@@ -27,6 +27,15 @@ $(function () {
 
 	});
 
+	function createMarker(position, title) {
+	
+		var marker = new google.maps.Marker({
+		      position: position,
+		      map: map,
+		      title: title
+  		});
+	}
+
 	function initialize(location) {
         var mapOptions = {
           center: location,
@@ -36,13 +45,24 @@ $(function () {
         map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
 
-        var myLatlng = new google.maps.LatLng(location.lat, location.lng);
-	
-		var marker = new google.maps.Marker({
-		      position: myLatlng,
-		      map: map,
-		      title: 'Hello World!'
-  		});
+       createMarker(new google.maps.LatLng(location.lat, location.lng));
+
+  		  var request = {
+		    location: location,
+		    radius: '3200',
+		    types: ['gym']
+		  };
+
+		  service = new google.maps.places.PlacesService(map);
+		  service.nearbySearch(request, function(results, status){
+		  	 if (status == google.maps.places.PlacesServiceStatus.OK) {
+    			// console.log(results);
+    			results.forEach(function(result){
+    				console.log(result);
+    				createMarker(result.geometry.location, name);
+    			});
+ 			 }
+		  });
       }
 
 
