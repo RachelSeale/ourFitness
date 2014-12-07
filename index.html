@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Our Fitness</title>
+</head>
+	<body>
+
+		<button id="location-button" type="button">Find my location</button>
+
+		<form id="location-form">
+			<label for="form-input">Enter your lcoation here</label>
+			<input type="text" id="location-input" />
+			<button type="submit">Go</button>
+		</form>
+ 
+ 		<div id="map-canvas" style="width: 100%; height: 400px"></div>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="location.js"></script>
+		
+	</body>
+</html>
