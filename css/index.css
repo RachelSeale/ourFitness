@@ -1,0 +1,179 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #f5f5f5; }
+
+.site {
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 1.5; }
+
+.header a {
+  font-weight: bold;
+  text-decoration: none; }
+
+.title {
+  display: inline-block;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif; }
+  .title a {
+    color: inherit; }
+
+.page-title {
+  font-size: 40px;
+  padding: 0% 2%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif; }
+
+ul li {
+  list-style-type: none; }
+
+.menu-link {
+  display: none;
+  font-family: Myriad Pro; }
+
+nav {
+  text-align: center; }
+  nav li {
+    display: inline-block;
+    margin: 1em 0.5em; }
+    nav li a {
+      padding: 1em 2em;
+      text-transform: uppercase;
+      border-sizing: border-box;
+      color: #2e3133;
+      font-family: 'Oswald', sans-serif;
+      text-decoration: none; }
+
+@media screen and (max-width: 600px) {
+  a.menu-link {
+    float: right;
+    display: block;
+    margin: 1% 5%;
+    background: #2e3133;
+    padding: 20px 32px;
+    position: relative;
+    padding-left: 1.25em; }
+
+  .menu-link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 2.3em;
+    margin: 0 12%;
+    height: 0.35em;
+    background: #f5f5f5;
+    box-shadow: 0 0.65em 0 0 #f5f5f5, 0 1.3em 0 0 #f5f5f5; }
+
+  nav li:hover {
+    background: rgba(255, 255, 255, 0.6); }
+
+  nav.active {
+    max-height: 15em;
+    transition: 1s; }
+
+  nav {
+    transition: 1.5s;
+    overflow: hidden;
+    max-height: 0;
+    clear: both;
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f5; }
+    nav li {
+      display: block;
+      padding: 1em;
+      margin: 0 0; } }
+/*****************************************************************************/
+/*
+/* Bourbon
+/*
+/*****************************************************************************/
+.site {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .site:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .site .header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center; }
+    .site .header:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 660px) {
+      .site .header {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .site .header:last-child {
+          margin-right: 0; }
+        .site .header .welcome-message, .site .header .border-line {
+          display: none; }
+        .site .header .title {
+          font-size: 60px; }
+        .site .header .job-title {
+          font-size: 30px; } }
+    @media screen and (max-width: 500px) {
+      .site .header {
+        float: left;
+        display: block;
+        margin-right: 38.19821%;
+        width: 100%; }
+        .site .header:last-child {
+          margin-right: 0; }
+        .site .header .page-title {
+          font-size: 35px; } }
+  .site .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .site .content:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      .site .content {
+        float: left;
+        display: block;
+        margin-right: 38.19821%;
+        width: 100%; }
+        .site .content:last-child {
+          margin-right: 0; } }
+
+/*# sourceMappingURL=index.css.map */
