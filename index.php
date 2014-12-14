@@ -16,6 +16,15 @@
 			<label for="form-input">Enter your lcoation here</label>
 			<input type="text" id="location-input" name="location" />
 			<button type="submit">Go</button>
+	
+			<label for="">2miles
+				<input type="radio" name="radius" value="2" checked />
+			</label>
+
+			<label for=""> 5miles
+				<input type="radio" name="radius" value="5" />
+			</label>
+
 		</form>
  
  		<div id="map-canvas" style="width: 100%; height: 400px"></div>

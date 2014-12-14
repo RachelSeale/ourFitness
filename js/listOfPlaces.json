@@ -1,0 +1,17 @@
+[
+	{
+		"geometry":{
+			"location":{
+				"lat":50.82444,
+				"lng": -0.1755931
+			}
+		},
+		"name":"OURFITNESS",
+		"types":[
+			"gym",
+			"health",
+			"establishment"
+		],
+		"vicinity":"OURFITNESS, Brighton"
+	}
+]
