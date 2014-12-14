@@ -1,6 +1,7 @@
 $(function () {
 	var map,
-		userLocation;
+		userLocation,
+		infoWindow;
 
 	$('#location-button').on('click', function(e){
 		navigator.geolocation.getCurrentPosition(function(position) {
@@ -44,10 +45,6 @@ $(function () {
 
 		content += '<p>' + place.vicinity + '</p>';
 
-		var infowindow = new google.maps.InfoWindow({
-			content: content
-
-		});
 	
 		var marker = new google.maps.Marker({
 		      position: position,
@@ -56,7 +53,8 @@ $(function () {
   		});
 
   		google.maps.event.addListener(marker, 'click', function() {
-		    infowindow.open(map,marker);
+  			infoWindow.setContent(content);
+		    infoWindow.open(map,marker);
 		 });
 	}
 
@@ -108,6 +106,7 @@ $(function () {
 		      icon: 'images/userMarker.png'
   		});
 
+		infoWindow = new google.maps.InfoWindow();
 		getPlaces(location);
       }
 
