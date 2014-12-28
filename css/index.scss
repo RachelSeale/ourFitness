@@ -32,3 +32,45 @@ body {
 
 
 @import "header";
+
+/*****************************************************************************/
+/*
+/* Bourbon
+/*
+/*****************************************************************************/
+.site {
+  @include outer-container;
+  $tablet: new-breakpoint(max-width 660px  4);
+  $mobile: new-breakpoint(max-width 500px 1);
+
+  .header { @include span-columns(12); 
+    text-align: center;
+    @include media($tablet) {
+    @include span-columns(4);
+     .welcome-message, .border-line{
+        display: none;
+      }
+        .title{
+        font-size: 60px;
+      }
+       .job-title {
+        font-size: 30px;
+      }
+    }
+
+    @include media($mobile) {
+      @include span-columns(1);
+      .page-title{
+        font-size: 35px;
+      }
+
+    }
+  }
+  .content { 
+  	@include span-columns(12); 
+  	background: white;
+	    @include media($mobile) {
+	    	@include span-columns(1);
+	    }
+  }
+}
