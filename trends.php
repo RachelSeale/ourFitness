@@ -23,6 +23,6 @@
 		    });
 		    feed.run();
 		</script>
-		</section>
+		
 	</body>
 </html>

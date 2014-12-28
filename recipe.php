@@ -10,8 +10,8 @@
 		<section class="site">
 			<div class="content">
 				<form action='./search.php' method='get'>
-					<input type='text' name='k' size='50' />
-					<input type='submit' value='Search' />
+					<input type='text' name='k' size='50'/>
+					<input type='submit' value='Search'/>
 				</form>
 			</div>
 		</section>
