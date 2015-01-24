@@ -1,7 +1,8 @@
 $(function () {
 	var map,
 		userLocation,
-		infoWindow;
+		infoWindow,
+		template = Handlebars.compile($('#mapAddress').html());
 
 	$('#location-button').on('click', function(e){
 		navigator.geolocation.getCurrentPosition(function(position) {
@@ -44,6 +45,7 @@ $(function () {
 		}
 
 		content += '<p>' + place.vicinity + '</p>';
+		content += '<p> <a href="' + place.website +'">' + place.website +' </a></p>';
 
 	
 		var marker = new google.maps.Marker({
@@ -59,7 +61,7 @@ $(function () {
 	}
 
 	function listPlaces (places) {
-		var template = Handlebars.compile($('#mapAddress').html());
+		
 		var output = '';
 		places.forEach(function(place) {
 			output += template(place);
@@ -83,8 +85,15 @@ $(function () {
     			// console.log(results);
     			listPlaces(results);
     			results.forEach(function(result){
-    				console.log(result);
-    				createMarker(result.geometry.location, result);
+    				service.getDetails({
+						placeId: result.place_id
+					}, function(place, status) {
+						if (status == google.maps.places.PlacesServiceStatus.OK) {
+							console.log(place);
+							createMarker(result.geometry.location, place);
+							$('#resultsAddressList').append(template(place));
+						}
+					});
     			});
  			 }
 		  });
@@ -95,6 +104,7 @@ $(function () {
 				places.forEach(function(place){
 					createMarker(new google.maps.LatLng(place.geometry.location.lat, place.geometry.location.lng), place);
 					console.log(place);
+					$('#resultsAddressList').append(template(place));
 
 				})
 			

@@ -43,7 +43,8 @@
 		<script src="js/handlebars.js"></script>
 		<script id="mapAddress" type="text/x-handlerbars-template">
 			<li>
-				{{name}}
+				<h3>{{name}}</h3>
+				<p><img src="{{icon}}" alt="{{types}}"></p>
 			</li>
 		</script>
 	</body>
