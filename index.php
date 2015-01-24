@@ -28,13 +28,23 @@
 					</label>
 				</form>
 	 			<div id="map-canvas" style="width: 100%; height: 400px"></div>
+
+	 			<ol id="resultsAddressList">
+
+	 			</ol>
 	 		</div>
+
  		</section>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 		<script src="js/location.js"></script>
 		<script src="js/nav.js"></script>
-	
+		<script src="js/handlebars.js"></script>
+		<script id="mapAddress" type="text/x-handlerbars-template">
+			<li>
+				{{name}}
+			</li>
+		</script>
 	</body>
 </html>
