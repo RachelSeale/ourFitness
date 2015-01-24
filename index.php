@@ -7,6 +7,9 @@
 </head>
 	<body>
 		<?php include("header.php"); ?>
+		<header class="header">
+	  		<h1 class="title"><a href="/">Our Fitness Network</a></h1>
+		</header>  
 		<section class="site">
 			<div class="content">
 				<button id="location-button" type="button">Find my location</button>

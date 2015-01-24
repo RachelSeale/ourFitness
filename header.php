@@ -10,8 +10,4 @@
 	        </ul>
 	    </nav>
 	</div>
-
-	<header class="header">
-	  <h1 class="title"><a href="/">OurFitness</a></h1>
-	</header>  
 </section>

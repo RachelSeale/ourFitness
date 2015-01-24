@@ -1,0 +1,84 @@
+input {
+	outline: none;
+}
+
+input[type=text] {
+	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	margin-top: 2%;
+	width: 30%;
+	
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=text]:focus {
+	width: 40%;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input[type=submit] {
+	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 100px;
+	
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/*****************************************************************************/
+/*
+/* Search recipe page
+/*
+/*****************************************************************************/
+
+.azRecipes img {
+	height: 80px;
+	width: 80px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+  	margin: 2% 0% 0% 5%;
+}
+
+.azRecipes h2 {
+		font-size: 12px;
+  		display: inline-block;
+		margin-right: 10%;
+		vertical-align: top;
+ }
+
+ .search-page h2 {
+	color: $pastel-pink;
+	margin: 1% 0 1% 0;
+	font-family: $font-family;
+}
+
+.search-recipes {
+	text-align: center;
+	margin: 0 2% 0 2%;
+}
