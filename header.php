@@ -3,7 +3,8 @@
 	<a href="#menu" class="menu-link"></a>
 	    <nav id="nav" class="nav toggle-nav" >
 	        <ul>
-	          <li><a href="/">Home</a></li>
+	          <li><a href="index.php">Home</a></li>
+	          <li><a href="map.php">Map</a></li>
 	          <li><a href="recipe.php">Recipes</a></li>
 	          <li><a href="trends.php">#Trends</a></li>
 	          <li><a href="/contact.html">Contact</a></li>

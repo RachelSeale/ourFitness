@@ -12,6 +12,7 @@ $black: #000000;
 $white: #FFF;
 $pastel-pink: #F76AB6;
 $silver-grey: #f5f5f5;
+$light-bluegrey: #E0EBEB;
 $pea-green: #76BF41;
 $pastel-pink: #ff93a5;
 $font-color: #2e3133;
@@ -36,6 +37,7 @@ body {
 
 @import "header";
 @import "recipe";
+@import "index2";
 /*****************************************************************************/
 /*
 /* Bourbon

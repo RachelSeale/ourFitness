@@ -14,7 +14,7 @@
 			<div class="content">
 				<button id="location-button" type="button">Find my location</button>
 
-				<form action="map.php" method="GET">
+				<form id="location-form">
 					<label for="form-input">Enter your lcoation here</label>
 					<input type="text" id="location-input" name="location" />
 					<button type="submit">Go</button>
@@ -28,17 +28,20 @@
 					</label>
 				</form>
 
+				<div id="map-canvas" style="width: 100%; height: 400px"></div>
+
 	 			<ol id="resultsAddressList">
 
 	 			</ol>
-	 		</div>
+			</div>
 
  		</section>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+		<script src="js/location.js"></script>
 		<script src="js/nav.js"></script>
-		<script src="js/home.js"></script>
+		<script src="js/handlebars.js"></script>
 		<script id="mapAddress" type="text/x-handlerbars-template">
 			<li>
 				<h3>{{name}}</h3>
