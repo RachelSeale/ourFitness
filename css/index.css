@@ -31,6 +31,14 @@ html, body {
 body {
   background-color: #FFF; }
 
+header {
+  font-weight: bold;
+  color: #76cdd3;
+  padding: 1% 0 1% 0;
+  text-align: center; }
+  header a {
+    text-decoration: none; }
+
 ul li {
   list-style-type: none; }
 
@@ -40,8 +48,8 @@ ul li {
 
 nav {
   text-align: center;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5; }
+  border-top: 1px solid #E9EBEB;
+  border-bottom: 1px solid #E9EBEB; }
   nav li {
     display: inline-block;
     margin: 1em 0.5em; }
@@ -71,8 +79,8 @@ nav {
     width: 2.3em;
     margin: 0 12%;
     height: 0.35em;
-    background: #f5f5f5;
-    box-shadow: 0 0.65em 0 0 #f5f5f5, 0 1.3em 0 0 #f5f5f5; }
+    background: #E9EBEB;
+    box-shadow: 0 0.65em 0 0 #E9EBEB, 0 1.3em 0 0 #E9EBEB; }
 
   nav li:hover {
     background: rgba(255, 255, 255, 0.6); }
@@ -88,7 +96,7 @@ nav {
     clear: both;
     position: relative;
     width: 100%;
-    background-color: #f5f5f5; }
+    background-color: #E9EBEB; }
     nav li {
       display: block;
       padding: 1em;
@@ -155,13 +163,91 @@ input::-webkit-input-placeholder {
   vertical-align: top; }
 
 .search-page h2 {
-  color: #ff93a5;
+  color: #A2F3A8;
   margin: 1% 0 1% 0;
   font-family: "Solomon", Arial, Helvetica, sans-serif; }
 
 .search-recipes {
   text-align: center;
   margin: 0 2% 0 2%; }
+
+/*Main page search input*/
+input {
+  outline: none; }
+
+input[type=text] {
+  background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
+  border: solid 1px #ccc;
+  padding: 20px 10px 9px 32px;
+  margin-top: 2%;
+  width: 30%;
+  font-size: 13px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s; }
+
+input[type=text]:focus {
+  width: 40%;
+  background-color: #fff;
+  border-color: #76cdd3;
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+
+input[type=submit] {
+  background: white url(../images/locationSearchIcon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 100px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s; }
+
+input:-moz-placeholder {
+  color: #999; }
+
+input::-webkit-input-placeholder {
+  color: #999; }
+
+#location-form {
+  padding-top: 5%; }
+  #location-form h2 {
+    text-transform: uppercase;
+    color: #FFF; }
+
+.searchLocationBtn,
+.locationBtn {
+  padding: 1%;
+  width: 7%;
+  color: white;
+  border: 1px solid #76cdd3;
+  border-radius: 0.5em;
+  display: inline-block;
+  background: #76cdd3;
+  vertical-align: bottom;
+  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+.locationBtn {
+  width: 10%; }
+
+/*TITLE*/
+.title {
+  display: inline-block;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  .title a {
+    color: #76cdd3; }
+
+.logo {
+  vertical-align: bottom; }
 
 /*****************************************************************************/
 /*
@@ -171,27 +257,13 @@ input::-webkit-input-placeholder {
 .site {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin: 0 auto;
+  line-height: 1.5; }
   .site:after {
     content: "";
     display: table;
     clear: both; }
-  .site .content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    background: white; }
-    .site .content:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      .site .content {
-        float: left;
-        display: block;
-        margin-right: 38.19821%;
-        width: 100%; }
-        .site .content:last-child {
-          margin-right: 0; } }
   .site .side-content {
     float: left;
     display: block;
@@ -226,25 +298,64 @@ input::-webkit-input-placeholder {
         .site .recipe-content:last-child {
           margin-right: 0; } }
 
-.site {
-  text-align: justify;
-  margin: 0 auto;
-  line-height: 1.5; }
+.search-location .content {
+  text-align: center;
+  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  background-image: url("../images/fitness.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .search-location .content p {
+    color: white;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-size: 15px; }
 
-header {
-  font-weight: bold;
-  color: #76cdd3;
-  padding: 1% 0 1% 0;
-  text-align: center; }
-  header a {
-    text-decoration: none; }
+/*sUB CONTENT ON MAIN PAGE*/
+.sub-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .sub-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .sub-content .idea1, .sub-content .idea2, .sub-content idea3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
+      margin-right: 0; }
+  .sub-content h2 {
+    text-align: center;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    color: #76cdd3; }
+  .sub-content img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
 
-.title {
-  display: inline-block;
-  font-size: 45px;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif; }
-  .title a {
-    color: inherit; }
+.welcome-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .welcome-info:last-child {
+    margin-right: 0; }
+  .welcome-info p {
+    color: #000000;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    padding-bottom: 2%; }
+    .welcome-info p a {
+      text-decoration: none;
+      color: black; }
+  .welcome-info h2 {
+    text-align: center;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    color: #A2F3A8;
+    margin: -2% 0% 2% 0%; }
 
 /*# sourceMappingURL=index.css.map */

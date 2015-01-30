@@ -10,11 +10,8 @@
 
 $black: #000000;
 $white: #FFF;
-$pastel-pink: #F76AB6;
-$silver-grey: #f5f5f5;
-$light-bluegrey: #E0EBEB;
-$pea-green: #76BF41;
-$pastel-pink: #ff93a5;
+$silver-grey: #E9EBEB;
+$pastel-green: #A2F3A8;
 $font-color: #2e3133;
 $sky-blue: #76cdd3;
 $font-family: "Solomon", Arial, Helvetica, sans-serif;
@@ -37,27 +34,39 @@ body {
 
 @import "header";
 @import "recipe";
-@import "index2";
+@import "searchInput";
+
+/*TITLE*/
+
+.title {
+  display: inline-block;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: $font-family;
+  a {
+  color: $sky-blue;
+  }
+}
+
+.logo {
+  vertical-align: bottom;
+}
+
 /*****************************************************************************/
 /*
 /* Bourbon
 /*
 /*****************************************************************************/
+
+
 .site {
-  @include outer-container;
+    @include outer-container;
+
+  margin: 0 auto;
+  line-height: 1.5;
   $tablet: new-breakpoint(max-width 660px  4);
   $mobile: new-breakpoint(max-width 500px 1);
-
-
- .content { 
-  	@include span-columns(12); 
-  	background: white;
-	    @include media($mobile) {
-	    	@include span-columns(1);
-	    }
-  }
   
-
    .side-content  { @include span-columns(4); 
     background-color: $white;
     @include media($tablet) {
@@ -67,43 +76,77 @@ body {
   } 
 
   .recipe-content { 
-  	@include span-columns(8); 
-  	background: white;
-	    @include media($mobile) {
-	    	@include span-columns(1);
-	    }
+    @include span-columns(8); 
+    background: white;
+      @include media($mobile) {
+        @include span-columns(1);
+      }
+  }
+}
+
+ .search-location {
+   .content { 
+      text-align: center;
+      font-family: $font-family;
+      background-image: url("../images/fitness.jpg");
+      background-repeat: no-repeat;
+      height: 300px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      p{
+        color: white;
+        font-family: $font-family;
+        font-size: 15px;
+      }
+
+    }
+}
+
+/*sUB CONTENT ON MAIN PAGE*/
+
+.sub-content {
+  @include outer-container;
+
+  .idea1, .idea2, idea3 {
+    @include span-columns(4);
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $font-family;
+    color: $sky-blue;
+
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
 
 
+.welcome-info {
+  @include span-columns(12);
+      p {
+        color: $black;
+        font-family: $font-family;
+        padding-bottom: 2%;
 
-.site {
-  text-align: justify;
-  margin: 0 auto;
-  line-height: 1.5;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      } 
+
+      h2 {
+        text-align: center;
+        font-family: $font-family;
+        color: $pastel-green;
+        margin: -2% 0% 2% 0%;
+      }     
 }
-
-
-header {
-  font-weight: bold;
-  color: $sky-blue;
-  padding: 1% 0 1% 0;
-  text-align: center;
-
-	a{
-	  text-decoration: none;
-	}
-}
-
-.title {
-  display: inline-block;
-  font-size: 45px;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  a {
-  color: inherit;
-  }
-}
-
-
 

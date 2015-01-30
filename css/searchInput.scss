@@ -1,13 +1,16 @@
+/*Main page search input*/
+
 input {
 	outline: none;
 }
 
 input[type=text] {
-	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
 	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
+	padding: 20px 10px 9px 32px;
 	margin-top: 2%;
 	width: 30%;
+	font-size: 13px;
 	
 	-webkit-border-radius: 1em;
 	-moz-border-radius: 1em;
@@ -21,7 +24,7 @@ input[type=text] {
 input[type=text]:focus {
 	width: 40%;
 	background-color: #fff;
-	border-color: #66CC75;
+	border-color: $sky-blue;
 	
 	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -29,7 +32,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	background: white url(../images/locationSearchIcon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
 	width: 100px;
@@ -50,35 +53,31 @@ input::-webkit-input-placeholder {
 	color: #999;
 }
 
-/*****************************************************************************/
-/*
-/* Search recipe page
-/*
-/*****************************************************************************/
 
-.azRecipes img {
-	height: 80px;
-	width: 80px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-  	margin: 2% 0% 0% 5%;
+#location-form {
+	padding-top: 5%;
+
+	h2 {
+		text-transform: uppercase;
+		color: $white;
+	}
 }
 
-.azRecipes h2 {
-		font-size: 12px;
-  		display: inline-block;
-		margin-right: 10%;
-		vertical-align: top;
- }
 
- .search-page h2 {
-	color: $pastel-green;
-	margin: 1% 0 1% 0;
+.searchLocationBtn,
+.locationBtn {
+	padding: 1%;
+	width: 7%;
+	color: white;
+	border: 1px solid #76cdd3;
+	border-radius: 0.5em;
+	display: inline-block;
+	background: $sky-blue;
+	vertical-align: bottom;
 	font-family: $font-family;
+	font-size: 15px;
 }
 
-.search-recipes {
-	text-align: center;
-	margin: 0 2% 0 2%;
+.locationBtn{
+	width: 10%;
 }
