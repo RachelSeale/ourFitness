@@ -1,16 +1,38 @@
+
 /*Main page search input*/
+.searchLocationForm{
+
+	input[type=text] {
+		background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
+		padding: 20px 10px 9px 32px;
+		margin-top: 2%;
+		width: 30%;
+		font-size: 13px;
+	}
+}
+
+.content .searchLocationForm {
+	padding-top: 5%;
+
+	h2 {
+		text-transform: uppercase;
+		color: $white;
+	}
+}
+
+
+/* RECIPE SEARCH OPTION*/
 
 input {
 	outline: none;
 }
 
 input[type=text] {
-	background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
+	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
-	padding: 20px 10px 9px 32px;
+	padding: 9px 10px 9px 32px;
 	margin-top: 2%;
 	width: 30%;
-	font-size: 13px;
 	
 	-webkit-border-radius: 1em;
 	-moz-border-radius: 1em;
@@ -32,7 +54,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-	background: white url(../images/locationSearchIcon.png) no-repeat 9px center;
+	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
 	width: 100px;
@@ -46,27 +68,9 @@ input[type=submit] {
 	transition: all .5s;
 }
 
-input:-moz-placeholder {
-	color: #999;
-}
-input::-webkit-input-placeholder {
-	color: #999;
-}
-
-
-#location-form {
-	padding-top: 5%;
-
-	h2 {
-		text-transform: uppercase;
-		color: $white;
-	}
-}
-
-
 .searchLocationBtn,
 .locationBtn {
-	padding: 1%;
+	padding: 0.9%;
 	width: 7%;
 	color: white;
 	border: 1px solid #76cdd3;
@@ -76,8 +80,12 @@ input::-webkit-input-placeholder {
 	vertical-align: bottom;
 	font-family: $font-family;
 	font-size: 15px;
+
+	input[type=submit] {
+		outline: none;
+	}
 }
 
 .locationBtn{
-	width: 10%;
+	width: 14%;
 }

@@ -35,6 +35,7 @@ body {
 @import "header";
 @import "recipe";
 @import "searchInput";
+@import "map";
 
 /*TITLE*/
 
@@ -57,77 +58,7 @@ body {
 /* Bourbon
 /*
 /*****************************************************************************/
-
-
-.site {
-    @include outer-container;
-
-  margin: 0 auto;
-  line-height: 1.5;
-  $tablet: new-breakpoint(max-width 660px  4);
-  $mobile: new-breakpoint(max-width 500px 1);
-  
-   .side-content  { @include span-columns(4); 
-    background-color: $white;
-    @include media($tablet) {
-      margin-top: 2%;
-    @include span-columns(1);
-    }
-  } 
-
-  .recipe-content { 
-    @include span-columns(8); 
-    background: white;
-      @include media($mobile) {
-        @include span-columns(1);
-      }
-  }
-}
-
- .search-location {
-   .content { 
-      text-align: center;
-      font-family: $font-family;
-      background-image: url("../images/fitness.jpg");
-      background-repeat: no-repeat;
-      height: 300px;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-
-      p{
-        color: white;
-        font-family: $font-family;
-        font-size: 15px;
-      }
-
-    }
-}
-
-/*sUB CONTENT ON MAIN PAGE*/
-
-.sub-content {
-  @include outer-container;
-
-  .idea1, .idea2, idea3 {
-    @include span-columns(4);
-  }
-
-  h2 {
-    text-align: center;
-    font-family: $font-family;
-    color: $sky-blue;
-
-  }
-
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
-
+/* HOMEPAGE */
 
 .welcome-info {
   @include span-columns(12);
@@ -149,4 +80,59 @@ body {
         margin: -2% 0% 2% 0%;
       }     
 }
+
+
+ .search-location {
+   .content { 
+      text-align: center;
+      font-family: $font-family;
+      background-image: url("../images/fitness.jpg");
+      background-repeat: no-repeat;
+      height: 300px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      p{
+        color: white;
+        font-family: $font-family;
+        font-size: 15px;
+        padding: 1% 0;
+      }
+
+    }
+}
+
+
+/*SUB CONTENT ON MAIN PAGE*/
+
+.sub-content {
+  @include outer-container;
+  $tablet: new-breakpoint(max-width 660px  4);
+  $mobile: new-breakpoint(max-width 500px 1);
+
+  .idea1, .idea2, idea3 {
+    @include span-columns(4);
+
+    @include media($tablet) {
+      @include span-columns(4);
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $font-family;
+    color: $sky-blue;
+
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+
 

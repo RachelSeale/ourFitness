@@ -1,54 +1,32 @@
-input {
-	outline: none;
+/* RECIPE PAGE */
+
+.site {
+  @include outer-container;
+
+  margin: 0 auto;
+  line-height: 1.5;
+  $tablet: new-breakpoint(max-width 660px  4);
+  $mobile: new-breakpoint(max-width 500px 1);
+  
+   .side-content  { 
+
+   	@include span-columns(4); 
+    background-color: $white;
+    @include media($tablet) {
+      margin-top: 2%;
+    @include span-columns(1);
+    }
+  } 
+
+  .recipe-content { 
+    @include span-columns(8); 
+    background: white;
+      @include media($mobile) {
+        @include span-columns(1);
+      }
+  }
 }
 
-input[type=text] {
-	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	margin-top: 2%;
-	width: 30%;
-	
-	-webkit-border-radius: 1em;
-	-moz-border-radius: 1em;
-	border-radius: 1em;
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-
-input[type=text]:focus {
-	width: 40%;
-	background-color: #fff;
-	border-color: #66CC75;
-	
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
-}
-
-input[type=submit] {
-	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 100px;
-	
-	-webkit-border-radius: 1em;
-	-moz-border-radius: 1em;
-	border-radius: 1em;
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
-}
-
-input:-moz-placeholder {
-	color: #999;
-}
-input::-webkit-input-placeholder {
-	color: #999;
-}
 
 /*****************************************************************************/
 /*

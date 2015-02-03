@@ -1,0 +1,29 @@
+/* MAP PAGE */
+.site {
+	@include outer-container;
+	margin: 0 auto;
+	.resultsMapSection {
+		@include span-columns(8);
+		@include omega();
+	}
+	.resultAddressSection {
+		@include span-columns(3);
+		margin: 5% 0% 0% 5%;
+	}
+
+}
+
+.searchLocationForm {
+	text-align: center;
+	padding-top: 0%;
+	color: $black;
+    font-family: $font-family;
+
+	p{
+		display: inline-block;
+	}
+}
+
+.resultsMapSection {
+	padding-top: 4%;
+}

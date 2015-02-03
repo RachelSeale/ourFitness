@@ -101,159 +101,7 @@ nav {
       display: block;
       padding: 1em;
       margin: 0 0; } }
-input {
-  outline: none; }
-
-input[type=text] {
-  background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-  border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
-  margin-top: 2%;
-  width: 30%;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
-
-input[type=text]:focus {
-  width: 40%;
-  background-color: #fff;
-  border-color: #66CC75;
-  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
-  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
-  box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
-
-input[type=submit] {
-  background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-  border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
-  width: 100px;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
-
-input:-moz-placeholder {
-  color: #999; }
-
-input::-webkit-input-placeholder {
-  color: #999; }
-
-/*****************************************************************************/
-/*
-/* Search recipe page
-/*
-/*****************************************************************************/
-.azRecipes img {
-  height: 80px;
-  width: 80px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  margin: 2% 0% 0% 5%; }
-
-.azRecipes h2 {
-  font-size: 12px;
-  display: inline-block;
-  margin-right: 10%;
-  vertical-align: top; }
-
-.search-page h2 {
-  color: #A2F3A8;
-  margin: 1% 0 1% 0;
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
-
-.search-recipes {
-  text-align: center;
-  margin: 0 2% 0 2%; }
-
-/*Main page search input*/
-input {
-  outline: none; }
-
-input[type=text] {
-  background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
-  border: solid 1px #ccc;
-  padding: 20px 10px 9px 32px;
-  margin-top: 2%;
-  width: 30%;
-  font-size: 13px;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
-
-input[type=text]:focus {
-  width: 40%;
-  background-color: #fff;
-  border-color: #76cdd3;
-  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
-  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
-  box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
-
-input[type=submit] {
-  background: white url(../images/locationSearchIcon.png) no-repeat 9px center;
-  border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
-  width: 100px;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
-
-input:-moz-placeholder {
-  color: #999; }
-
-input::-webkit-input-placeholder {
-  color: #999; }
-
-#location-form {
-  padding-top: 5%; }
-  #location-form h2 {
-    text-transform: uppercase;
-    color: #FFF; }
-
-.searchLocationBtn,
-.locationBtn {
-  padding: 1%;
-  width: 7%;
-  color: white;
-  border: 1px solid #76cdd3;
-  border-radius: 0.5em;
-  display: inline-block;
-  background: #76cdd3;
-  vertical-align: bottom;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
-  font-size: 15px; }
-
-.locationBtn {
-  width: 10%; }
-
-/*TITLE*/
-.title {
-  display: inline-block;
-  font-size: 45px;
-  text-transform: uppercase;
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
-  .title a {
-    color: #76cdd3; }
-
-.logo {
-  vertical-align: bottom; }
-
-/*****************************************************************************/
-/*
-/* Bourbon
-/*
-/*****************************************************************************/
+/* RECIPE PAGE */
 .site {
   max-width: 68em;
   margin-left: auto;
@@ -298,46 +146,160 @@ input::-webkit-input-placeholder {
         .site .recipe-content:last-child {
           margin-right: 0; } }
 
-.search-location .content {
-  text-align: center;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
-  background-image: url("../images/fitness.jpg");
-  background-repeat: no-repeat;
-  height: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .search-location .content p {
-    color: white;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
-    font-size: 15px; }
+/*****************************************************************************/
+/*
+/* Search recipe page
+/*
+/*****************************************************************************/
+.azRecipes img {
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  margin: 2% 0% 0% 5%; }
 
-/*sUB CONTENT ON MAIN PAGE*/
-.sub-content {
+.azRecipes h2 {
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 10%;
+  vertical-align: top; }
+
+.search-page h2 {
+  color: #A2F3A8;
+  margin: 1% 0 1% 0;
+  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+
+.search-recipes {
+  text-align: center;
+  margin: 0 2% 0 2%; }
+
+/*Main page search input*/
+.searchLocationForm input[type=text] {
+  background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
+  padding: 20px 10px 9px 32px;
+  margin-top: 2%;
+  width: 30%;
+  font-size: 13px; }
+
+.content .searchLocationForm {
+  padding-top: 5%; }
+  .content .searchLocationForm h2 {
+    text-transform: uppercase;
+    color: #FFF; }
+
+/* RECIPE SEARCH OPTION*/
+input {
+  outline: none; }
+
+input[type=text] {
+  background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  margin-top: 2%;
+  width: 30%;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s; }
+
+input[type=text]:focus {
+  width: 40%;
+  background-color: #fff;
+  border-color: #76cdd3;
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+
+input[type=submit] {
+  background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 100px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s; }
+
+.searchLocationBtn,
+.locationBtn {
+  padding: 0.9%;
+  width: 7%;
+  color: white;
+  border: 1px solid #76cdd3;
+  border-radius: 0.5em;
+  display: inline-block;
+  background: #76cdd3;
+  vertical-align: bottom;
+  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+  .searchLocationBtn input[type=submit],
+  .locationBtn input[type=submit] {
+    outline: none; }
+
+.locationBtn {
+  width: 14%; }
+
+/* MAP PAGE */
+.site {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
-  .sub-content:after {
+  margin-right: auto;
+  margin: 0 auto; }
+  .site:after {
     content: "";
     display: table;
     clear: both; }
-  .sub-content .idea1, .sub-content .idea2, .sub-content idea3 {
+  .site .resultsMapSection {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
-    .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
+    width: 65.88078%;
+    margin-right: 0; }
+    .site .resultsMapSection:last-child {
       margin-right: 0; }
-  .sub-content h2 {
-    text-align: center;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
-    color: #76cdd3; }
-  .sub-content img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
+  .site .resultAddressSection {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin: 5% 0% 0% 5%; }
+    .site .resultAddressSection:last-child {
+      margin-right: 0; }
 
+.searchLocationForm {
+  text-align: center;
+  padding-top: 0%;
+  color: #000000;
+  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  .searchLocationForm p {
+    display: inline-block; }
+
+.resultsMapSection {
+  padding-top: 4%; }
+
+/*TITLE*/
+.title {
+  display: inline-block;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  .title a {
+    color: #76cdd3; }
+
+.logo {
+  vertical-align: bottom; }
+
+/*****************************************************************************/
+/*
+/* Bourbon
+/*
+/*****************************************************************************/
+/* HOMEPAGE */
 .welcome-info {
   float: left;
   display: block;
@@ -357,5 +319,54 @@ input::-webkit-input-placeholder {
     font-family: "Solomon", Arial, Helvetica, sans-serif;
     color: #A2F3A8;
     margin: -2% 0% 2% 0%; }
+
+.search-location .content {
+  text-align: center;
+  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  background-image: url("../images/fitness.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .search-location .content p {
+    color: white;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 1% 0; }
+
+/*SUB CONTENT ON MAIN PAGE*/
+.sub-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .sub-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .sub-content .idea1, .sub-content .idea2, .sub-content idea3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 660px) {
+      .sub-content .idea1, .sub-content .idea2, .sub-content idea3 {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
+          margin-right: 0; } }
+  .sub-content h2 {
+    text-align: center;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    color: #76cdd3; }
+  .sub-content img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
 
 /*# sourceMappingURL=index.css.map */

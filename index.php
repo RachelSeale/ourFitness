@@ -20,23 +20,16 @@
 
 		<section class="search-location">
 			<div class="content">
-				<form class="site" action="map.php" method="GET">
+				<form class="searchLocationForm" action="map.php" method="GET">
 					<h2>Find local sport activities!</h2>
 					<input for="form-input" type="text" value="Enter your location here" id="location-input" name="location">
-					<button class="searchLocationBtn" type="submit">Find</button><br>
-			
-					<label for="">2miles
-						<input type="radio" name="radius" value="2" checked />
-					</label>
-
-					<label for=""> 5miles
-						<input type="radio" name="radius" value="5" />
-					</label>
+					<button class="searchLocationBtn" type="submit">Find</button>
+					<br />
 				</form>
 
 				<p><b>OR</br></p>
 
-				<button id="location-button" type="button">Find my location</button>
+				<button class="locationBtn" id="location-button" type="button">Find my location</button>
 	 		</div>
  		</section>
 

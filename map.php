@@ -11,14 +11,14 @@
 	  		<h1 class="title"><a href="/">Our Fitness Network</a></h1>
 		</header>  
 		<section class="site">
-			<div class="content">
-				<button id="location-button" type="button">Find my location</button>
+			<div>
+				<form class="searchLocationForm" id="location-form">
+					<input for="form-input" type="text" value="Enter your location here" id="location-input" name="location">
 
-				<form id="location-form">
-					<label for="form-input">Enter your lcoation here</label>
-					<input type="text" id="location-input" name="location" />
-					<button type="submit">Go</button>
-			
+					<button class="searchLocationBtn" type="submit">Go</button>
+					<p>OR</p>
+					<button class="locationBtn" id="location-button" type="button">Find my location</button>
+					
 					<label for="">2miles
 						<input type="radio" name="radius" value="2" checked />
 					</label>
@@ -27,10 +27,13 @@
 						<input type="radio" name="radius" value="5" />
 					</label>
 				</form>
-
+			</div>
+			<div class="resultsMapSection">
 				<div id="map-canvas" style="width: 100%; height: 400px"></div>
+			</div>
 
-	 			<ol id="resultsAddressList">
+			<div class="resultAddressSection">
+				<ol id="resultsAddressList">
 
 	 			</ol>
 			</div>

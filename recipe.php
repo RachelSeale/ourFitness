@@ -9,18 +9,16 @@
 		<?php include("header.php"); ?>
 		<header>
 	  		<h1 class="title">
-	  			<a href="/">Our Fitness Network</a>
+	  			<a href="index.php">Our Fitness Network</a>
 	  		</h1>
 		</header>
 
 
 		<section class="site">
-
 				<form class="search-recipes form-wrapper" action='./search.php' method='get'>
 					<input type='text' name='k' size='50' placeholder="Search recipes"/>
 					<input type='submit' value='Search'/>
 				</form>
-
 			<div class="recipe-content">
 				<h1> Recipes </h1>
 			</div>
