@@ -25,12 +25,12 @@
 	  	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
-		    	<img src="images/food/starters/prawnScrewer.png"> 
+		    	<img src="images/food/mains/vegCurry.png"> 
 		  		<div class="likes">
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Spicy Chilli Prawn Skewer</h3>
+		 			<h3>Vegetable Curry</h3>
 		 		</div>
 			</div>
 	  		<ul class="icons">
@@ -43,12 +43,12 @@
 	  	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
-		    	<img src="images/food/starters/bruschetta.png"> 
+		    	<img src="images/food/mains/lobster.png"> 
 		  		<div class="likes">
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Tomatoe and Basil Bruschetta</h3>
+		 			<h3>Lobster and pan-fried aubergine</h3>
 		 		</div>
 			</div>
 	  		<ul class="icons">
@@ -61,12 +61,12 @@
 	  	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
-		    	<img src="images/food/starters/sushi.png"> 
+		    	<img src="images/food/mains/roastDinner.png"> 
 		  		<div class="likes">
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Vegetarian Sushi Rolls</h3>
+		 			<h3>Classic Pork roast dinner</h3>
 		 		</div>
 			</div>
 	  		<ul class="icons">
@@ -79,12 +79,12 @@
 	  	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
-		    	<img src="images/food/starters/vegSoup.png"> 
+		    	<img src="images/food/mains/seafood.png"> 
 		  		<div class="likes">
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Vegatable Soup</h3>
+		 			<h3>Seafood Risotto</h3>
 		 		</div>
 			</div>
 	  		<ul class="icons">
@@ -97,12 +97,12 @@
 	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
-		    	<img src="images/food/starters/baconSalad.png"> 
+		    	<img src="images/food/mains/thaiGreen.png"> 
 		  		<div class="likes">
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Pancetta Salad</h3>
+		 			<h3>Thai Green Curry</h3>
 		 		</div>
 			</div>
 	  		<ul class="icons">
@@ -115,12 +115,12 @@
 	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
-		    	<img src="images/food/starters/scallops.png"> 
+		    	<img src="images/food/mains/fish.png"> 
 		  		<div class="likes">
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Scallops with lime & coriander</h3>
+		 			<h3>Fish and Vgatables</h3>
 		 		</div>
 			</div>
 	  		<ul class="icons">

@@ -45,9 +45,9 @@
 						<a href="starters.php">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/prawnScrewer.png"> 
+						    	<img src="images/food/starters/prawnScrewer.png"> 
 						 		<div class="name">
-						 			<h3>Starter</h3>
+						 			<h3>Starters</h3>
 						 		</div>
 							</div>
 						</div>
@@ -62,7 +62,7 @@
 						<a href="mains.php">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/vegCurry.png"> 
+						    	<img src="images/food/mains/vegCurry.png"> 
 						 		<div class="name">
 						 			<h3>Mains</h3>
 					 			</div>
@@ -79,9 +79,9 @@
 						<a href="desserts.php">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/nuttyYogurt.png"> 
+						    	<img src="images/food/desserts/nuttyYogurt.png"> 
 							 		<div class="name">
-							 			<h3>Dessert</h3>
+							 			<h3>Desserts</h3>
 							 		</div>
 							</div>
 						</div>
