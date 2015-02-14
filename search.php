@@ -65,35 +65,6 @@
 
 				?>
 			</div>
-			<div class="side-content">
-				<h1> A-Z Rceipes </h1>
-					<ul class="azRecipes">
-						<li>
-							<img src="images/blueberry-muffin.jpg">
-							<h2> Blueberry Muffins!</h2>
-						</li>
-						<li>
-							<img src="images/passion-yogurt.jpg">
-							<h2> Passion Fruit Yogurt</h2>
-						</li>
-						<li>
-							<img src="images/raspberry-mess.jpg">
-							<h2> Raspberry Mess</h2>
-						</li>
-						<li>
-							<img src="images/berry-gronola.jpg">
-							<h2> Berry Gronola</h2>
-						</li>
-						<li>
-							<img src="images/berry-yogurt.jpg">
-							<h2> Berry Yogurt</h2>
-						</li>
-						<li>
-							<img src="images/veg-soup.jpg">
-							<h2> Vegatable Soup </h2>
-						</li>
-					</ul>
-			</div>
 		</section>
 	</body>
 </html>

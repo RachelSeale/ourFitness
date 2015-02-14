@@ -1,30 +1,38 @@
 /* RECIPE PAGE */
 
+.recipe-header {
+	    text-align: center;
+        font-family: $font-family;
+        color: $pastel-green;
+}
+
+.recipe-page {
+	p {
+		margin-bottom: 2%;
+	}
+}
+
 .site {
   @include outer-container;
-
   margin: 0 auto;
   line-height: 1.5;
   $tablet: new-breakpoint(max-width 660px  4);
   $mobile: new-breakpoint(max-width 500px 1);
   
-   .side-content  { 
-
-   	@include span-columns(4); 
-    background-color: $white;
-    @include media($tablet) {
-      margin-top: 2%;
-    @include span-columns(1);
+    h1,
+   	h2,
+   	p {
+     	font-family: $font-family;
     }
-  } 
 
-  .recipe-content { 
-    @include span-columns(8); 
-    background: white;
-      @include media($mobile) {
-        @include span-columns(1);
-      }
-  }
+	.recipe-content { 
+		margin-top: 5%;
+    	@include span-columns(8); 
+    	background: white;
+      	@include media($mobile) {
+        	@include span-columns(1);
+      	}
+  	}
 }
 
 
@@ -34,21 +42,6 @@
 /*
 /*****************************************************************************/
 
-.azRecipes img {
-	height: 80px;
-	width: 80px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-  	margin: 2% 0% 0% 5%;
-}
-
-.azRecipes h2 {
-		font-size: 12px;
-  		display: inline-block;
-		margin-right: 10%;
-		vertical-align: top;
- }
 
  .search-page h2 {
 	color: $pastel-green;
@@ -58,5 +51,131 @@
 
 .search-recipes {
 	text-align: center;
-	margin: 0 2% 0 2%;
+	margin: 0 2% 2% 2%;
+}
+
+.list-of-starters,
+.list-of-courses {
+	@include outer-container;
+
+	.recipe,
+	.course {
+	  @include span-columns(4); 
+	  @include omega(3n);
+	  margin-bottom: 4%;
+	  -webkit-border-radius:0 0 7px 7px;
+	  border-radius:0 0 7px 7px;
+	  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+	  .name {
+	  	  width:100%;
+		  height:50px;
+		  background: $sky-blue;
+		  opacity: 0.85;
+		  filter: alpha(opacity=85); /* IE8 and Lower */
+		  overflow:hidden;
+		  position:absolute;
+		  bottom:0;
+		  text-align: center;
+		  vertical-align: middle;
+		  line-height: 50px; 
+	  	  font-family: $font-family;
+	  }
+
+	  .likes {
+		  width:45px;
+		  height:35px;
+		  background: $pastel-pink;
+		  opacity: 0.85;
+		  color:white;
+		  text-align: center;
+		  line-height: 35px; 
+		  position:absolute;
+		  top:20px;
+		  -webkit-border-radius:0 5px 5px 0px;
+		  border-radius:0 5px 5px 0px;
+		  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+		  -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	 }
+	 }
+
+	 a {
+			text-decoration: none;
+			color: black;
+	 }
+
+	 .course {
+		.name {
+			background: $pastel-green;
+			bottom: 7px;
+		}
+	}
+
+}
+
+
+.image {
+  position:relative;
+}
+
+.image img{
+  width:100%;
+  height: 250px;
+}
+
+.fa-heart-o:hover {
+  animation-name: pulse; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  -webkit-animation-name: pulse; 
+  -webkit-animation-duration: 0.5s; 
+  -webkit-animation-iteration-count: infinite; 
+}
+
+
+.media {
+  width:100%;
+  font-size:0.7em;
+  color:#777;
+  padding:15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.media li {
+  display:inline-block;
+  padding:0 7px;
+}
+
+/* Pulse Animation for Firefox, Opera and Internet Explorer 10 */
+@keyframes pulse {
+  from {
+    transform: scale(1.0);
+    opacity: 1.0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1.0;
+  }
+  to { 
+    transform: scale(1.0);
+    opacity: 1.0;
+  }
+}
+/* Pulse Animation for Google Chrome and Safari */
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1.0);
+    opacity: 1.0;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    opacity: 1.0;
+  }
+  to { 
+    -webkit-transform: scale(1.0);
+    opacity: 1.0;
+  }
 }

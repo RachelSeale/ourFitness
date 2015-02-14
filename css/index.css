@@ -102,6 +102,14 @@ nav {
       padding: 1em;
       margin: 0 0; } }
 /* RECIPE PAGE */
+.recipe-header {
+  text-align: center;
+  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  color: #A2F3A8; }
+
+.recipe-page p {
+  margin-bottom: 2%; }
+
 .site {
   max-width: 68em;
   margin-left: auto;
@@ -112,24 +120,12 @@ nav {
     content: "";
     display: table;
     clear: both; }
-  .site .side-content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    background-color: #FFF; }
-    .site .side-content:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 660px) {
-      .site .side-content {
-        margin-top: 2%;
-        float: left;
-        display: block;
-        margin-right: 7.42297%;
-        width: 19.43277%; }
-        .site .side-content:last-child {
-          margin-right: 0; } }
+  .site h1,
+  .site h2,
+  .site p {
+    font-family: "Solomon", Arial, Helvetica, sans-serif; }
   .site .recipe-content {
+    margin-top: 5%;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -151,20 +147,6 @@ nav {
 /* Search recipe page
 /*
 /*****************************************************************************/
-.azRecipes img {
-  height: 80px;
-  width: 80px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  margin: 2% 0% 0% 5%; }
-
-.azRecipes h2 {
-  font-size: 12px;
-  display: inline-block;
-  margin-right: 10%;
-  vertical-align: top; }
-
 .search-page h2 {
   color: #A2F3A8;
   margin: 1% 0 1% 0;
@@ -172,8 +154,140 @@ nav {
 
 .search-recipes {
   text-align: center;
-  margin: 0 2% 0 2%; }
+  margin: 0 2% 2% 2%; }
 
+.list-of-starters,
+.list-of-courses {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .list-of-starters:after,
+  .list-of-courses:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .list-of-starters .recipe,
+  .list-of-starters .course,
+  .list-of-courses .recipe,
+  .list-of-courses .course {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 4%;
+    -webkit-border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
+    .list-of-starters .recipe:last-child,
+    .list-of-starters .course:last-child,
+    .list-of-courses .recipe:last-child,
+    .list-of-courses .course:last-child {
+      margin-right: 0; }
+    .list-of-starters .recipe:nth-child(3n),
+    .list-of-starters .course:nth-child(3n),
+    .list-of-courses .recipe:nth-child(3n),
+    .list-of-courses .course:nth-child(3n) {
+      margin-right: 0; }
+    .list-of-starters .recipe:nth-child(3n+1),
+    .list-of-starters .course:nth-child(3n+1),
+    .list-of-courses .recipe:nth-child(3n+1),
+    .list-of-courses .course:nth-child(3n+1) {
+      clear: left; }
+    .list-of-starters .recipe .name,
+    .list-of-starters .course .name,
+    .list-of-courses .recipe .name,
+    .list-of-courses .course .name {
+      width: 100%;
+      height: 50px;
+      background: #76cdd3;
+      opacity: 0.85;
+      filter: alpha(opacity=85);
+      /* IE8 and Lower */
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50px;
+      font-family: "Solomon", Arial, Helvetica, sans-serif; }
+    .list-of-starters .recipe .likes,
+    .list-of-starters .course .likes,
+    .list-of-courses .recipe .likes,
+    .list-of-courses .course .likes {
+      width: 45px;
+      height: 35px;
+      background: #ed7aad;
+      opacity: 0.85;
+      color: white;
+      text-align: center;
+      line-height: 35px;
+      position: absolute;
+      top: 20px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px;
+      -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+  .list-of-starters a,
+  .list-of-courses a {
+    text-decoration: none;
+    color: black; }
+  .list-of-starters .course .name,
+  .list-of-courses .course .name {
+    background: #A2F3A8;
+    bottom: 7px; }
+
+.image {
+  position: relative; }
+
+.image img {
+  width: 100%;
+  height: 250px; }
+
+.fa-heart-o:hover {
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite; }
+
+.media {
+  width: 100%;
+  font-size: 0.7em;
+  color: #777;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px; }
+
+.media li {
+  display: inline-block;
+  padding: 0 7px; }
+
+/* Pulse Animation for Firefox, Opera and Internet Explorer 10 */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1.0; }
+  50% {
+    transform: scale(1.2);
+    opacity: 1.0; }
+  to {
+    transform: scale(1);
+    opacity: 1.0; } }
+/* Pulse Animation for Google Chrome and Safari */
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+    opacity: 1.0; }
+  50% {
+    -webkit-transform: scale(1.2);
+    opacity: 1.0; }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1.0; } }
 /*Main page search input*/
 .searchLocationForm input[type=text] {
   background: white url(../images/locationSearchIcon.png) no-repeat 0px center;

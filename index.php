@@ -37,15 +37,15 @@
 		 	<div class="sub-content">
 		 		<div class="idea1">
 		 			<h2>Search</h2>		 				
-					<img src="images/search.png"></img>
+					<img src="images/icons/search.png"></img>
 				</div>
 			 	<div class="idea2">
 			 		<h2>Find</h2>
-					<img src="images/find.png"></img>
+					<img src="images/icons/find.png"></img>
 		 		</div>
 		 		<div class="idea3">
 					<h2>Go & Share</h2>
-		 			<img src="images/share.png"></img>
+		 			<img src="images/icons/share.png"></img>
 	 			</div>
 			</div>
 		</section>

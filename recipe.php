@@ -7,24 +7,95 @@
 </head>
 	<body>
 		<?php include("header.php"); ?>
-		<header>
+		<header class="recipe-header">
 	  		<h1 class="title">
-	  			<a href="index.php">Our Fitness Network</a>
+	  			<img class="logo" src="images/logo2.png">
+	  			<a href="index.php">Our Fitness</a>
 	  		</h1>
+	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
 		</header>
 
-
-		<section class="site">
+		<section class="site recipe-page">
 				<form class="search-recipes form-wrapper" action='./search.php' method='get'>
 					<input type='text' name='k' size='50' placeholder="Search recipes"/>
 					<input type='submit' value='Search'/>
 				</form>
-			<div class="recipe-content">
-				<h1> Recipes </h1>
-			</div>
-			<div class="side-content">
-				<h1>A-Z Rceipes</h1>
-			</div>
+				<p><b>Our Fitness</b> is all about keeping fit and healthy. So this is the place to find great recipes and learn about quality cooking that everyone can try and enjoy. So why not try out our inspirational healthy, fun and colourful dishes from starters to desserts!</p>
+				
+
+				<section class="list-of-courses">
+
+				  	  <!-- Course Start -->
+					<div class="course"> 
+						<div class="image">
+					    	<img src="images/food/blueberrySmoothie.png"> 
+					 		<div class="name">
+					 			<h3>Drinks</h3>
+					 		</div>
+						</div>
+				  		<ul class="media">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+				  		</ul>
+					</div>
+				  <!-- Course End -->
+				  <!-- Course Start -->
+					<div class="course"> 
+						<a href="starters.php">
+						<div class="image">
+					    	<img src="images/food/prawnScrewer.png"> 
+					 		<div class="name">
+					 			<h3>Starter</h3>
+					 		</div>
+						</div>
+				  		<ul class="media">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+				  		</ul>
+				  		</a>
+					</div>
+				  <!-- Course End -->
+				  <!-- Course Start -->
+					<div class="course"> 
+						<a href="mains.php">
+							<div class="image">
+					    	<img src="images/food/vegCurry.png"> 
+					 		<div class="name">
+					 			<h3>Mains</h3>
+					 		</div>
+						</div>
+				  		<ul class="media">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+				  		</ul>
+				  		</a>
+					</div>
+				  <!-- Course End -->
+				  <!-- Course Start -->
+					<div class="course"> 
+						<div class="image">
+					    	<img src="images/food/nuttyYogurt.png"> 
+					 		<div class="name">
+					 			<h3>Dessert</h3>
+					 		</div>
+						</div>
+				  		<ul class="media">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+				  		</ul>
+					</div>
+				  <!-- Course End -->
+				  <!-- Course Start -->
+					<div class="course"> 
+						<div class="image">
+					    	<img src="images/food/ingrediants.png"> 
+					 		<div class="name">
+					 			<h3>Snacks / Light Bites</h3>
+					 		</div>
+						</div>
+				  		<ul class="media">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+				  		</ul>
+					</div>
+				  <!-- Course End -->
+
+			 </section>
 		</section>
 	</body>
 </html>
