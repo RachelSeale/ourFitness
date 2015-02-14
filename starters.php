@@ -30,12 +30,12 @@
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Spicy Chilli Prawn Screwer</h3>
+		 			<h3>Spicy Chilli Prawn Skewer</h3>
 		 		</div>
 			</div>
-	  		<ul class="media">
+	  		<ul class="icons">
 			    <li><i class="fa fa-clock-o"></i> 30 Minutes</li>
-			    <li><i class="fa fa-leaf"></i> 250 Calories</li>
+			    <li><i class="fa fa-tachometer"></i> 250 Calories</li>
 			    <li><i class="fa fa-cutlery"></i> 4 People</li>
 	  		</ul>
 		</div>
@@ -48,12 +48,12 @@
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Spicy Chilli Prawn Screwer</h3>
+		 			<h3>Spicy Chilli Prawn Skewer</h3>
 		 		</div>
 			</div>
-	  		<ul class="media">
+	  		<ul class="icons">
 			    <li><i class="fa fa-clock-o"></i> 30 Minutes</li>
-			    <li><i class="fa fa-leaf"></i> 250 Calories</li>
+			    <li><i class="fa fa-tachometer"></i> 250 Calories</li>
 			    <li><i class="fa fa-cutlery"></i> 4 People</li>
 	  		</ul>
 		</div>
@@ -66,12 +66,12 @@
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Spicy Chilli Prawn Screwer</h3>
+		 			<h3>Spicy Chilli Prawn Skewer</h3>
 		 		</div>
 			</div>
-	  		<ul class="media">
+	  		<ul class="icons">
 			    <li><i class="fa fa-clock-o"></i> 30 Minutes</li>
-			    <li><i class="fa fa-leaf"></i> 250 Calories</li>
+			    <li><i class="fa fa-tachometer"></i> 250 Calories</li>
 			    <li><i class="fa fa-cutlery"></i> 4 People</li>
 	  		</ul>
 		</div>
@@ -84,12 +84,12 @@
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Spicy Chilli Prawn Screwer</h3>
+		 			<h3>Spicy Chilli Prawn Skewer</h3>
 		 		</div>
 			</div>
-	  		<ul class="media">
+	  		<ul class="icons">
 			    <li><i class="fa fa-clock-o"></i> 30 Minutes</li>
-			    <li><i class="fa fa-leaf"></i> 250 Calories</li>
+			    <li><i class="fa fa-tachometer"></i> 250 Calories</li>
 			    <li><i class="fa fa-cutlery"></i> 4 People</li>
 	  		</ul>
 		</div>
@@ -102,12 +102,12 @@
 		    		<i class="fa fa-heart-o lv" data-test="pulse"></i>
 				</div>
 		 		<div class="name">
-		 			<h3>Spicy Chilli Prawn Screwer</h3>
+		 			<h3>Spicy Chilli Prawn Skewer</h3>
 		 		</div>
 			</div>
-	  		<ul class="media">
+	  		<ul class="icons">
 			    <li><i class="fa fa-clock-o"></i> 30 Minutes</li>
-			    <li><i class="fa fa-leaf"></i> 250 Calories</li>
+			    <li><i class="fa fa-tachometer"></i> 250 Calories</li>
 			    <li><i class="fa fa-cutlery"></i> 4 People</li>
 	  		</ul>
 		</div>

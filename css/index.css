@@ -235,11 +235,11 @@ nav {
     color: black; }
   .list-of-starters .course .name,
   .list-of-courses .course .name {
-    background: #A2F3A8;
-    bottom: 7px; }
+    background: #A2F3A8; }
 
 .image {
-  position: relative; }
+  position: relative;
+  height: 250px; }
 
 .image img {
   width: 100%;
@@ -253,7 +253,7 @@ nav {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-iteration-count: infinite; }
 
-.media {
+.icons {
   width: 100%;
   font-size: 0.7em;
   color: #777;
@@ -262,7 +262,7 @@ nav {
   vertical-align: middle;
   line-height: 20px; }
 
-.media li {
+.icons li {
   display: inline-block;
   padding: 0 7px; }
 
@@ -288,6 +288,21 @@ nav {
   to {
     -webkit-transform: scale(1);
     opacity: 1.0; } }
+.image-overlay {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #efefef;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  opacity: 1;
+  transition: all 0.7s ease; }
+
+.course:hover .image-overlay {
+  opacity: 0.5; }
+
 /*Main page search input*/
 .searchLocationForm input[type=text] {
   background: white url(../images/locationSearchIcon.png) no-repeat 0px center;

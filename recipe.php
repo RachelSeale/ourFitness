@@ -27,11 +27,13 @@
 
 				  	  <!-- Course Start -->
 					<div class="course"> 
-						<div class="image">
-					    	<img src="images/food/blueberrySmoothie.png"> 
-					 		<div class="name">
-					 			<h3>Drinks</h3>
-					 		</div>
+						<div class="image-overlay">
+							<div class="image">
+						    	<img src="images/food/blueberrySmoothie.png"> 
+						 		<div class="name">
+						 			<h3>Drinks</h3>
+						 		</div>
+							</div>
 						</div>
 				  		<ul class="media">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
@@ -41,11 +43,13 @@
 				  <!-- Course Start -->
 					<div class="course"> 
 						<a href="starters.php">
-						<div class="image">
-					    	<img src="images/food/prawnScrewer.png"> 
-					 		<div class="name">
-					 			<h3>Starter</h3>
-					 		</div>
+						<div class="image-overlay">
+							<div class="image">
+						    	<img src="images/food/prawnScrewer.png"> 
+						 		<div class="name">
+						 			<h3>Starter</h3>
+						 		</div>
+							</div>
 						</div>
 				  		<ul class="media">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
@@ -56,11 +60,13 @@
 				  <!-- Course Start -->
 					<div class="course"> 
 						<a href="mains.php">
+						<div class="image-overlay">
 							<div class="image">
-					    	<img src="images/food/vegCurry.png"> 
-					 		<div class="name">
-					 			<h3>Mains</h3>
-					 		</div>
+						    	<img src="images/food/vegCurry.png"> 
+						 		<div class="name">
+						 			<h3>Mains</h3>
+					 			</div>
+							</div>
 						</div>
 				  		<ul class="media">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
@@ -70,28 +76,36 @@
 				  <!-- Course End -->
 				  <!-- Course Start -->
 					<div class="course"> 
-						<div class="image">
-					    	<img src="images/food/nuttyYogurt.png"> 
-					 		<div class="name">
-					 			<h3>Dessert</h3>
-					 		</div>
+						<a href="desserts.php">
+						<div class="image-overlay">
+							<div class="image">
+						    	<img src="images/food/nuttyYogurt.png"> 
+							 		<div class="name">
+							 			<h3>Dessert</h3>
+							 		</div>
+							</div>
 						</div>
 				  		<ul class="media">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
 				  		</ul>
+				  		</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="course"> 
-						<div class="image">
-					    	<img src="images/food/ingrediants.png"> 
-					 		<div class="name">
-					 			<h3>Snacks / Light Bites</h3>
-					 		</div>
+					<div class="course">
+						<a href="snacks.php">
+						<div class="image-overlay">
+							<div class="image">
+						    	<img src="images/food/ingrediants.png"> 
+						 		<div class="name">
+						 			<h3>Snacks / Light Bites</h3>
+						 		</div>
+							</div>
 						</div>
 				  		<ul class="media">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
 				  		</ul>
+				  		</a>
 					</div>
 				  <!-- Course End -->
 
