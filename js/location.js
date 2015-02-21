@@ -165,7 +165,7 @@ $(function () {
 		      position: new google.maps.LatLng(location.lat, location.lng),
 		      map: map,
 		      title: 'user location', 
-		      icon: 'images/incons/userMarker.png'
+		      icon: 'images/icons/userMarker.png'
   		});
 
 		infoWindow = new google.maps.InfoWindow();
