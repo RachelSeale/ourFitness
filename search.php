@@ -5,6 +5,7 @@
 	<title>Our Fitness - Recipes!</title>
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body class="search-page">
 		<header>
@@ -19,23 +20,55 @@
 			<div class="recipe-content">
 				<h2>Find your favourite healthy and low calories recipes here...</h2>
 				<form action='./search.php' method='get'>
-					<input type='text' name='k' size='50' value='<?php echo $_GET['k']; ?>' />
+					<input type='hidden' name='course' value="<?php echo $_GET['course']; ?>" />
+					<input type='text' name='search' size='50' value='<?php echo $_GET['search']; ?>' />
 					<input type='submit' value='Search' />
+					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
 				</form>
-
+				<section class="list-of-recipes">
 				<?php
-					$k = $_GET['k'];
-					$terms = explode(" ", $k);
-					$query = "SELECT * FROM search WHERE ";
+					$search = $_GET['search'];
+					$course = $_GET['course'];
+					$quick = $_GET['quick'];
 
-					foreach ($terms as $each){
-						$i++;
-						if ($i == 1)
-							$query .= "keywords LIKE '%$each%' ";
-						else 
-							$query .= "OR keywords LIKE '%$each%' ";
+					$terms = explode(" ", $search);
+					$query = "SELECT * FROM search ";
+
+					$filters = array();
+
+					if ($quick) {
+						array_push($filters, "`cooking time` <= 30 ");
 
 					}
+
+
+					if ($course) {
+					
+						array_push($filters, "course = '$course' ");
+					
+					}
+
+					if ($search) {
+
+						$searchQuery = "";
+
+						foreach ($terms as $each){
+							$i++;
+							if ($i == 1)
+								$searchQuery .= "keywords LIKE '%$each%' ";
+							else 
+								$searchQuery .= "OR keywords LIKE '%$each%' ";
+
+						}
+
+						array_push($filters, '('.$searchQuery.')');
+					}
+
+					if (count($filters) > 0) {
+						$query .= "WHERE ".join("AND ", $filters);
+					}
+
+					echo $query;
 
 					//conect to database
 
@@ -52,9 +85,28 @@
 							$description = $row ['description'];
 							$keywords = $row ['keywords'];
 							$link = $row ['link'];
+							$servingSize = $row ['serving size'];
+							$calories = $row ['calories'];
+							$cookingTime = $row ['cooking time'];
 
-							echo "<h2><a href='$link'>$title</a></h2>
-							$description<br /><br />";
+							echo "
+									<div class='recipe'> 
+										<div class='image'>
+									    	<img src='images/recipeImages/$id.png'> 
+									  		<div class='likes'>
+									    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
+											</div>
+									 		<div class='name'>
+									 			<h3>$title</h3>
+									 		</div>
+										</div>
+								  		<ul class='icons'>
+										    <li><i class='fa fa-clock-o'></i> $cookingTime Minutes</li>
+										    <li><i class='fa fa-tachometer'></i> $calories Calories</li>
+										    <li><i class='fa fa-cutlery'></i> $servingSize People</li>
+								  		</ul>
+									</div>
+								  ";
 
 						}
 
@@ -64,6 +116,7 @@
 						echo "No results for <b>$k</b>";
 
 				?>
+			</section>
 			</div>
 		</section>
 	</body>

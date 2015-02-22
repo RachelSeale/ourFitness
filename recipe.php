@@ -17,7 +17,7 @@
 
 		<section class="site recipe-page">
 				<form class="search-recipes form-wrapper" action='./search.php' method='get'>
-					<input type='text' name='k' size='50' placeholder="Search recipes"/>
+					<input type='text' name='search' size='50' placeholder="Search recipes"/>
 					<input type='submit' value='Search'/>
 				</form>
 				<p><b>Our Fitness</b> is all about keeping fit and healthy. So this is the place to find great recipes and learn about quality cooking that everyone can try and enjoy. So why not try out our inspirational healthy, fun and colourful dishes from starters to desserts!</p>
@@ -42,7 +42,7 @@
 				  <!-- Course End -->
 				  <!-- Course Start -->
 					<div class="course"> 
-						<a href="starters.php">
+						<a href="search.php?course=starters">
 						<div class="image-overlay">
 							<div class="image">
 						    	<img src="images/food/starters/prawnScrewer.png"> 

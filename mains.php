@@ -21,7 +21,7 @@
 			<input type='submit' value='Search'/>
 		</form>
 
-		<section class="list-of-starters">
+		<section class="list-of-recipes">
 	  	  <!-- Recipe Start -->
 		<div class="recipe"> 
 			<div class="image">
