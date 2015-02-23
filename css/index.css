@@ -124,23 +124,6 @@ nav {
   .site h2,
   .site p {
     font-family: "Solomon", Arial, Helvetica, sans-serif; }
-  .site .recipe-content {
-    margin-top: 5%;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    background: white; }
-    .site .recipe-content:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 500px) {
-      .site .recipe-content {
-        float: left;
-        display: block;
-        margin-right: 38.19821%;
-        width: 100%; }
-        .site .recipe-content:last-child {
-          margin-right: 0; } }
 
 /*****************************************************************************/
 /*
@@ -156,49 +139,33 @@ nav {
   text-align: center;
   margin: 0 2% 2% 2%; }
 
-.list-of-recipes,
-.list-of-courses {
+.list-of-recipes {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .list-of-recipes:after,
-  .list-of-courses:after {
+  .list-of-recipes:after {
     content: "";
     display: table;
     clear: both; }
-  .list-of-recipes .recipe,
-  .list-of-recipes .course,
-  .list-of-courses .recipe,
-  .list-of-courses .course {
+  .list-of-recipes .recipe {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    margin-top: 2%;
     margin-bottom: 4%;
     -webkit-border-radius: 0 0 7px 7px;
     border-radius: 0 0 7px 7px;
     -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
-    .list-of-recipes .recipe:last-child,
-    .list-of-recipes .course:last-child,
-    .list-of-courses .recipe:last-child,
-    .list-of-courses .course:last-child {
+    .list-of-recipes .recipe:last-child {
       margin-right: 0; }
-    .list-of-recipes .recipe:nth-child(3n),
-    .list-of-recipes .course:nth-child(3n),
-    .list-of-courses .recipe:nth-child(3n),
-    .list-of-courses .course:nth-child(3n) {
+    .list-of-recipes .recipe:nth-child(3n) {
       margin-right: 0; }
-    .list-of-recipes .recipe:nth-child(3n+1),
-    .list-of-recipes .course:nth-child(3n+1),
-    .list-of-courses .recipe:nth-child(3n+1),
-    .list-of-courses .course:nth-child(3n+1) {
+    .list-of-recipes .recipe:nth-child(3n+1) {
       clear: left; }
-    .list-of-recipes .recipe .name,
-    .list-of-recipes .course .name,
-    .list-of-courses .recipe .name,
-    .list-of-courses .course .name {
+    .list-of-recipes .recipe .name {
       width: 100%;
       height: 50px;
       background: #76cdd3;
@@ -212,10 +179,7 @@ nav {
       vertical-align: middle;
       line-height: 50px;
       font-family: "Solomon", Arial, Helvetica, sans-serif; }
-    .list-of-recipes .recipe .likes,
-    .list-of-recipes .course .likes,
-    .list-of-courses .recipe .likes,
-    .list-of-courses .course .likes {
+    .list-of-recipes .recipe .likes {
       width: 45px;
       height: 35px;
       background: #ed7aad;
@@ -229,12 +193,10 @@ nav {
       border-radius: 0 5px 5px 0px;
       -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
       -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
-  .list-of-recipes a,
-  .list-of-courses a {
+  .list-of-recipes a {
     text-decoration: none;
     color: black; }
-  .list-of-recipes .course .name,
-  .list-of-courses .course .name {
+  .list-of-recipes .course .name {
     background: #A2F3A8; }
 
 .image {

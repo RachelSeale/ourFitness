@@ -24,16 +24,8 @@
    	p {
      	font-family: $font-family;
     }
+ }
 
-	.recipe-content { 
-		margin-top: 5%;
-    	@include span-columns(8); 
-    	background: white;
-      	@include media($mobile) {
-        	@include span-columns(1);
-      	}
-  	}
-}
 
 
 /*****************************************************************************/
@@ -54,14 +46,13 @@
 	margin: 0 2% 2% 2%;
 }
 
-.list-of-recipes,
-.list-of-courses {
+.list-of-recipes {
 	@include outer-container;
 
-	.recipe,
-	.course {
+	.recipe {
 	  @include span-columns(4); 
 	  @include omega(3n);
+	  margin-top: 2%;
 	  margin-bottom: 4%;
 	  -webkit-border-radius:0 0 7px 7px;
 	  border-radius:0 0 7px 7px;

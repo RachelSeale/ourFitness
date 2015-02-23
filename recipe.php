@@ -23,10 +23,10 @@
 				<p><b>Our Fitness</b> is all about keeping fit and healthy. So this is the place to find great recipes and learn about quality cooking that everyone can try and enjoy. So why not try out our inspirational healthy, fun and colourful dishes from starters to desserts!</p>
 				
 
-				<section class="list-of-courses">
+				<section class="list-of-recipes">
 
 				  	  <!-- Course Start -->
-					<div class="course"> 
+					<div class="recipe"> 
 						<div class="image-overlay">
 							<div class="image">
 						    	<img src="images/food/blueberrySmoothie.png"> 
@@ -41,7 +41,7 @@
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="course"> 
+					<div class="recipe"> 
 						<a href="search.php?course=starters">
 						<div class="image-overlay">
 							<div class="image">
@@ -58,8 +58,8 @@
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="course"> 
-						<a href="mains.php">
+					<div class="recipe"> 
+						<a href="search.php?course=mains">
 						<div class="image-overlay">
 							<div class="image">
 						    	<img src="images/food/mains/vegCurry.png"> 
@@ -75,8 +75,8 @@
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="course"> 
-						<a href="desserts.php">
+					<div class="recipe"> 
+						<a href="search.php?course=desserts">
 						<div class="image-overlay">
 							<div class="image">
 						    	<img src="images/food/desserts/nuttyYogurt.png"> 
@@ -92,7 +92,7 @@
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="course">
+					<div class="recipe">
 						<a href="snacks.php">
 						<div class="image-overlay">
 							<div class="image">

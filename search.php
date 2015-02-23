@@ -68,7 +68,7 @@
 						$query .= "WHERE ".join("AND ", $filters);
 					}
 
-					echo $query;
+					//echo $query;
 
 					//conect to database
 
@@ -92,7 +92,7 @@
 							echo "
 									<div class='recipe'> 
 										<div class='image'>
-									    	<img src='images/recipeImages/$id.png'> 
+									    	<img src='images/recipeImages/$id.jpg'> 
 									  		<div class='likes'>
 									    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
 											</div>
@@ -119,5 +119,10 @@
 			</section>
 			</div>
 		</section>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+		<script src="js/nav.js"></script>
+		<script src="js/home.js"></script>
+		<script src="js/likeFunction.js"></script>
 	</body>
 </html>
