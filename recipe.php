@@ -45,7 +45,7 @@
 						<a href="search.php?course=starters">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/starters/prawnScrewer.png"> 
+						    	<img src="images/recipeImages/1.jpg"> 
 						 		<div class="name">
 						 			<h3>Starters</h3>
 						 		</div>
@@ -62,7 +62,7 @@
 						<a href="search.php?course=mains">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/mains/vegCurry.png"> 
+						    	<img src="images/recipeImages/13.jpg"> 
 						 		<div class="name">
 						 			<h3>Mains</h3>
 					 			</div>
@@ -79,7 +79,7 @@
 						<a href="search.php?course=desserts">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/desserts/nuttyYogurt.png"> 
+						    	<img src="images/recipeImages/16.jpg"> 
 							 		<div class="name">
 							 			<h3>Desserts</h3>
 							 		</div>
