@@ -113,7 +113,7 @@
 					}
 
 					else 
-						echo "No results for <b>$k</b>";
+						echo "No results for <b>$query</b>";
 
 				?>
 			</section>

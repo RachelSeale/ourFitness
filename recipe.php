@@ -26,7 +26,8 @@
 				<section class="list-of-recipes">
 
 				  	  <!-- Course Start -->
-					<div class="recipe"> 
+					<div class="recipe">
+						<a href="search.php?course=drinks">
 						<div class="image-overlay">
 							<div class="image">
 						    	<img src="images/food/blueberrySmoothie.png"> 
@@ -38,6 +39,24 @@
 				  		<ul class="media">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
 				  		</ul>
+				  	</a>
+					</div>
+				  <!-- Course End -->
+				  <!-- Course Start -->
+					<div class="recipe"> 
+						<a href="search.php?course=breakfast">
+						<div class="image-overlay">
+							<div class="image">
+						    	<img src="images/recipeImages/7.jpg"> 
+						 		<div class="name">
+						 			<h3>Breakfast</h3>
+						 		</div>
+							</div>
+						</div>
+				  		<ul class="media">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+				  		</ul>
+				  		</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->

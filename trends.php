@@ -19,13 +19,13 @@
 
 		<script type="text/javascript" src="js/instafeed.min.js"></script>
 		<script type="text/javascript">
-		    var feed = new Instafeed({
-		        get: 'tagged',
-		        tagName: 'girlsourfitness',
-		        clientId: 'd0cba10561564bfaae551ce7c9c44ad1',
+		    var userFeed = new Instafeed({
+		        get: 'user',
+		        userId: 1582417946,
+		        accessToken: '1582417946.467ede5.5af2eb172d8b44778708310f7319403b',
 		        limit: 60
 		    });
-		    feed.run();
+		    userFeed.run();
 		</script>
 		
 	</body>
