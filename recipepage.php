@@ -20,55 +20,17 @@
 			<div class="recipe-content">
 				<h2>Find your favourite healthy and low calories recipes here...</h2>
 				<form action='./search.php' method='get'>
-					<input type='hidden' name='course' value="<?php echo isset($_GET['course']) ? $_GET['course'] : '' ; ?>" />
-					<input type='text' name='search' size='50' value='<?php echo isset($_GET['search']) ? $_GET['search'] : '' ; ?>' />
+					<input type='hidden' name='course' value="<?php echo $_GET['course']; ?>" />
+					<input type='text' name='search' size='50' value='<?php echo $_GET['search']; ?>' />
 					<input type='submit' value='Search' />
 					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
 				</form>
 				<section class="list-of-recipes">
 				<?php
-					$search = isset($_GET['search']) ? $_GET['search'] : false;
-					$course = isset($_GET['course']) ? $_GET['course'] : false;
-					$quick = isset($_GET['quick']) ? $_GET['quick'] : false;
+					$id = $_GET['id'];
+			
+					$query = "SELECT * FROM search WHERE id = '$id'";
 
-					$terms = explode(" ", $search);
-					$query = "SELECT * FROM search ";
-
-					$filters = array();
-
-					if ($quick) {
-						array_push($filters, "`cooking time` <= 30 ");
-
-					}
-
-
-					if ($course) {
-					
-						array_push($filters, "course = '$course' ");
-					
-					}
-
-					if ($search) {
-
-						$searchQuery = "";
-
-						foreach ($terms as $each){
-							$i++;
-							if ($i == 1)
-								$searchQuery .= "keywords LIKE '%$each%' ";
-							else 
-								$searchQuery .= "OR keywords LIKE '%$each%' ";
-
-						}
-
-						array_push($filters, '('.$searchQuery.')');
-					}
-
-					if (count($filters) > 0) {
-						$query .= "WHERE ".join("AND ", $filters);
-					}
-
-					//echo $query;
 
 					//conect to database
 
@@ -88,10 +50,10 @@
 							$servingSize = $row ['serving size'];
 							$calories = $row ['calories'];
 							$cookingTime = $row ['cooking time'];
+							$instructions = explode("\n", $row['instructions']);
 
-							echo "
+							$output = "
 									<div class='recipe'> 
-									<a href='recipepage.php?id=$id'>
 										<div class='image'>
 									    	<img src='images/recipeImages/$id.jpg'> 
 									  		<div class='likes'>
@@ -106,9 +68,23 @@
 										    <li><i class='fa fa-tachometer'></i> $calories Calories</li>
 										    <li><i class='fa fa-cutlery'></i> $servingSize People</li>
 								  		</ul>
-								  	</a>
-									</div>
-								  ";
+								  		<ul>
+
+										<div class='fb-share-button' data-layout='button_count'>
+										</div>
+
+										<a href='//www.pinterest.com/pin/create/button/'' data-pin-do='buttonBookmark'  data-pin-height='28'><img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png' /></a>
+										<a href='https://twitter.com/share' class='twitter-share-button'>Tweet</a>
+								  		";
+
+							foreach ($instructions as $instruction) {
+							 	$output .= "<li>$instruction</li>";
+							 }
+
+							$output .=	"</ul>
+							</div>";
+
+							echo $output;
 
 						}
 
@@ -130,6 +106,22 @@
 				?>
 			</section>
 			</div>
+
+			<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+		}
+
+		(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</section>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
