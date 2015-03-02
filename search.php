@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body class="search-page">
-		<header>
+		<header class="recipe-header">
 	  		<h1 class="title">
-	  			<a href="/">Our Fitness Network</a>
+	  			<img class="logo" src="images/logo2.png">
+	  			<a href="index.php">Our Fitness</a>
 	  		</h1>
+	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
 		</header>
 
 		<?php include("header.php"); ?>
@@ -19,17 +21,19 @@
 		<section class="site">
 			<div class="recipe-content">
 				<h2>Find your favourite healthy and low calories recipes here...</h2>
-				<form action='./search.php' method='get'>
+				<form class="recipe-search" action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo isset($_GET['course']) ? $_GET['course'] : '' ; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo isset($_GET['search']) ? $_GET['search'] : '' ; ?>' />
 					<input type='submit' value='Search' />
 					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
+					<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
 				</form>
 				<section class="list-of-recipes">
 				<?php
 					$search = isset($_GET['search']) ? $_GET['search'] : false;
 					$course = isset($_GET['course']) ? $_GET['course'] : false;
 					$quick = isset($_GET['quick']) ? $_GET['quick'] : false;
+					$vegetarian = isset($_GET['vegetarian']) ? $_GET['vegetarian'] : false;
 
 					$terms = explode(" ", $search);
 					$query = "SELECT * FROM search ";
@@ -38,6 +42,11 @@
 
 					if ($quick) {
 						array_push($filters, "`cooking time` <= 30 ");
+
+					}
+
+					if ($vegetarian) {
+						array_push($filters, "vegetarian = 'yes' ");
 
 					}
 

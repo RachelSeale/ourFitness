@@ -15,10 +15,12 @@
 	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
 		</header>
 
-		<section class="site recipe-page">
+		<section class="site">
 				<form class="search-recipes form-wrapper" action='./search.php' method='get'>
 					<input type='text' name='search' size='50' placeholder="Search recipes"/>
 					<input type='submit' value='Search'/>
+					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
+					<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
 				</form>
 				<p><b>Our Fitness</b> is all about keeping fit and healthy. So this is the place to find great recipes and learn about quality cooking that everyone can try and enjoy. So why not try out our inspirational healthy, fun and colourful dishes from starters to desserts!</p>
 				

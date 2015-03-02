@@ -1,18 +1,5 @@
 <section class="site">
-	<div id="menu" >
-	<a href="#menu" class="menu-link"></a>
-	    <nav id="nav" class="nav toggle-nav" >
-	        <ul>
-	          <li><a href="index.php">Home</a></li>
-	          <li><a href="map.php">Map</a></li>
-	          <li><a href="recipe.php">Recipes</a></li>
-	          <li><a href="trends.php">#Trends</a></li>
-	          <li><a href="/contact.html">Contact</a></li>
-	        </ul>
-	    </nav>
-	</div>
-
-	<?php
+			<?php
 
 			if (isset($_POST ['email']) && isset($_POST ['password'])) {
 				$email = $_POST ['email'];
@@ -40,24 +27,38 @@
 
 			if (isset($_SESSION['name'])) {
 				$name = $_SESSION['name'];
-				echo "<h1>Hello, $name! How are you today?</h1>
-				<a href='logout.php'>Log Out</a>";
+				echo "
+				<div class='welcome-message'>
+					<h2>Hello, $name! How are you today?</h2>
+					<a href='logout.php'>Log Out</a>
+				</div>";
 			} else {
 		?>
 
 
 		<section class="site">
 
-				<form method="POST">
+				<form class="login-form" method="POST">
 					<ul>
-						<li><input type='email' name='email' size='50' value='Email' /></li>
-						<li><input type='password' name='password' size='50' value='' /></li>
+						<li><input type='email' name='email' size='50' placeholder="Please enter your email address" /></li>
+						<li><input type='password' name='password' size='50' placeholder="Your password" /></li>
+						<button type="submit">Log In</button>
 					</ul>
-
-					<button type="submit"> Submit</button>
 				</form>
 
 		</section>
 
 		<?php } ?>
+	<div id="menu" >
+	<a href="#menu" class="menu-link"></a>
+	    <nav id="nav" class="nav toggle-nav" >
+	        <ul>
+	          <li><a href="index.php">Home</a></li>
+	          <li><a href="map.php">Map</a></li>
+	          <li><a href="recipe.php">Recipes</a></li>
+	          <li><a href="trends.php">#Trends</a></li>
+	          <li><a href="/contact.html">Contact</a></li>
+	        </ul>
+	    </nav>
+	</div>
 </section>
