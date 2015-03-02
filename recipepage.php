@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body class="search-page">
-		<header>
+		<?php include("header.php"); ?>
+		<header class="recipe-header">
 	  		<h1 class="title">
-	  			<a href="/">Our Fitness Network</a>
+	  			<img class="logo" src="images/logo2.png">
+	  			<a href="index.php">Our Fitness</a>
 	  		</h1>
+	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
 		</header>
 
-		<?php include("header.php"); ?>
+		
 
 		<section class="site">
 			<div class="recipe-content">
-				<h2>Find your favourite healthy and low calories recipes here...</h2>
 				<form action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo $_GET['course']; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo $_GET['search']; ?>' />
 					<input type='submit' value='Search' />
 					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
 				</form>
-				<section class="list-of-recipes">
+				<section>
 				<?php
 					$id = $_GET['id'];
 			
@@ -51,37 +53,44 @@
 							$calories = $row ['calories'];
 							$cookingTime = $row ['cooking time'];
 							$instructions = explode("\n", $row['instructions']);
+							$ingrediants = explode("\n", $row['ingrediants']);
 
 							$output = "
-									<div class='recipe'> 
-										<div class='image'>
-									    	<img src='images/recipeImages/$id.jpg'> 
-									  		<div class='likes'>
-									    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
-											</div>
-									 		<div class='name'>
-									 			<h3>$title</h3>
-									 		</div>
+									<div class='recipe-page'>
+									    <img class='recipe-image' src='images/recipeImages/$id.jpg'> 
+								  		<div class='likes'>
+								    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
 										</div>
-								  		<ul class='icons'>
-										    <li><i class='fa fa-clock-o'></i> $cookingTime Minutes</li>
-										    <li><i class='fa fa-tachometer'></i> $calories Calories</li>
-										    <li><i class='fa fa-cutlery'></i> $servingSize People</li>
-								  		</ul>
-								  		<ul>
+								 		<div class='details'>
+								 			<h3>$title</h3>
+							
+									  		<ul class='icons'>
+											    <li><i class='fa fa-clock-o'></i> $cookingTime Minutes</li>
+											    <li><i class='fa fa-tachometer'></i> $calories Calories</li>
+											    <li><i class='fa fa-cutlery'></i> $servingSize People</li>
+									  		</ul>
+									  	</div>
+									  	<ul class= 'ingrediants'>";
 
-										<div class='fb-share-button' data-layout='button_count'>
-										</div>
+									  	foreach ($ingrediants as $ingrediants) {
+							 	$output .= "<li>$ingrediants</li>";
+							 }
 
-										<a href='//www.pinterest.com/pin/create/button/'' data-pin-do='buttonBookmark'  data-pin-height='28'><img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png' /></a>
-										<a href='https://twitter.com/share' class='twitter-share-button'>Tweet</a>
+							  			$output .= "</ul>
+							  			<ol class='instructions'>
 								  		";
-
+							 	  		
 							foreach ($instructions as $instruction) {
 							 	$output .= "<li>$instruction</li>";
 							 }
 
-							$output .=	"</ul>
+							 $output .=	"
+							 </ol>
+							</div>
+							 <div class='share-buttons'>
+								<div class='fb-share-button' data-layout='button_count'>
+								<a class='pin-share-button' href='//www.pinterest.com/pin/create/button/'' data-pin-do='buttonBookmark'  data-pin-height='28'><img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png' /></a>
+								<a class='twitter-share-button' href='https://twitter.com/share' class='twitter-share-button'>Tweet</a>
 							</div>";
 
 							echo $output;

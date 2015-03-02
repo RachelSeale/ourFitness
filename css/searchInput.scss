@@ -27,7 +27,9 @@ input {
 	outline: none;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email],
+input[type=password] {
 	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
@@ -43,7 +45,17 @@ input[type=text] {
 	transition: all .5s;
 }
 
-input[type=text]:focus {
+input[type=email],
+input[type=password] {
+	background: none;
+	width: 35%;
+	padding: 5px 0px 6px 6px;
+	margin-top: 1%;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
 	width: 40%;
 	background-color: #fff;
 	border-color: $sky-blue;
@@ -53,7 +65,13 @@ input[type=text]:focus {
 	box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
-input[type=submit] {
+input[type=email]:focus,
+input[type=password]:focus {
+	width: 40%;
+}
+
+input[type=submit],
+.login-form button[type=submit] {
 	background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
@@ -66,6 +84,21 @@ input[type=submit] {
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
+}
+
+
+
+.recipe-search {
+	label {
+		font-family: $font-family;
+	}
+}
+
+.login-form button[type=submit] {
+	background: white;
+	padding: 7px 0px 8px 1px;
+	width: 77px;
+	margin-top: 1%;
 }
 
 .searchLocationBtn,
@@ -88,4 +121,27 @@ input[type=submit] {
 
 .locationBtn{
 	width: 14%;
+}
+
+/* Log in Form */
+
+.login-form {
+	float: right;
+	margin-right: -8%;
+	margin-bottom: 2%;
+
+	li {
+		display: inline;
+	}
+}
+
+.welcome-message {
+	float: right;
+
+	h2, a {
+		display: inline-block;
+		font-family: $font-family;
+		font-size: 13px;
+		color: $sky-blue;
+	}
 }
