@@ -293,23 +293,25 @@ nav {
     text-align: center;
     line-height: 35px;
     position: absolute;
-    top: 115%;
+    top: 20px;
     -webkit-border-radius: 0 5px 5px 0px;
     border-radius: 0 5px 5px 0px;
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
-  .recipe-page .recipe-image {
+  .recipe-page .image {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    position: relative; }
+    .recipe-page .image:last-child {
+      margin-right: 0; }
+  .recipe-page .recipe-image {
     background: white;
     -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 0.5%; }
-    .recipe-page .recipe-image:last-child {
-      margin-right: 0; }
+    padding: 5px; }
   .recipe-page .details {
     float: left;
     display: block;

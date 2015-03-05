@@ -59,10 +59,11 @@
 
 							$output = "
 									<div class='recipe-page'>
-									    <img class='recipe-image' src='images/recipeImages/$id.jpg'> 
-
-								  		<div class='likes'>
-								    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
+										<div class='image'>
+										    <img class='recipe-image' src='images/recipeImages/$id.jpg'> 
+											<div class='likes'>
+										    	<i class='fa fa-heart-o lv' data-test='pulse'></i>
+											</div>
 										</div>
 
 								 		<div class='details'>

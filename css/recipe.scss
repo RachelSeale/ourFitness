@@ -213,20 +213,24 @@
         text-align: center;
         line-height: 35px; 
         position:absolute;
-        top: 115%;
+        top: 20px;
         -webkit-border-radius:0 5px 5px 0px;
         border-radius:0 5px 5px 0px;
         -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
         -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     }
   
-      .recipe-image {
+      .image {
         @include span-columns(4); 
+        position: relative;
+      }
+
+      .recipe-image {
         background: white;
         -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
         -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-        padding: 0.5%;
+        padding: 5px;
       }
 
       .details {
