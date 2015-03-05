@@ -200,6 +200,8 @@
     @include outer-container;
     @include span-columns(12); 
     margin-top: 2%;
+    background: #F3FCFF;
+    padding: 2%;
     font-family: $font-family;
 
     .likes {
@@ -211,7 +213,7 @@
         text-align: center;
         line-height: 35px; 
         position:absolute;
-        top:20px;
+        top: 115%;
         -webkit-border-radius:0 5px 5px 0px;
         border-radius:0 5px 5px 0px;
         -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
@@ -220,6 +222,11 @@
   
       .recipe-image {
         @include span-columns(4); 
+        background: white;
+        -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+        -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        padding: 0.5%;
       }
 
       .details {
@@ -232,6 +239,12 @@
         .icons {
             font-size: 20px;
             margin-bottom: 2%;
+            padding: 12px 0 15px 0;
+            text-align: justify;
+
+            .fa {
+                color: #ed7aad;
+            }
 
             li {
                @include span-columns(4); 
@@ -240,15 +253,36 @@
       }
 
       .share-buttons {
-        @include span-columns(4);
-      }
-
-      .ingrediants {
         @include span-columns(7);
       }
 
-      .instructions {
-        @include span-columns(7);
-        margin-left: 2%;
-      }
+      .method {
+            @include span-columns(12);
+            margin-top: 2%;
+            background: white;
+
+            h2 {
+                color: grey;
+                margin-top: -3%;
+            }
+
+          .ingrediants {
+            @include span-columns(3);
+            background-color: $white;
+            padding: 3%;
+            padding: 2% 3%;
+            border-right: 2px solid #ECECF0;
+
+            li {
+                list-style-type: disc;
+            }
+          }
+
+          .instructions {
+            @include span-columns(8);
+            margin-left: 2%;
+            background-color: $white;
+            padding: 3%;
+          }
+    }
 }

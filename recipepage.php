@@ -21,11 +21,12 @@
 
 		<section class="site">
 			<div class="recipe-content">
-				<form action='./search.php' method='get'>
+				<form class="search-recipes" action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo $_GET['course']; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo $_GET['search']; ?>' />
 					<input type='submit' value='Search' />
 					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
+					<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
 				</form>
 				<section>
 				<?php
@@ -52,15 +53,18 @@
 							$servingSize = $row ['serving size'];
 							$calories = $row ['calories'];
 							$cookingTime = $row ['cooking time'];
+							$description = $row ['description'];
 							$instructions = explode("\n", $row['instructions']);
 							$ingrediants = explode("\n", $row['ingrediants']);
 
 							$output = "
 									<div class='recipe-page'>
 									    <img class='recipe-image' src='images/recipeImages/$id.jpg'> 
+
 								  		<div class='likes'>
 								    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
 										</div>
+
 								 		<div class='details'>
 								 			<h3>$title</h3>
 							
@@ -69,15 +73,31 @@
 											    <li><i class='fa fa-tachometer'></i> $calories Calories</li>
 											    <li><i class='fa fa-cutlery'></i> $servingSize People</li>
 									  		</ul>
-									  	</div>
-									  	<ul class= 'ingrediants'>";
+									  		<div class='description'>
+									  			<p>$description</p>
+									  		</div>
+									  		<div class='share-buttons'>
+									  		<h2>Share : </h2>
+									  			<ul>
+													<li><div class='fb-share-button button' data-layout='button'></div></li>
+													<li><a class='pin-share-button' href='//www.pinterest.com/pin/create/button/'' data-pin-do='buttonBookmark'  data-pin-height='28'><img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png' /></a></li>
+													<li><a href='https://twitter.com/share' class='twitter-share-button' data-via='Active_Sussex' data-count='none'>Tweet</a></li>
+												</ul>
+											</div>
+								  		</div>
+
+									  	<div class='method'>
+									  	
+									  		<ul class= 'ingrediants'>
+									  		<h2>Ingrediants</h2>";
 
 									  	foreach ($ingrediants as $ingrediants) {
-							 	$output .= "<li>$ingrediants</li>";
-							 }
+							 				$output .= "<li>$ingrediants</li>";
+										}
 
 							  			$output .= "</ul>
-							  			<ol class='instructions'>
+										  				<ol class='instructions'>
+										  				<h2>Method</h2>
 								  		";
 							 	  		
 							foreach ($instructions as $instruction) {
@@ -86,12 +106,8 @@
 
 							 $output .=	"
 							 </ol>
-							</div>
-							 <div class='share-buttons'>
-								<div class='fb-share-button' data-layout='button_count'>
-								<a class='pin-share-button' href='//www.pinterest.com/pin/create/button/'' data-pin-do='buttonBookmark'  data-pin-height='28'><img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png' /></a>
-								<a class='twitter-share-button' href='https://twitter.com/share' class='twitter-share-button'>Tweet</a>
-							</div>";
+							 </div>
+							 </div>";
 
 							echo $output;
 

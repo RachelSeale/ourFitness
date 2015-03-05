@@ -21,7 +21,7 @@
 		<section class="site">
 			<div class="recipe-content">
 				<h2>Find your favourite healthy and low calories recipes here...</h2>
-				<form class="recipe-search" action='./search.php' method='get'>
+				<form class="search-recipes" action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo isset($_GET['course']) ? $_GET['course'] : '' ; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo isset($_GET['search']) ? $_GET['search'] : '' ; ?>' />
 					<input type='submit' value='Search' />

@@ -275,6 +275,8 @@ nav {
   margin-right: 2.35765%;
   width: 100%;
   margin-top: 2%;
+  background: #F3FCFF;
+  padding: 2%;
   font-family: "Solomon", Arial, Helvetica, sans-serif; }
   .recipe-page:after {
     content: "";
@@ -291,7 +293,7 @@ nav {
     text-align: center;
     line-height: 35px;
     position: absolute;
-    top: 20px;
+    top: 115%;
     -webkit-border-radius: 0 5px 5px 0px;
     border-radius: 0 5px 5px 0px;
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
@@ -300,7 +302,12 @@ nav {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 31.76157%;
+    background: white;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 0.5%; }
     .recipe-page .recipe-image:last-child {
       margin-right: 0; }
   .recipe-page .details {
@@ -314,7 +321,11 @@ nav {
       font-size: 30px; }
     .recipe-page .details .icons {
       font-size: 20px;
-      margin-bottom: 2%; }
+      margin-bottom: 2%;
+      padding: 12px 0 15px 0;
+      text-align: justify; }
+      .recipe-page .details .icons .fa {
+        color: #ed7aad; }
       .recipe-page .details .icons li {
         float: left;
         display: block;
@@ -326,24 +337,44 @@ nav {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 57.35098%; }
     .recipe-page .share-buttons:last-child {
       margin-right: 0; }
-  .recipe-page .ingrediants {
+  .recipe-page .method {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%; }
-    .recipe-page .ingrediants:last-child {
+    width: 100%;
+    margin-top: 2%;
+    background: white; }
+    .recipe-page .method:last-child {
       margin-right: 0; }
-  .recipe-page .instructions {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
-    margin-left: 2%; }
-    .recipe-page .instructions:last-child {
-      margin-right: 0; }
+    .recipe-page .method h2 {
+      color: grey;
+      margin-top: -3%; }
+    .recipe-page .method .ingrediants {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      background-color: #FFF;
+      padding: 3%;
+      padding: 2% 3%;
+      border-right: 2px solid #ECECF0; }
+      .recipe-page .method .ingrediants:last-child {
+        margin-right: 0; }
+      .recipe-page .method .ingrediants li {
+        list-style-type: disc; }
+    .recipe-page .method .instructions {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 2%;
+      background-color: #FFF;
+      padding: 3%; }
+      .recipe-page .method .instructions:last-child {
+        margin-right: 0; }
 
 /*Main page search input*/
 .searchLocationForm input[type=text] {
