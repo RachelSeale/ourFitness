@@ -13,7 +13,7 @@ header {
 	display: inline-block;
 	@include span-columns(4);
 	@include omega(3n);
-	height: 450px;
+	height: 465px;
 	margin-top: 2%;
 	-webkit-border-radius:0 0 7px 7px;
 	border-radius:0 0 7px 7px;
