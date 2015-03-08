@@ -1,13 +1,14 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Search Engine - Search</title>
-	<title>Our Fitness - Recipes!</title>
+	<title>Search Recipes- Our Fitness</title>
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body class="search-page">
+		<?php include("header.php"); ?>
 		<header class="recipe-header">
 	  		<h1 class="title">
 	  			<img class="logo" src="images/logo2.png">
@@ -15,8 +16,6 @@
 	  		</h1>
 	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
 		</header>
-
-		<?php include("header.php"); ?>
 
 		<section class="site">
 			<div class="recipe-content">

@@ -1,0 +1,15 @@
+.login-form,
+.register-form {
+	@include span-columns(12);
+	border: 1px solid #e4e4e4;
+	padding: 2%;
+}
+
+.register-form {
+	input[type=text] {
+		background: none;
+		width: 35%;
+		padding: 5px 0px 6px 6px;
+		margin-top: 1%;
+	}
+}

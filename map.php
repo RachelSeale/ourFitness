@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Our Fitness</title>
+		<title>Find local activities - Our Fitness</title>
 		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/index.css">
 </head>
@@ -14,7 +14,7 @@
 		<section class="site">
 			<div>
 				<form class="searchLocationForm" id="location-form">
-					<input for="form-input" type="text" value="Enter your location here" id="location-input" name="location">
+					<input for="form-input" type="text" placeholder="Enter your location here" id="location-input" name="location">
 
 					<button class="searchLocationBtn" type="submit">Go</button>
 					<p>OR</p>

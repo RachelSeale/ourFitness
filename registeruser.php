@@ -60,38 +60,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Search Engine - Search</title>
-	<title>Our Fitness - Recipes!</title>
+	<title>Login & Register - Our Fitness</title>
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 	<body class="search-page">
-		<header>
-	  		<h1 class="title">
-	  			<a href="/">Our Fitness Network</a>
-	  		</h1>
-		</header>
-
 		<?php include("header.php"); ?>
-
+		<header class="header">
+			<img class="logo" src="images/logo2.png">
+	  		<h1 class="title"><a href="index.php">Our Fitness </a></h1>
+		</header>  
 
 		<section class="site">
-
-				<form method="POST">
-					<ul>
-						<li><input type='text' name='name' size='50' value='Name' /></li>
-						<li><input type='email' name='email' size='50' value='Email' /></li>
-						<li><input type='password' name='password' size='50' value='' /></li>
-						<li><input type='password' name='confirmPassword' size='50' value='' /></li>
-					</ul>
-
-					<button type="submit" name="register"> Submit</button>
-				</form>
-		</section>
-		<section class="site">
-
 				<form class="login-form" method="POST">
+					<h2>Login Here</h2>
+					<p>Sign in to your account to access your faviourite recipes.</p>
 					<ul>
 						<li><input type='email' name='email' size='50' placeholder="Please enter your email address" /></li>
 						<li><input type='password' name='password' size='50' placeholder="Your password" /></li>
@@ -99,6 +83,18 @@
 					</ul>
 				</form>
 
+				<form class="register-form" method="POST">
+					<h2>Register Here</h2>
+					<p>Create a Our Fitness account now to make liking and storing recipes quicker and easier.</p>
+					<ul>
+						<li><input type='text' name='name' size='50' placeholder='Name' /></li>
+						<li><input type='email' name='email' size='50' placeholder='Email' /></li>
+						<li><input type='password' name='password' size='50' placeholder='Please enter your password' /></li>
+						<li><input type='password' name='confirmPassword' size='50' placeholder='Please re-enter your password' /></li>
+					</ul>
+
+					<button type="submit" name="register"> Submit</button>
+				</form>
 		</section>
 
 		

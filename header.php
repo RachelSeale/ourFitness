@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <section class="site">
 	<div id="menu" >
 	<a href="#menu" class="menu-link"></a>
@@ -13,12 +14,14 @@
 		          		if (isset($_SESSION['name'])) {
 							$name = $_SESSION['name'];
 							echo "
+								<li>
 								<div class='welcome-message'>
 									<h2>Hello, $name! How are you today?</h2>
 									<a href='logout.php'>Log Out</a>
-								</div>";
+								</div>
+								</li>";
 						} else {
-							echo "<a href='registeruser.php'>Login</a>"; 
+							echo "<a href='registeruser.php'><i class='fa fa-user'></i><b>Login</b></a>"; 
 						}
 					?>
 				</li>

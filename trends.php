@@ -1,16 +1,20 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Our Fitness - Recipes!</title>
+	<title>@activegirlsussex - Our Fitness</title>
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 	<body>
 		<?php include("header.php"); ?>
-		<header class="header">
-	  		<h1 class="title"><a href="/">#girlsourfitness</a></h1>
-		</header>  
+		<header class="recipe-header">
+	  		<h1 class="title">
+	  			<img class="logo" src="images/logo2.png">
+	  			<a href="index.php">Our Fitness</a>
+	  		</h1>
+	  		<h2 class="hashtag-name"><a href="https://instagram.com/activegirlsussex/">#girlsourfitness</a></h2>
+		</header>
 		<section class="site">
 				<div class="content">
 					<div id="instafeed"></div>

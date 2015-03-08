@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Our Fitness</title>
+		<title>Our Fitness - Health and Fitness Tips</title>
 		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/index.css">
 </head>
@@ -23,7 +23,7 @@
 			<div class="content">
 				<form class="searchLocationForm" action="map.php" method="GET">
 					<h2>Find local sport activities!</h2>
-					<input for="form-input" type="text" value="Enter your location here" id="location-input" name="location">
+					<input for="form-input" type="text" placeholder="Enter your location here" id="location-input" name="location">
 					<button class="searchLocationBtn" type="submit">Find</button>
 					<br />
 				</form>
@@ -50,7 +50,7 @@
 	 			</div>
 			</div>
 		</section>
-
+		<?php include("footer.php"); ?>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 		<script src="js/nav.js"></script>

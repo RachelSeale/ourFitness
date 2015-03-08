@@ -1,8 +1,8 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Search Engine - Search</title>
-	<title>Our Fitness - Recipes!</title>
+	<title>Recipes - Our Fitness</title>
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -78,14 +78,22 @@
 									  			<p>$description</p>
 									  		</div>
 									  		<div class='share-buttons'>
-									  		<h2>Share : </h2>
-									  			<ul>
-													<li><div class='fb-share-button button' data-layout='button'></div></li>
-													<li><a class='pin-share-button' href='//www.pinterest.com/pin/create/button/'' data-pin-do='buttonBookmark'  data-pin-height='28'><img src='//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png' /></a></li>
-													<li><a href='https://twitter.com/share' class='twitter-share-button' data-via='Active_Sussex' data-count='none'>Tweet</a></li>
-												</ul>
+									  			<h2>Share : </h2>
+												<a class='fb-share-button' href='http://www.facebook.com/sharer.php?u=https//recipepage.php?id=$id' title='Share on Facebook' class='service-links-facebook service-links-link service-links-popup-processed analytics-processed' rel='nofollow' data-service-name='Facebook'>
+													<i class='icon icon-facebook'></i>
+													<span class='service-links-text'> </span>
+												</a>
+												<a class='pinterest-share-button' href='http://pinterest.com/pin/create/bookmarklet?media=https//http://localhost:8888/finalProject/ourFitness/images/recipeImages/$id.jpg' title='Pin it on Pinterest' class='service-links-pinterest' rel='nofollow' data-service-name='Pinterest'>
+													<i class='icon icon-pinterest'></i>
+													<span class='service-links-text'></span>
+												</a>
+												<a href='https://twitter.com/share' class='tweet-share-button' data-via='Active_Sussex' data-count='none'>
+													<i class='icon icon-twitter'></i>
+													<span class='service-links-text'> </span>
+												</a>
 											</div>
 								  		</div>
+
 
 									  	<div class='method'>
 									  	
@@ -146,7 +154,7 @@
 		(document, 'script', 'facebook-jssdk'));
 		</script>
 		<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
-		
+
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</section>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

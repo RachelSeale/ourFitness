@@ -1,7 +1,8 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Our Fitness - Recipes!</title>
+	<title>Recipes - Our Fitness</title>
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 </head>

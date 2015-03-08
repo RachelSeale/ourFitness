@@ -48,6 +48,7 @@ ul li {
 
 nav {
   text-align: center;
+  margin-top: 2%;
   border-top: 1px solid #E9EBEB;
   border-bottom: 1px solid #E9EBEB; }
   nav li {
@@ -86,7 +87,7 @@ nav {
     background: rgba(255, 255, 255, 0.6); }
 
   nav.active {
-    max-height: 15em;
+    max-height: 22em;
     transition: 1s; }
 
   nav {
@@ -342,6 +343,29 @@ nav {
     width: 57.35098%; }
     .recipe-page .share-buttons:last-child {
       margin-right: 0; }
+    .recipe-page .share-buttons a.fb-share-button,
+    .recipe-page .share-buttons a.pinterest-share-button,
+    .recipe-page .share-buttons a.tweet-share-button {
+      display: -webkit-inline-box;
+      vertical-align: middle; }
+    .recipe-page .share-buttons .fb-share-button {
+      background-image: url("../images/icons/facebook-share.png");
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 32px; }
+    .recipe-page .share-buttons .tweet-share-button {
+      background-image: url("../images/icons/twitter-share.png");
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 32px; }
+    .recipe-page .share-buttons .pinterest-share-button {
+      background-image: url("../images/icons/pinterest-share.png");
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 32px; }
+    .recipe-page .share-buttons h2 {
+      display: -webkit-inline-box;
+      vertical-align: sub; }
   .recipe-page .method {
     float: left;
     display: block;
@@ -481,13 +505,11 @@ input[type=submit],
   .login-form li {
     display: inline; }
 
-.welcome-message {
-  float: right; }
-  .welcome-message h2, .welcome-message a {
-    display: inline-block;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: #76cdd3; }
+.welcome-message h2, .welcome-message a {
+  display: inline-block;
+  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #76cdd3; }
 
 /* MAP PAGE */
 .site {
@@ -526,6 +548,97 @@ input[type=submit],
 
 .resultsMapSection {
   padding-top: 4%; }
+
+.login-form,
+.register-form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  padding: 2%; }
+  .login-form:last-child,
+  .register-form:last-child {
+    margin-right: 0; }
+
+.register-form input[type=text] {
+  background: none;
+  width: 35%;
+  padding: 5px 0px 6px 6px;
+  margin-top: 1%; }
+
+header .hashtag-name a {
+  text-decoration: none;
+  color: #A2F3A8; }
+
+footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  margin-top: 3%; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer .footer-info {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 12px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    footer .footer-info:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 300px) {
+      footer .footer-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        footer .footer-info:last-child {
+          margin-right: 0; } }
+
+.footer-info a {
+  color: #2e3133;
+  text-decoration: none; }
+
+.footer-info a:hover {
+  text-decoration: underline;
+  color: #ed7aad; }
+
+.social-icons img {
+  max-width: 100%;
+  display: block;
+  -webkit-transition: 0.30s;
+  -webkit-filter: brightness(1);
+  -moz-filter: brightness(1);
+  -o-filter: brightness(1);
+  -ms-filter: brightness(1);
+  filter: brightness(1); }
+
+.social-icons img:hover {
+  -webkit-filter: brightness(0.6);
+  -moz-filter: brightness(0.6);
+  -o-filter: brightness(0.6);
+  -ms-filter: brightness(0.6);
+  filter: brightness(0.6); }
+
+.social-icons {
+  margin-top: -2%;
+  text-align: center; }
+  .social-icons a {
+    display: block; }
+
+.social-icons li {
+  display: inline-block;
+  width: 35px;
+  margin-left: 2%;
+  height: 64px; }
+
+.touch .social-icons img {
+  -webkit-filter: grayscale(0); }
 
 /*TITLE*/
 .title {
