@@ -585,6 +585,31 @@ header .hashtag-name a {
 .instafeed img {
   padding: 15px; }
 
+.insta-images {
+  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 450px;
+  margin-top: 2%;
+  -webkit-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
+  .insta-images:last-child {
+    margin-right: 0; }
+  .insta-images:nth-child(3n) {
+    margin-right: 0; }
+  .insta-images:nth-child(3n+1) {
+    clear: left; }
+  .insta-images .fa-heart {
+    color: #ed7aad;
+    padding-right: 4px; }
+  .insta-images p {
+    padding: 1% 1% 0 5%; }
+
 footer {
   max-width: 68em;
   margin-left: auto;

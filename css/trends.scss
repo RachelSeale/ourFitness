@@ -5,10 +5,29 @@ header {
 	}
 }
 
-
-
 .instafeed img {
 		padding: 15px;
+}
+
+.insta-images {
+	display: inline-block;
+	@include span-columns(4);
+	@include omega(3n);
+	height: 450px;
+	margin-top: 2%;
+	-webkit-border-radius:0 0 7px 7px;
+	border-radius:0 0 7px 7px;
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+	.fa-heart {
+		color: $pastel-pink;
+		padding-right: 4px;
 	}
 
+	p {
+		padding: 1% 1% 0 5%;
+	}
+}
 
