@@ -525,7 +525,7 @@ input[type=submit],
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
+    width: 100%;
     margin-right: 0; }
     .site .resultsMapSection:last-child {
       margin-right: 0; }
@@ -533,10 +533,21 @@ input[type=submit],
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
+    width: 100%;
     margin: 5% 0% 0% 5%; }
     .site .resultAddressSection:last-child {
       margin-right: 0; }
+    .site .resultAddressSection h3 {
+      font-family: "Solomon", Arial, Helvetica, sans-serif;
+      display: inline-block; }
+    .site .resultAddressSection li {
+      padding: 0.5%; }
+    .site .resultAddressSection img {
+      width: 32px;
+      vertical-align: bottom; }
+    .site .resultAddressSection p {
+      display: inline-block;
+      vertical-align: bottom; }
 
 .searchLocationForm {
   text-align: center;

@@ -119,7 +119,7 @@ $(function () {
 		 var request = {
 		    location: location,
 		    radius: parseInt($('[name="radius"]:checked').val(), 10) * 1600,
-		    types: ['gym']
+		    types: ['gym'],
 		  }
 
 		  console.log(request);

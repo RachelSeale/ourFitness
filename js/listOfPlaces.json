@@ -12,6 +12,7 @@
 			"health",
 			"establishment"
 		],
-		"vicinity":"OURFITNESS, Brighton"
+		"vicinity":"OURFITNESS, Brighton",
+		"formatted_address": "2 Colet Rd" 
 	}
 ]

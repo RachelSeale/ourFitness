@@ -3,12 +3,31 @@
 	@include outer-container;
 	margin: 0 auto;
 	.resultsMapSection {
-		@include span-columns(8);
+		@include span-columns(12);
 		@include omega();
 	}
 	.resultAddressSection {
-		@include span-columns(3);
+		@include span-columns(12);
 		margin: 5% 0% 0% 5%;
+
+		h3 {
+			font-family: $font-family;
+			display: inline-block;
+		}
+
+		li {
+			padding: 0.5%;
+		}
+	
+		img {
+			width: 32px;
+			vertical-align: bottom;
+		}
+
+		p {
+			display: inline-block;
+			vertical-align: bottom;
+		}
 	}
 
 }

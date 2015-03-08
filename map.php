@@ -30,7 +30,7 @@
 				</form>
 			</div>
 			<div class="resultsMapSection">
-				<div id="map-canvas" style="width: 100%; height: 400px"></div>
+				<div id="map-canvas" style="width: 100%; height: 300px"></div>
 			</div>
 
 			<div class="resultAddressSection">
@@ -40,17 +40,20 @@
 			</div>
 
  		</section>
+ 		<script id="mapAddress" type="text/x-handlerbars-template">
+			<li>
+				<h3>{{name}}</h3>
+				<p><img src="{{icon}}" alt="{{types}}"></p><br>
+				<p>{{formatted_address}}</p><br>
+				<p>{{formatted_phone_number}}</p><br>
+				<p><a href="{{website}}">{{name}} Website</a></p>
 
+			</li>
+		</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 		<script src="js/location.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/handlebars.js"></script>
-		<script id="mapAddress" type="text/x-handlerbars-template">
-			<li>
-				<h3>{{name}}</h3>
-				<p><img src="{{icon}}" alt="{{types}}"></p>
-			</li>
-		</script>
 	</body>
 </html>
