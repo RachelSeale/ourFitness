@@ -582,6 +582,9 @@ header .hashtag-name a {
   text-decoration: none;
   color: #A2F3A8; }
 
+.instafeed img {
+  padding: 15px; }
+
 footer {
   max-width: 68em;
   margin-left: auto;

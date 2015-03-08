@@ -16,9 +16,10 @@
 	  		<h2 class="hashtag-name"><a href="https://instagram.com/activegirlsussex/">#girlsourfitness</a></h2>
 		</header>
 		<section class="site">
-				<div class="content">
-					<div id="instafeed"></div>
+			<div class="content">
+				<div class="instafeed" id="instafeed">
 				</div>
+			</div>
 		
 
 		<script type="text/javascript" src="js/instafeed.min.js"></script>
