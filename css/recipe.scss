@@ -16,8 +16,6 @@
   @include outer-container;
   margin: 0 auto;
   line-height: 1.5;
-  $tablet: new-breakpoint(max-width 660px  4);
-  $mobile: new-breakpoint(max-width 500px 1);
   
     h1,
    	h2,
@@ -46,12 +44,27 @@
 	margin: 0 2% 2% 2%;
 }
 
+.search-recipe-page p{
+  @include media($mobile) {
+    display: none;
+  }
+}
+
 .list-of-recipes {
 	@include outer-container;
 
-    .recipe {
+  @include media($phablet) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  @include media($mobile) {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .recipe {
         @include span-columns(4); 
-        @include omega(3n);
+        margin-right: 1.5%;
         margin-top: 2%;
         margin-bottom: 4%;
         -webkit-border-radius:0 0 7px 7px;
@@ -59,6 +72,15 @@
         -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
         -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
         box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+        @include media($tablet) {
+          @include span-columns(2);
+          @include omega(2n);  
+        }
+
+        @include media($phablet) {
+          @include span-columns(2); 
+        }
 
         .name {
             width:100%;

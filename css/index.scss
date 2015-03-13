@@ -17,6 +17,10 @@ $sky-blue: #76cdd3;
 $pastel-pink: #ed7aad;
 $font-family: "Solomon", Arial, Helvetica, sans-serif;
 
+
+$tablet: new-breakpoint(max-width 750px  4);
+$phablet: new-breakpoint(max-width 650px  2);
+$mobile: new-breakpoint(max-width 500px 1);
 /* Global Reset */
 * {
   margin: 0;
@@ -65,11 +69,16 @@ body {
 /* HOMEPAGE */
 
 .welcome-info {
+
   @include span-columns(12);
       p {
         color: $black;
         font-family: $font-family;
         padding-bottom: 2%;
+
+      @include media($mobile) {
+        display: none;
+      }
 
         a {
           text-decoration: none;
@@ -82,7 +91,12 @@ body {
         font-family: $font-family;
         color: $pastel-green;
         margin: -2% 0% 2% 0%;
-      }     
+          
+      @include media($mobile) {
+        display: none;
+      }
+
+    }
 }
 
 

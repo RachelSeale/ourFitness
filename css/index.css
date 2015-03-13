@@ -140,6 +140,10 @@ nav {
   text-align: center;
   margin: 0 2% 2% 2%; }
 
+@media screen and (max-width: 500px) {
+  .search-recipe-page p {
+    display: none; } }
+
 .list-of-recipes {
   max-width: 68em;
   margin-left: auto;
@@ -148,11 +152,20 @@ nav {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (max-width: 650px) {
+    .list-of-recipes {
+      margin-left: 10%;
+      margin-right: 10%; } }
+  @media screen and (max-width: 500px) {
+    .list-of-recipes {
+      margin-left: 0%;
+      margin-right: 0%; } }
   .list-of-recipes .recipe {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    margin-right: 1.5%;
     margin-top: 2%;
     margin-bottom: 4%;
     -webkit-border-radius: 0 0 7px 7px;
@@ -162,10 +175,26 @@ nav {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
     .list-of-recipes .recipe:last-child {
       margin-right: 0; }
-    .list-of-recipes .recipe:nth-child(3n) {
-      margin-right: 0; }
-    .list-of-recipes .recipe:nth-child(3n+1) {
-      clear: left; }
+    @media screen and (max-width: 750px) {
+      .list-of-recipes .recipe {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 46.28851%; }
+        .list-of-recipes .recipe:last-child {
+          margin-right: 0; }
+        .list-of-recipes .recipe:nth-child(2n) {
+          margin-right: 0; }
+        .list-of-recipes .recipe:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 650px) {
+      .list-of-recipes .recipe {
+        float: left;
+        display: block;
+        margin-right: 16.03631%;
+        width: 100%; }
+        .list-of-recipes .recipe:last-child {
+          margin-right: 0; } }
     .list-of-recipes .recipe .name {
       width: 100%;
       height: 50px;
@@ -404,11 +433,17 @@ nav {
 
 /*Main page search input*/
 .searchLocationForm input[type=text] {
-  background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
+  background: white url(../images/icons/userMarker.png) no-repeat 0px center;
   padding: 20px 10px 9px 32px;
   margin-top: 2%;
   width: 30%;
   font-size: 13px; }
+  @media screen and (max-width: 500px) {
+    .searchLocationForm input[type=text] {
+      width: 60%; } }
+@media screen and (max-width: 500px) {
+  .searchLocationForm h2 {
+    font-size: 32px; } }
 
 .content .searchLocationForm {
   padding-top: 5%; }
@@ -428,9 +463,9 @@ input[type=password] {
   padding: 9px 10px 9px 32px;
   margin-top: 2%;
   width: 30%;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  border-radius: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s; }
@@ -496,6 +531,15 @@ input[type=submit],
 
 .locationBtn {
   width: 14%; }
+  @media screen and (max-width: 500px) {
+    .locationBtn {
+      width: 37%;
+      padding: 2.4%; } }
+
+@media screen and (max-width: 500px) {
+  .searchLocationBtn {
+    width: 18%;
+    padding: 2.4%; } }
 
 /* Log in Form */
 .login-form {
@@ -583,7 +627,8 @@ header .hashtag-name a {
   color: #A2F3A8; }
 
 .instafeed img {
-  padding: 15px; }
+  padding: 15px;
+  width: 100%; }
 
 .insta-images {
   display: inline-block;
@@ -604,6 +649,14 @@ header .hashtag-name a {
     margin-right: 0; }
   .insta-images:nth-child(3n+1) {
     clear: left; }
+  @media screen and (max-width: 750px) {
+    .insta-images {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .insta-images:last-child {
+        margin-right: 0; } }
   .insta-images .fa-heart {
     color: #ed7aad;
     padding-right: 4px; }
@@ -708,6 +761,9 @@ footer {
     color: #000000;
     font-family: "Solomon", Arial, Helvetica, sans-serif;
     padding-bottom: 2%; }
+    @media screen and (max-width: 500px) {
+      .welcome-info p {
+        display: none; } }
     .welcome-info p a {
       text-decoration: none;
       color: black; }
@@ -716,6 +772,9 @@ footer {
     font-family: "Solomon", Arial, Helvetica, sans-serif;
     color: #A2F3A8;
     margin: -2% 0% 2% 0%; }
+    @media screen and (max-width: 500px) {
+      .welcome-info h2 {
+        display: none; } }
 
 .search-location .content {
   text-align: center;

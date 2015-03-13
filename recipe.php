@@ -16,7 +16,7 @@
 	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
 		</header>
 
-		<section class="site">
+		<section class="site search-recipe-page">
 				<form class="search-recipes form-wrapper" action='./search.php' method='get'>
 					<input type='text' name='search' size='50' placeholder="Search recipes"/>
 					<input type='submit' value='Search'/>

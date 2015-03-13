@@ -1,13 +1,22 @@
 
 /*Main page search input*/
 .searchLocationForm{
-
 	input[type=text] {
-		background: white url(../images/locationSearchIcon.png) no-repeat 0px center;
+		background: white url(../images/icons/userMarker.png) no-repeat 0px center;
 		padding: 20px 10px 9px 32px;
 		margin-top: 2%;
 		width: 30%;
 		font-size: 13px;
+
+	 @include media($mobile) {
+        width: 60%;
+      }
+	}
+
+	h2 {
+		@include media($mobile) {
+        font-size: 32px;
+      }
 	}
 }
 
@@ -36,9 +45,9 @@ input[type=password] {
 	margin-top: 2%;
 	width: 30%;
 	
-	-webkit-border-radius: 1em;
-	-moz-border-radius: 1em;
-	border-radius: 1em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -121,6 +130,18 @@ input[type=submit],
 
 .locationBtn{
 	width: 14%;
+
+	@include media($mobile) {
+		width: 37%;
+		padding: 2.4%;
+	}	
+}
+
+.searchLocationBtn {
+	@include media($mobile) {
+        width: 18%;
+		padding: 2.4%;
+	}	
 }
 
 /* Log in Form */
