@@ -21,6 +21,7 @@ $font-family: "Solomon", Arial, Helvetica, sans-serif;
 $tablet: new-breakpoint(max-width 750px  4);
 $phablet: new-breakpoint(max-width 650px  2);
 $mobile: new-breakpoint(max-width 500px 1);
+
 /* Global Reset */
 * {
   margin: 0;
@@ -149,6 +150,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 125px;
   }
 }
 

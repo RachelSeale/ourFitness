@@ -2,7 +2,8 @@
       <ul class="social-icons">
         <li><a href="https://www.pinterest.com/OurFitness/"><img class="social-icon" src="images/icons/pinterest.png"></a></li>
         <li><a href="https://twitter.com/Active_Sussex"><img class="social-icon" src="images/icons/twitter.png"></a></li>
-        <li><a href="https://instagram.com/activegirlsussex/"><img src=""></a>
+        <li><a href="https://instagram.com/activegirlsussex/"><img src="images/icons/instagram.png"></a>
+          <li><a href="https://instagram.com/activegirlsussex/"><img src="images/icons/googleplus.png"></a>
       </ul>
 
       <section>

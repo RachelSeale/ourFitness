@@ -34,7 +34,6 @@
 
 
 .search-page h2 {
-	color: $pastel-green;
 	margin: 1% 0 1% 0;
 	font-family: $font-family;
 }
@@ -242,21 +241,36 @@
         -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     }
   
-      .image {
+    .image {
         @include span-columns(4); 
         position: relative;
-      }
 
-      .recipe-image {
+        @include media($phablet) {
+            @include span-columns(1);
+            width: 70%;
+        } 
+
+        @include media($mobile) {
+            @include span-columns(1);
+            margin-right: 5px;
+            margin-left: 5px;
+        } 
+    }
+
+    .recipe-image {
         background: white;
         -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
         -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
         padding: 5px;
-      }
+    }
 
-      .details {
-        @include span-columns(7);
+    .details {
+    @include span-columns(7);
+
+        @include media($tablet) {
+        	@include span-columns(4);
+        } 
 
         h3 {
             font-size: 30px;
@@ -276,73 +290,99 @@
                @include span-columns(4); 
             }
         }
-      }
+    }
 
-      .share-buttons {
-        @include span-columns(7);
+    .description {
+	  	margin-top: 25px;
+		font-style: italic;
+	}
 
-        a.fb-share-button,
-        a.pinterest-share-button,
-        a.tweet-share-button {
-          display: -webkit-inline-box;
-          vertical-align: middle;
-        }
+    .share-buttons {
+    	@include span-columns(7);
 
-        .fb-share-button {
-          background-image: url("../images/icons/facebook-share.png");
-          background-repeat: no-repeat;
-          height: 32px;
-          width: 32px;
+	    @include media($mobile) {
+	        @include span-columns(1);
+	    }
 
-        }
+	    a.fb-share-button,
+	    a.pinterest-share-button,
+	    a.tweet-share-button {
+	      display: -webkit-inline-box;
+	      vertical-align: middle;
+	    }
 
-        .tweet-share-button {
-          background-image: url("../images/icons/twitter-share.png");
-          background-repeat: no-repeat;
-          height: 32px;
-          width: 32px;
-        }
+	    .fb-share-button,
+	    .pinterest-share-button,
+	    .tweet-share-button {
+			color: $sky-blue;
+			font-size: 32px;
+	    } 
 
-        .pinterest-share-button {
-          background-image: url("../images/icons/pinterest-share.png");
-          background-repeat: no-repeat;
-          height: 32px;
-          width: 32px;
-        }
+	    h2 {
+	      display: -webkit-inline-box;
+	      vertical-align: sub;
+	    }
+  	}
+
+    .nutrition-servings {
+		@include span-columns(12);
+		display: flex;
+		margin-top: 15px;
+
+		dl {
+			text-align: center;
+			width: 10%;
+			display: block;
+			width: 70px;
+			margin-right: 2px;
+		}
+
+		dt {
+			background: $pastel-green;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+		dd {
+			background: $white;
+		}
+	}
+
+    .method {
+        @include span-columns(12);
+        margin-top: 2%;
+        background: white;
 
         h2 {
-          display: -webkit-inline-box;
-          vertical-align: sub;
+            color: grey;
+            margin-top: -3%;
         }
-      }
 
-      .method {
-            @include span-columns(12);
-            margin-top: 2%;
-            background: white;
+        .ingrediants {
+		    @include span-columns(3);
+		    background-color: $white;
+		    padding: 3%;
+		    padding: 2% 3%;
+		    border-right: 2px solid #ECECF0;
 
-            h2 {
-                color: grey;
-                margin-top: -3%;
-            }
+		    @include media($mobile) {
+		      @include span-columns(1);
+		    } 
 
-          .ingrediants {
-            @include span-columns(3);
-            background-color: $white;
-            padding: 3%;
-            padding: 2% 3%;
-            border-right: 2px solid #ECECF0;
+	        li {
+	            list-style-type: disc;
+	        }
+      	}
 
-            li {
-                list-style-type: disc;
-            }
-          }
-
-          .instructions {
+        .instructions {
             @include span-columns(8);
             margin-left: 2%;
             background-color: $white;
             padding: 3%;
-          }
+
+            @include media($mobile) {
+              @include span-columns(1);
+            } 
+        }
     }
 }

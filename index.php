@@ -42,7 +42,7 @@
 				</div>
 			 	<div class="idea2">
 			 		<h2>Find</h2>
-					<img src="images/icons/find.png"></img>
+					<img src="images/icons/map.png"></img>
 		 		</div>
 		 		<div class="idea3">
 					<h2>Go & Share</h2>

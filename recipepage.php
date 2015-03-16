@@ -25,8 +25,10 @@
 					<input type='hidden' name='course' value="<?php echo $_GET['course']; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo $_GET['search']; ?>' />
 					<input type='submit' value='Search' />
-					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
-					<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
+					<div class='filters'>
+						<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
+						<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
+					</div>
 				</form>
 				<section>
 				<?php
@@ -81,16 +83,45 @@
 									  			<h2>Share : </h2>
 												<a class='fb-share-button' href='http://www.facebook.com/sharer.php?u=https//recipepage.php?id=$id' title='Share on Facebook' class='service-links-facebook service-links-link service-links-popup-processed analytics-processed' rel='nofollow' data-service-name='Facebook'>
 													<i class='icon icon-facebook'></i>
+													<i class='fa fa-facebook-square'></i>
 													<span class='service-links-text'> </span>
 												</a>
 												<a class='pinterest-share-button' href='http://pinterest.com/pin/create/bookmarklet?media=https//http://localhost:8888/finalProject/ourFitness/images/recipeImages/$id.jpg' title='Pin it on Pinterest' class='service-links-pinterest' rel='nofollow' data-service-name='Pinterest'>
 													<i class='icon icon-pinterest'></i>
+													<i class='fa fa-pinterest-square'></i>
 													<span class='service-links-text'></span>
 												</a>
 												<a href='https://twitter.com/share' class='tweet-share-button' data-via='Active_Sussex' data-count='none'>
 													<i class='icon icon-twitter'></i>
+													<i class='fa fa-twitter-square'></i>
 													<span class='service-links-text'> </span>
 												</a>
+											</div>
+											<div class='nutrition-servings'>
+												<dl>											
+													<dt><span>Calories</span></dt>
+													<dd>$calories</dd>
+												</dl>
+												<dl>
+													<dt><span>Protein</span></dt>
+													<dd>39g</dd>
+												</dl>
+												<dl>
+													<dt><span>Carbs</span></dt>
+													<dd>0g</dd>
+												</dl>
+												<dl>
+													<dt><span>Fat</span></dt>
+													<dd>0g</dd>
+												</dl>
+												<dl>
+													<dt><span>Sugar</span></dt>
+													<dd>0g</dd>
+												</dl>
+												<dl>
+													<dt><span>Fibre</span></dt>
+													<dd>0g</dd>
+												</dl>
 											</div>
 								  		</div>
 
