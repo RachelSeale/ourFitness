@@ -641,15 +641,40 @@ input[type=submit],
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    margin: 5% 0% 0% 5%; }
+    width: 100%; }
     .site .resultAddressSection:last-child {
       margin-right: 0; }
     .site .resultAddressSection h3 {
       font-family: "Solomon", Arial, Helvetica, sans-serif;
       display: inline-block; }
     .site .resultAddressSection li {
-      padding: 0.5%; }
+      padding: 2%;
+      display: inline-block;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      height: 200px;
+      margin-top: 2%;
+      -webkit-border-radius: 0 0 7px 7px;
+      border-radius: 0 0 7px 7px;
+      -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
+      .site .resultAddressSection li:last-child {
+        margin-right: 0; }
+      .site .resultAddressSection li:nth-child(3n) {
+        margin-right: 0; }
+      .site .resultAddressSection li:nth-child(3n+1) {
+        clear: left; }
+      @media screen and (max-width: 750px) {
+        .site .resultAddressSection li {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 100%; }
+          .site .resultAddressSection li:last-child {
+            margin-right: 0; } }
     .site .resultAddressSection img {
       width: 32px;
       vertical-align: bottom; }

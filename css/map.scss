@@ -8,7 +8,6 @@
 	}
 	.resultAddressSection {
 		@include span-columns(12);
-		margin: 5% 0% 0% 5%;
 
 		h3 {
 			font-family: $font-family;
@@ -16,7 +15,21 @@
 		}
 
 		li {
-			padding: 0.5%;
+			padding: 2%;
+			display: inline-block;
+			@include span-columns(4);
+			@include omega(3n);
+			height: 200px;
+			margin-top: 2%;
+			-webkit-border-radius:0 0 7px 7px;
+			border-radius:0 0 7px 7px;
+			-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+			-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+			box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+
+			@include media($tablet) {
+				@include span-columns(4);
+  			}
 		}
 	
 		img {
@@ -31,6 +44,7 @@
 	}
 
 }
+
 
 .searchLocationForm {
 	text-align: center;
