@@ -128,7 +128,7 @@ $(function () {
 		  service.nearbySearch(request, function(results, status){
 		  	 if (status == google.maps.places.PlacesServiceStatus.OK) {
     			// console.log(results);
-    			listPlaces(results);
+    			// listPlaces(results);
     			results.forEach(function(result){
     				service.getDetails({
 						placeId: result.place_id

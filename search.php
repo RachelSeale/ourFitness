@@ -19,7 +19,15 @@
 
 		<section class="site">
 			<div class="recipe-content">
-				<h2>Find your favourite healthy and low calories recipes here...</h2>
+		  		<?php
+		  			$liked = isset($_GET['liked']) ? true : false;
+
+		  			if ($liked) {
+		  				echo "<h2>Your likes... </h2>";
+		  			} else {
+		  				echo "<h2>Find your favourite healthy and low calories recipes here...</h2>";	
+		  			}
+		  		?>
 				<form class="search-recipes" action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo isset($_GET['course']) ? $_GET['course'] : '' ; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo isset($_GET['search']) ? $_GET['search'] : '' ; ?>' />
@@ -35,7 +43,13 @@
 					$vegetarian = isset($_GET['vegetarian']) ? $_GET['vegetarian'] : false;
 
 					$terms = explode(" ", $search);
-					$query = "SELECT * FROM search ";
+					if (isset($_SESSION['id'])) {
+						$userID = $_SESSION['id'];
+						$query = "SELECT search.*, likes.userID AS liked FROM search LEFT JOIN likes ON search.id = likes.recipeID AND likes.userID=$userID ";
+					} else {
+						$query = "SELECT * FROM search ";
+					}
+
 
 					$filters = array();
 
@@ -53,6 +67,12 @@
 					if ($course) {
 					
 						array_push($filters, "course = '$course' ");
+					
+					}
+
+					if ($liked && $userID) {
+					
+						array_push($filters, "likes.userID = '$userID' ");
 					
 					}
 
@@ -103,7 +123,7 @@
 										<div class='image'>
 									    	<img src='images/recipeImages/$id.jpg'> 
 									  		<div class='likes'>
-									    		<i class='fa fa-heart-o lv' data-test='pulse'></i>
+									    		<i class='fa ".($row['liked'] ? 'fa-heart' : 'fa-heart-o')." lv' data-id='$id' data-test='pulse'></i>
 											</div>
 									 		<div class='name'>
 									 			<h3>$title</h3>

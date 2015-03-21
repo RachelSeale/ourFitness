@@ -12,6 +12,7 @@
 			"health",
 			"establishment"
 		],
+		"icon": "http://maps.gstatic.com/mapfiles/place_api/icons/fitness-71.png",
 		"vicinity":"OURFITNESS, Brighton",
 		"formatted_address": "2 Colet Rd" 
 	}

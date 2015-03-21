@@ -64,7 +64,7 @@
 										<div class='image'>
 										    <img class='recipe-image' src='images/recipeImages/$id.jpg'> 
 											<div class='likes'>
-										    	<i class='fa fa-heart-o lv' data-test='pulse'></i>
+										    	<i class='fa fa-heart-o lv' data-id='$id' data-test='pulse'></i>
 											</div>
 										</div>
 
@@ -81,12 +81,12 @@
 									  		</div>
 									  		<div class='share-buttons'>
 									  			<h2>Share : </h2>
-												<a class='fb-share-button' href='http://www.facebook.com/sharer.php?u=https//recipepage.php?id=$id' title='Share on Facebook' class='service-links-facebook service-links-link service-links-popup-processed analytics-processed' rel='nofollow' data-service-name='Facebook'>
+												<a class='fb-share-button' href='http://www.facebook.com/sharer.php?u=http://localhost:8888/finalProject/ourFitness/recipepage.php?id=$id' title='Share on Facebook' class='service-links-facebook service-links-link service-links-popup-processed analytics-processed' rel='nofollow' data-service-name='Facebook'>
 													<i class='icon icon-facebook'></i>
 													<i class='fa fa-facebook-square'></i>
 													<span class='service-links-text'> </span>
 												</a>
-												<a class='pinterest-share-button' href='http://pinterest.com/pin/create/bookmarklet?media=https//http://localhost:8888/finalProject/ourFitness/images/recipeImages/$id.jpg' title='Pin it on Pinterest' class='service-links-pinterest' rel='nofollow' data-service-name='Pinterest'>
+												<a class='pinterest-share-button' href='http://pinterest.com/pin/create/bookmarklet?media=http://localhost:8888/finalProject/ourFitness/images/recipeImages/$id.jpg' title='Pin it on Pinterest' class='service-links-pinterest' rel='nofollow' data-service-name='Pinterest'>
 													<i class='icon icon-pinterest'></i>
 													<i class='fa fa-pinterest-square'></i>
 													<span class='service-links-text'></span>

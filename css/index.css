@@ -646,6 +646,7 @@ input[type=submit],
       margin-right: 0; }
     .site .resultAddressSection h3 {
       font-family: "Solomon", Arial, Helvetica, sans-serif;
+      font-size: 17px;
       display: inline-block; }
     .site .resultAddressSection li {
       padding: 2%;
@@ -654,7 +655,7 @@ input[type=submit],
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      height: 200px;
+      height: 250px;
       margin-top: 2%;
       -webkit-border-radius: 0 0 7px 7px;
       border-radius: 0 0 7px 7px;

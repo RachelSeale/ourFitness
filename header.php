@@ -16,7 +16,7 @@
 							echo "
 								<li>
 								<div class='welcome-message'>
-									<h2>Hello, $name! How are you today?</h2>
+									<a href='search.php?liked=true'>Saved recipes</a>
 									<a href='logout.php'>Log Out</a>
 								</div>
 								</li>";

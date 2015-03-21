@@ -53,7 +53,11 @@
 
 	if (isset($_SESSION['name'])) {
 		$name = $_SESSION['name'];
-		header("location:index.php");
+		if (isset($_GET['return_url'])) {
+			header("location:".$_GET['return_url']);
+		} else {
+			header("location:index.php");
+		}
 	}
 ?>
 
