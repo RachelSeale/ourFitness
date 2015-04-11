@@ -21,6 +21,7 @@
 
 		<section class="site">
 			<div class="recipe-content">
+				<!--Once pressed search use the php from search.php -->
 				<form class="search-recipes" action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo $_GET['course']; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo $_GET['search']; ?>' />
@@ -45,7 +46,7 @@
 					$query = mysql_query($query);
 					$numrows = mysql_num_rows($query);
 					if ($numrows > 0) {
-
+						//fetch that row with that id
 						while ($row = mysql_fetch_assoc($query)) {
 							$id = $row ['id'];
 							$title = $row ['title'];
@@ -54,6 +55,7 @@
 							$link = $row ['link'];
 							$servingSize = $row ['serving size'];
 							$calories = $row ['calories'];
+							$protein = $row ['protein'];
 							$cookingTime = $row ['cooking time'];
 							$description = $row ['description'];
 							$instructions = explode("\n", $row['instructions']);
@@ -104,7 +106,7 @@
 												</dl>
 												<dl>
 													<dt><span>Protein</span></dt>
-													<dd>39g</dd>
+													<dd>$protein</dd>
 												</dl>
 												<dl>
 													<dt><span>Carbs</span></dt>
@@ -130,7 +132,8 @@
 									  	
 									  		<ul class= 'ingrediants'>
 									  		<h2>Ingrediants</h2>";
-
+									  	
+									  	//for every ingrediants display as list
 									  	foreach ($ingrediants as $ingrediants) {
 							 				$output .= "<li>$ingrediants</li>";
 										}
@@ -140,21 +143,23 @@
 										  				<h2>Method</h2>
 								  		";
 							 	  		
-							foreach ($instructions as $instruction) {
-							 	$output .= "<li>$instruction</li>";
-							 }
+								  		//for every instruction display as list
+										foreach ($instructions as $instruction) {
+										 	$output .= "<li>$instruction</li>";
+										 }
 
-							 $output .=	"
-							 </ol>
-							 </div>
-							 </div>";
+										 $output .=	"
+										 </ol>
+										 </div>
+										 </div>";
 
-							echo $output;
+										echo $output;
 
 						}
 
 					}
 
+					//else display message telling the user that what they search has no results
 					else {
 						$message = "No results";
 
@@ -172,7 +177,7 @@
 			</section>
 			</div>
 
-			<div id="fb-root"></div>
+		<!--Sharing buttons - FB, Pintrest and Twitter -->	
 		<script>
 		(function(d, s, id) {
 				  var js, fjs = d.getElementsByTagName(s)[0];

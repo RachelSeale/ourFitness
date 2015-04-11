@@ -41,6 +41,7 @@
 
  		</section>
  		<script id="mapAddress" type="text/x-handlerbars-template">
+ 			//pulling these parameters and displaying them from google maps
 			<li>
 				<h3>{{name}}</h3>
 				<p><img src="{{icon}}" alt="{{types}}"></p><br>

@@ -52,6 +52,7 @@
 		</section>
 		<?php include("footer.php"); ?>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/jquery.uniform.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/home.js"></script>

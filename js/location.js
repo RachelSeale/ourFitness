@@ -83,28 +83,34 @@ $(function () {
 	});
 
 	function createMarker(position, place) {
+		//Pop ups on google map to show the name
+
 		var content = '<h1>' + place.name + '</h1>'; 
 
 		if (place.opening_hours && place.opening_hours.open_now) {
 			content += '<h1> Open now </h1>';
 		}
-
+		//location 
 		content += '<p>' + place.vicinity + '</p>';
+
+		//website
 		content += '<p> <a href="' + place.website +'">' + place.website +' </a></p>';
 
-	
+		//creating the marker
 		var marker = new google.maps.Marker({
 		      position: position,
 		      map: map,
 		      title: place.name  
   		});
 
+		//click event on the marker to display popup window
   		google.maps.event.addListener(marker, 'click', function() {
   			infoWindow.setContent(content);
 		    infoWindow.open(map,marker);
 		 });
 	}
 
+	//to display what is being pulled through from google maps
 	function listPlaces (places) {
 		
 		var output = '';
@@ -119,6 +125,7 @@ $(function () {
 		 var request = {
 		    location: location,
 		    radius: parseInt($('[name="radius"]:checked').val(), 10) * 1600,
+		    //display only ones with type=gym
 		    types: ['gym'],
 		  }
 
@@ -155,7 +162,8 @@ $(function () {
 			
 		});
 	}
-
+	
+	//displaying the map
 	function initialize(location) {
 
 		map.setCenter(location);

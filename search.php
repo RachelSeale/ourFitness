@@ -37,6 +37,7 @@
 				</form>
 				<section class="list-of-recipes">
 				<?php
+					//setting variables - determine if a variable is set and is not NULL
 					$search = isset($_GET['search']) ? $_GET['search'] : false;
 					$course = isset($_GET['course']) ? $_GET['course'] : false;
 					$quick = isset($_GET['quick']) ? $_GET['quick'] : false;
@@ -45,11 +46,14 @@
 					$terms = explode(" ", $search);
 					if (isset($_SESSION['id'])) {
 						$userID = $_SESSION['id'];
+
+						//search all(*) from search table, userID from likes table and join 
 						$query = "SELECT search.*, likes.userID AS liked FROM search LEFT JOIN likes ON search.id = likes.recipeID AND likes.userID=$userID ";
 					} else {
+
+						// else show all from search table
 						$query = "SELECT * FROM search ";
 					}
-
 
 					$filters = array();
 
@@ -92,11 +96,12 @@
 						array_push($filters, '('.$searchQuery.')');
 					}
 
+					//if there are filters join them into the search query
 					if (count($filters) > 0) {
 						$query .= "WHERE ".join("AND ", $filters);
 					}
 
-					//echo $query;
+				
 
 					//conect to database
 
@@ -108,6 +113,8 @@
 					if ($numrows > 0) {
 
 						while ($row = mysql_fetch_assoc($query)) {
+							//fetch that row with that id
+
 							$id = $row ['id'];
 							$title = $row ['title'];
 							$description = $row ['description'];
@@ -117,6 +124,7 @@
 							$calories = $row ['calories'];
 							$cookingTime = $row ['cooking time'];
 
+							//display 
 							echo "
 									<div class='recipe'> 
 									<a href='recipepage.php?id=$id'>
@@ -141,7 +149,7 @@
 						}
 
 					}
-
+					//else display message telling the user that what they search has no results
 					else {
 						$message = "No results";
 
@@ -162,6 +170,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 		<script src="js/nav.js"></script>
+		<script src="js/jquery.uniform.min.js"></script>
 		<script src="js/home.js"></script>
 		<script src="js/likeFunction.js"></script>
 	</body>

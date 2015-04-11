@@ -16,7 +16,7 @@
 
 	// MySQL
 
-	$conn = new mysqli("localhost", "root", "root", "tutorials");
+	include ('../connect.php');
 
 	$sql = "SELECT likeID FROM likes WHERE userID=$user_id AND recipeID=$recipe_id";
 	$exists = $conn->query($sql);
