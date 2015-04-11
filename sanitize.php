@@ -1,6 +1,6 @@
 <?php
 	//Taken from Chris Coyier - Sanitize Database Inputs - https://css-tricks.com/snippets/php/sanitize-database-inputs/
-	function cleanInput($input) {
+	function cleanInput ($input) {
 	 
 		$search = array(
 			'@<script[^>]*?>.*?</script>@si',   // Strip out javascript
@@ -9,28 +9,20 @@
 			'@<![\s\S]*?--[ \t\n\r]*>@'         // Strip multi-line comments
 		);
 
-		$output = preg_replace($search, '', $input);
-		return $output;
+		return preg_replace($search, '', $input);
 	}
 
 
-	function sanitize($input) {
+	function sanitize ($input) {
 		if (is_array($input)) {
-			foreach($input as $var=>$val) {
-				$output[$var] = sanitize($val);
-			}
-		}
-
-		else {
-			
-			if (get_magic_quotes_gpc()) {
-				$input = stripslashes($input);
-			}
-			
-			$input  = cleanInput($input);
-			$output = mysql_real_escape_string($input);
-		}
-		return $output;
+            return array_map('sanitize', $input);
+        } else {
+            if (get_magic_quotes_gpc()) {
+                $input = stripslashes($input);
+            }
+            $input  = cleanInput($input);
+			return mysql_real_escape_string($input);
+        }
 	}
 
 	// Also use for getting POST/GET variables
