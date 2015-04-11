@@ -105,6 +105,7 @@
 
 					//conect to database
 					include ('../connect.php');
+					mysql_connect($database, $username, $password);
 					mysql_select_db("tutorials");
 
 					$query = mysql_query($query);
