@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php 
+	session_start(); 
+	include ('sanitize.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

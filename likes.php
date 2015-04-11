@@ -1,6 +1,6 @@
 <?php
 	session_start();
-
+	include ('sanitize.php');
 	// likes.php?id=1
 
 	if (!isset($_SESSION['id'])) {
