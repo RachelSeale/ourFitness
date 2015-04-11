@@ -14,6 +14,8 @@
 
 
 	function sanitize ($input) {
+		global $conn;
+
 		if (is_array($input)) {
             return array_map('sanitize', $input);
         } else {
@@ -21,7 +23,7 @@
                 $input = stripslashes($input);
             }
             $input  = cleanInput($input);
-			return mysql_real_escape_string($input);
+			return $conn->real_escape_string($input);
         }
 	}
 

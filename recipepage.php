@@ -1,5 +1,8 @@
 <?php
 	session_start();
+	//conect to database
+	include ('../connect.php');
+	$conn = new mysqli($database, $username, $password, "tutorials");
 	include ('sanitize.php');
 ?>
 <!DOCTYPE html>
@@ -40,18 +43,9 @@
 			
 					$query = "SELECT * FROM search WHERE id = '$id'";
 
-
-					//conect to database
-
-					include ('../connect.php');
-					mysql_connect($database, $username, $password);
-					mysql_select_db("tutorials");
-
-					$query = mysql_query($query);
-					$numrows = mysql_num_rows($query);
-					if ($numrows > 0) {
+					if ($result = $conn->query($query)) {
 						//fetch that row with that id
-						while ($row = mysql_fetch_assoc($query)) {
+						while ($row = $result->fetch_assoc()) {
 							$id = $row ['id'];
 							$title = $row ['title'];
 							$description = $row ['description'];
@@ -165,17 +159,7 @@
 
 					//else display message telling the user that what they search has no results
 					else {
-						$message = "No results";
-
-						if ($search) {
-							$message .= " for <b>$search</b>";
-						}
-
-						if ($course) {
-							$message .= " in <b>$course</b>"; 
-						}
-
-						echo $message;
+						echo "Not found";
 					}
 				?>
 			</section>
