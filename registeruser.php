@@ -10,7 +10,8 @@
 			return false;
 		}
 
-		$conn = new mysqli("localhost", "root", "root", "tutorials");
+		include ('../connect.php');
+		$conn = new mysqli($database, $username, $password, "tutorials");
 		
 		if (isset($_POST["login"])) {
 
