@@ -1,5 +1,8 @@
 <?php 
-	session_start(); 
+	session_start();
+	// connect to database
+	include ('../connect.php');
+	$conn = new mysqli($database, $username, $password, "tutorials");
 	include ('sanitize.php');
 ?>
 
@@ -105,18 +108,11 @@
 						$query .= "WHERE ".join("AND ", $filters);
 					}
 
-				
-
-					//conect to database
-					include ('../connect.php');
-					mysql_connect($database, $username, $password);
-					mysql_select_db("tutorials");
-
-					$query = mysql_query($query);
-					$numrows = mysql_num_rows($query);
+					$result = $conn->query($query);
+					$numrows = $result->num_rows;
 					if ($numrows > 0) {
 
-						while ($row = mysql_fetch_assoc($query)) {
+						while ($row = $result->fetch_assoc()) {
 							//fetch that row with that id
 
 							$id = $row ['id'];

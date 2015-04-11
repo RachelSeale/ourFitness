@@ -1,5 +1,7 @@
 <?php 
-	session_start(); 
+	session_start();
+	include ('../connect.php');
+	$conn = new mysqli($database, $username, $password, "tutorials");
 	include ('sanitize.php');
 	
 	if (isset($_POST ['email']) && isset($_POST ['password'])) {
@@ -10,9 +12,6 @@
 			// Fail if basic validation
 			return false;
 		}
-
-		include ('../connect.php');
-		$conn = new mysqli($database, $username, $password, "tutorials");
 		
 		if (isset($_POST["login"])) {
 

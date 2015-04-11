@@ -1,5 +1,7 @@
 <?php
 	session_start();
+	include ('../connect.php');
+	$conn = new mysqli($database, $username, $password, "tutorials");
 	include ('sanitize.php');
 	// likes.php?id=1
 
@@ -15,9 +17,6 @@
 	$recipe_id = $_GET['id'];
 
 	// MySQL
-
-	include ('../connect.php');
-	$conn = new mysqli($database, $username, $password, "tutorials");
 
 	$sql = "SELECT likeID FROM likes WHERE userID=$user_id AND recipeID=$recipe_id";
 	$exists = $conn->query($sql);
