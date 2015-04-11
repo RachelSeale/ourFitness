@@ -40,7 +40,7 @@
 
 					//conect to database
 
-					mysql_connect("localhost", "root", "root");
+					include ('../connect.php');
 					mysql_select_db("tutorials");
 
 					$query = mysql_query($query);
