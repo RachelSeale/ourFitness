@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<head>
+	<meta name="viewport" content="width=device-width">
+</head>
 <section class="site">
 	<div id="menu" >
 	<a href="#menu" class="menu-link"></a>

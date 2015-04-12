@@ -5,6 +5,7 @@
 		<title>Our Fitness - Health and Fitness Tips</title>
 		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/index.css">
+        <meta name="viewport" content="width=device-width">
 </head>
 	<body>
 		<?php include("header.php"); ?>
