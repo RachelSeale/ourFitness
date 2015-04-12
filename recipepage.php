@@ -165,6 +165,24 @@
 			</section>
 			</div>
 
+
+		<script>
+		//changing colour
+		var elems = document.getElementsByTagName("dd");
+		for (var i=0, m=elems.length; i<m; i++) {
+		  
+			if (parseInt(elems[i].innerHTML, 10) >300) { 
+		  	elems[i].style.color="red";
+		  
+		  	} else if (parseInt(elems[i].innerHTML, 10) >200) {
+		    	elems[i].style.color="orange";
+		    
+		  	} else {
+		    	elems[i].style.color="green";
+		 	}
+		}
+		</script>
+
 		<!--Sharing buttons - FB, Pintrest and Twitter -->	
 		<script>
 		(function(d, s, id) {
