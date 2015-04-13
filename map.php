@@ -8,13 +8,17 @@
 </head>
 	<body>
 		<?php include("header.php"); ?>
-		<header class="header">
-	  		<h1 class="title"><a href="/">Our Fitness Network</a></h1>
-		</header>  
+		<header class="recipe-header">
+	  		<h1 class="title">
+	  			<img class="logo" src="images/logo2.png">
+	  			<a href="index.php">Our Fitness</a>
+	  		</h1>
+	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
+		</header>
 		<section class="site">
 			<div>
 				<form class="searchLocationForm" id="location-form">
-					<input for="form-input" type="text" placeholder="Enter your location here" id="location-input" name="location">
+					<input for="form-input" type="text" placeholder="Enter your location here" id="location-input" name="location" />
 
 					<button class="searchLocationBtn" type="submit">Go</button>
 					<p>OR</p>

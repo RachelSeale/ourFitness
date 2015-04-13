@@ -67,7 +67,8 @@ nav {
     float: right;
     display: block;
     margin: 1% 5%;
-    background: #2e3133;
+    background: #C7C7C7;
+    border-radius: 0.2em;
     padding: 20px 32px;
     position: relative;
     padding-left: 1.25em; }
@@ -78,7 +79,8 @@ nav {
     left: 0;
     top: 0.45em;
     width: 2.3em;
-    margin: 0 12%;
+    border-radius: 0.1em;
+    margin: 0 14%;
     height: 0.35em;
     background: #E9EBEB;
     box-shadow: 0 0.65em 0 0 #E9EBEB, 0 1.3em 0 0 #E9EBEB; }
@@ -97,7 +99,8 @@ nav {
     clear: both;
     position: relative;
     width: 100%;
-    background-color: #E9EBEB; }
+    background-color: #E9EBEB;
+    border: none; }
     nav li {
       display: block;
       padding: 1em;
@@ -498,7 +501,7 @@ nav {
 /*Main page search input*/
 .searchLocationForm input[type=text] {
   background: white url(../images/icons/searchicon.png) no-repeat 0px center;
-  padding: 20px 10px 9px 32px;
+  padding: 11px 10px 9px 32px;
   margin-top: 2%;
   width: 30%;
   font-size: 13px; }
@@ -571,19 +574,13 @@ input[type=submit],
 .recipe-search label {
   font-family: "Solomon", Arial, Helvetica, sans-serif; }
 
-.login-form button[type=submit] {
-  background: white;
-  padding: 7px 0px 8px 1px;
-  width: 77px;
-  margin-top: 1%; }
-
 .searchLocationBtn,
 .locationBtn {
   padding: 0.9%;
   width: 7%;
   color: white;
   border: 1px solid #76cdd3;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   display: inline-block;
   background: #76cdd3;
   vertical-align: bottom;
@@ -690,6 +687,10 @@ input[type=submit],
   font-family: "Solomon", Arial, Helvetica, sans-serif; }
   .searchLocationForm p {
     display: inline-block; }
+    @media screen and (max-width: 750px) {
+      .searchLocationForm p {
+        display: block;
+        margin: 5px 0; } }
 
 .resultsMapSection {
   padding-top: 4%; }
@@ -706,10 +707,28 @@ input[type=submit],
   .register-form:last-child {
     margin-right: 0; }
 
-.register-form input[type=text] {
+.login-form input[type=text], .login-form input[type=email], .login-form input[type=password],
+.register-form input[type=text],
+.register-form input[type=email],
+.register-form input[type=password] {
   background: none;
   width: 35%;
   padding: 5px 0px 6px 6px;
+  margin-top: 1%; }
+  @media screen and (max-width: 500px) {
+    .login-form input[type=text], .login-form input[type=email], .login-form input[type=password],
+    .register-form input[type=text],
+    .register-form input[type=email],
+    .register-form input[type=password] {
+      display: inline-block;
+      width: 100%;
+      margin: 5px 0; } }
+
+.login-form button[type=submit],
+.register-form button[type=submit] {
+  background: white;
+  padding: 7px 0px 8px 1px;
+  width: 77px;
   margin-top: 1%; }
 
 header .hashtag-name a {

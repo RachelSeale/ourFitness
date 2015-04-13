@@ -33,7 +33,7 @@
 						<a href="search.php?course=drinks">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/blueberrySmoothie.png"> 
+						    	<img src="images/recipeImages/23.jpg"> 
 						 		<div class="name">
 						 			<h3>Drinks</h3>
 						 		</div>

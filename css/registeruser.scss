@@ -5,11 +5,27 @@
 	padding: 2%;
 }
 
+.login-form,
 .register-form {
-	input[type=text] {
+	input[type=text], input[type=email], input[type=password] {
+
+		@include media($mobile) {
+			display: inline-block;
+			width: 100%;
+			margin: 5px 0;
+		}
+
 		background: none;
 		width: 35%;
 		padding: 5px 0px 6px 6px;
 		margin-top: 1%;
 	}
+}
+
+.login-form button[type=submit],
+.register-form button[type=submit]  {
+	background: white;
+	padding: 7px 0px 8px 1px;
+	width: 77px;
+	margin-top: 1%;
 }

@@ -3,7 +3,7 @@
 .searchLocationForm{
 	input[type=text] {
 		background: white url(../images/icons/searchicon.png) no-repeat 0px center;
-		padding: 20px 10px 9px 32px;
+		padding: 11px 10px 9px 32px;
 		margin-top: 2%;
 		width: 30%;
 		font-size: 13px;
@@ -103,12 +103,6 @@ input[type=submit],
 	}
 }
 
-.login-form button[type=submit] {
-	background: white;
-	padding: 7px 0px 8px 1px;
-	width: 77px;
-	margin-top: 1%;
-}
 
 .searchLocationBtn,
 .locationBtn {
@@ -116,7 +110,7 @@ input[type=submit],
 	width: 7%;
 	color: white;
 	border: 1px solid #76cdd3;
-	border-radius: 0.5em;
+	border-radius: 0.2em;
 	display: inline-block;
 	background: $sky-blue;
 	vertical-align: bottom;

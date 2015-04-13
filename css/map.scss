@@ -55,6 +55,10 @@
 
 	p{
 		display: inline-block;
+		@include media($tablet) {
+        	display: block;
+        	margin: 5px 0;
+      }
 	}
 }
 
