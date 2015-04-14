@@ -44,6 +44,7 @@
 			</div>
 
  		</section>
+ 		<?php include("footer.php"); ?>
  		<script id="mapAddress" type="text/x-handlerbars-template">
  			<!-- pulling these parameters and displaying them from google maps -->
 			<li>

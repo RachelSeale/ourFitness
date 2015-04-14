@@ -56,6 +56,7 @@
 		$name = $_SESSION['name'];
 		if (isset($_GET['return_url'])) {
 			header("location:".$_GET['return_url']);
+			
 		} else {
 			header("location:index.php");
 		}
@@ -101,7 +102,7 @@
 					<button type="submit" name="register"> Submit</button>
 				</form>
 		</section>
-
+		<?php include("footer.php"); ?>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>

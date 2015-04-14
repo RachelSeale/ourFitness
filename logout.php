@@ -6,3 +6,4 @@ header("location:index.php");
 exit();
 
 ?>
+<?php include("footer.php"); ?>

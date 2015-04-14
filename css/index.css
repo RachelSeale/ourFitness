@@ -177,7 +177,7 @@ nav {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
     .list-of-recipes .recipe:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 850px) {
       .list-of-recipes .recipe {
         float: left;
         display: block;
@@ -338,13 +338,17 @@ nav {
     position: relative; }
     .recipe-page .image:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 850px) {
+      .recipe-page .image {
+        width: 42%; } }
     @media screen and (max-width: 650px) {
       .recipe-page .image {
         float: left;
         display: block;
         margin-right: 16.03631%;
-        width: 41.98184%;
-        width: 70%; }
+        width: 100%;
+        width: 70%;
+        margin: 0 auto; }
         .recipe-page .image:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 500px) {
@@ -352,9 +356,7 @@ nav {
         float: left;
         display: block;
         margin-right: 38.19821%;
-        width: 100%;
-        margin-right: 5px;
-        margin-left: 5px; }
+        width: 100%; }
         .recipe-page .image:last-child {
           margin-right: 0; } }
   .recipe-page .recipe-image {
@@ -370,11 +372,19 @@ nav {
     width: 57.35098%; }
     .recipe-page .details:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 850px) {
       .recipe-page .details {
         float: left;
         display: block;
         margin-right: 7.42297%;
+        width: 46.28851%; }
+        .recipe-page .details:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 650px) {
+      .recipe-page .details {
+        float: left;
+        display: block;
+        margin-right: 16.03631%;
         width: 100%; }
         .recipe-page .details:last-child {
           margin-right: 0; } }
@@ -391,12 +401,22 @@ nav {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%; }
+        width: 31.76157%;
+        font-size: 19px; }
         .recipe-page .details .icons li:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 850px) {
+          .recipe-page .details .icons li {
+            font-size: 15px; } }
+        @media screen and (max-width: 500px) {
+          .recipe-page .details .icons li {
+            font-size: 12px; } }
   .recipe-page .description {
     margin-top: 25px;
     font-style: italic; }
+    @media screen and (max-width: 500px) {
+      .recipe-page .description {
+        padding: 5px; } }
   .recipe-page .share-buttons {
     float: left;
     display: block;
@@ -476,7 +496,9 @@ nav {
           margin-right: 38.19821%;
           width: 100%; }
           .recipe-page .method .ingrediants:last-child {
-            margin-right: 0; } }
+            margin-right: 0; }
+          .recipe-page .method .ingrediants li {
+            margin-left: 17px; } }
       .recipe-page .method .ingrediants li {
         list-style-type: disc; }
     .recipe-page .method .instructions {
@@ -496,7 +518,9 @@ nav {
           margin-right: 38.19821%;
           width: 100%; }
           .recipe-page .method .instructions:last-child {
-            margin-right: 0; } }
+            margin-right: 0; }
+          .recipe-page .method .instructions li {
+            margin-left: 17px; } }
 
 /*Main page search input*/
 .searchLocationForm input[type=text] {
@@ -665,7 +689,7 @@ input[type=submit],
         margin-right: 0; }
       .site .resultAddressSection li:nth-child(3n+1) {
         clear: left; }
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: 850px) {
         .site .resultAddressSection li {
           float: left;
           display: block;
@@ -687,7 +711,7 @@ input[type=submit],
   font-family: "Solomon", Arial, Helvetica, sans-serif; }
   .searchLocationForm p {
     display: inline-block; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 850px) {
       .searchLocationForm p {
         display: block;
         margin: 5px 0; } }
@@ -758,7 +782,7 @@ header .hashtag-name a {
     margin-right: 0; }
   .insta-images:nth-child(3n+1) {
     clear: left; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     .insta-images {
       float: left;
       display: block;
@@ -933,6 +957,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 125px; }
+    width: 90px; }
 
 /*# sourceMappingURL=index.css.map */

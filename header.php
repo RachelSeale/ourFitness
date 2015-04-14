@@ -11,23 +11,21 @@
 				<li><a href="map.php">Map</a></li>
 				<li><a href="recipe.php">Recipes</a></li>
 				<li><a href="trends.php">#Trends</a></li>
-				<li><a href="/contact.html">Contact</a></li>
-				<li>
+				
 					<?php
 		          		if (isset($_SESSION['name'])) {
 							$name = $_SESSION['name'];
 							echo "
-								<li>
-								<div class='welcome-message'>
-									<a href='search.php?liked=true'>Saved recipes</a>
-									<a href='logout.php'>Log Out</a>
-								</div>
-								</li>";
+								
+									<li><a href='search.php?liked=true'>Saved recipes</a></li>
+									<li><a href='logout.php'>Log Out</a></li>
+								
+								";
 						} else {
-							echo "<a href='registeruser.php'><i class='fa fa-user'></i><b>Login</b></a>"; 
+							echo "<li><a href='registeruser.php'><i class='fa fa-user'></i><b>Login</b></a></li>"; 
 						}
 					?>
-				</li>
+				
 	        </ul>
 	    </nav>
 	</div>

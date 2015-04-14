@@ -30,7 +30,7 @@
 		  			$liked = isset($_GET['liked']) ? true : false;
 
 		  			if ($liked) {
-		  				echo "<h2>Your likes... </h2>";
+		  				echo "<h2>Hi $name, here are your likes... </h2>";
 		  			} else {
 		  				echo "<h2>Find your favourite healthy and low calories recipes here...</h2>";	
 		  			}
@@ -165,6 +165,7 @@
 					}
 				?>
 			</section>
+			<?php include("footer.php"); ?>
 			</div>
 		</section>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

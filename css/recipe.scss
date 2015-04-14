@@ -245,15 +245,18 @@
         @include span-columns(4); 
         position: relative;
 
-        @include media($phablet) {
-            @include span-columns(1);
-            width: 70%;
+        @include media($tablet) {
+            width: 42%;
         } 
+
+        @include media($phablet) {
+          @include span-columns(2);
+          width: 70%;
+          margin: 0 auto;
+        }
 
         @include media($mobile) {
             @include span-columns(1);
-            margin-right: 5px;
-            margin-left: 5px;
         } 
     }
 
@@ -269,7 +272,11 @@
     @include span-columns(7);
 
         @include media($tablet) {
-        	@include span-columns(4);
+        	@include span-columns(2);
+        } 
+
+         @include media($phablet) {
+          @include span-columns(2);
         } 
 
         h3 {
@@ -288,13 +295,24 @@
 
             li {
                @include span-columns(4); 
+               font-size: 19px;
+                @include media($tablet) { 
+                	font-size: 15px;
+               } 
+
+            	 @include media($mobile) {
+                	font-size: 12px;
+               } 
             }
         }
     }
 
     .description {
 	  	margin-top: 25px;
-		font-style: italic;
+		  font-style: italic;
+       @include media($mobile) {
+          padding: 5px;
+      }
 	}
 
     .share-buttons {
@@ -325,28 +343,28 @@
   	}
 
     .nutrition-servings {
-		@include span-columns(12);
-		display: flex;
-		margin-top: 15px;
+  		@include span-columns(12);
+  		display: flex;
+  		margin-top: 15px;
 
-		dl {
-			text-align: center;
-			width: 10%;
-			display: block;
-			width: 70px;
-			margin-right: 2px;
-		}
+  		dl {
+  			text-align: center;
+  			width: 10%;
+  			display: block;
+  			width: 70px;
+  			margin-right: 2px;
+  		}
 
-		dt {
-			background: $pastel-green;
-			border-top-left-radius: 5px;
-			border-top-right-radius: 5px;
-		}
+  		dt {
+  			background: $pastel-green;
+  			border-top-left-radius: 5px;
+  			border-top-right-radius: 5px;
+  		}
 
-		dd {
-			background: $white;
-		}
-	}
+  		dd {
+  			background: $white;
+  		}
+  	}
 
     .method {
         @include span-columns(12);
@@ -359,15 +377,19 @@
         }
 
         .ingrediants {
-		    @include span-columns(3);
-		    background-color: $white;
-		    padding: 3%;
-		    padding: 2% 3%;
-		    border-right: 2px solid #ECECF0;
+  		    @include span-columns(3);
+  		    background-color: $white;
+  		    padding: 3%;
+  		    padding: 2% 3%;
+  		    border-right: 2px solid #ECECF0;
 
-		    @include media($mobile) {
-		      @include span-columns(1);
-		    } 
+  		    @include media($mobile) {
+  		      @include span-columns(1);
+
+            li {
+              margin-left: 17px;
+            }
+  		    } 
 
 	        li {
 	            list-style-type: disc;
@@ -382,6 +404,10 @@
 
             @include media($mobile) {
               @include span-columns(1);
+
+              li {
+                margin-left: 17px;
+              }
             } 
         }
     }

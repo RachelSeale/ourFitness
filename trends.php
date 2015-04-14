@@ -38,6 +38,6 @@
 		    });
 		    userFeed.run();
 		</script>
-		
 	</body>
 </html>
+<?php include("footer.php"); ?>
