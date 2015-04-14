@@ -8,13 +8,13 @@
 </head>
 	<body>
 		<?php include("header.php"); ?>
-		<header class="recipe-header">
-	  		<h1 class="title">
-	  			<img class="logo" src="images/logo2.png">
-	  			<a href="index.php">Our Fitness</a>
-	  		</h1>
-	  		<h2> Looking for healthy recipes? Looking to get fit? </h2>
-		</header>
+		<header class="header">
+			<img class="logo" src="images/logo2.png">
+	  		<h1 class="title"><a href="index.php">Our Fitness </a></h1>
+		</header> 
+		<div class="welcome-info">
+			<h2> Looking for local sport activities? Looking to get fit? </h2> 	
+		</div>
 		<section class="site">
 			<div>
 				<form class="searchLocationForm" id="location-form">
