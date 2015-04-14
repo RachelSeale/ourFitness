@@ -919,6 +919,9 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media screen and (max-width: 850px) {
+    .search-location .content {
+      background-image: url("../images/fitness-mob.jpg"); } }
   .search-location .content p {
     color: white;
     font-family: "Solomon", Arial, Helvetica, sans-serif;

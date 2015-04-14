@@ -113,6 +113,10 @@ body {
       -o-background-size: cover;
       background-size: cover;
 
+      @include media($tablet) {
+      	background-image: url("../images/fitness-mob.jpg");
+      }
+
       p{
         color: white;
         font-family: $font-family;
