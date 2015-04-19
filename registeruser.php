@@ -15,14 +15,19 @@
 		
 		if (isset($_POST["login"])) {
 
-			$sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password' ";
+			$sql = "SELECT * FROM users WHERE email = '$email' ";
 
 			$result = $conn->query($sql);
 
 			if ($result->num_rows === 1) {
 				while ($row = $result->fetch_assoc()) {
-					$_SESSION['name'] = $row['name'];
-					$_SESSION['id'] = $row['id'];
+
+					if (password_verify ($password, $row['password'])) {
+						$_SESSION['name'] = $row['name'];
+						$_SESSION['id'] = $row['id'];
+					} else {
+						echo "Username and password did not match";
+					}
 				}
 				$formSubmitted = true;
 			} else {
@@ -38,6 +43,7 @@
 				return false;
 			}
 
+			$password = password_hash($password, PASSWORD_BCRYPT);
 			
 			$sql = "INSERT INTO users (email, name, password) values ('$email','$name','$password')";
 
