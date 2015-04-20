@@ -40,14 +40,17 @@
 		 		<div class="idea1">
 		 			<h2>Search</h2>		 				
 					<img src="images/icons/search.png"></img>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis viverra leo, ut laoreet felis viverra eget. Etiam quis sem eget metus mattis convallis. Mauris pulvinar augue ex, nec auctor ante auctor at. In sit amet tellus a nisi venenatis semper. Praesent sit amet sollicitudin lorem. Nulla aliquet, felis vitae mollis auctor, lorem eros tempus massa, vel placerat justo metus sit amet magna.</p>
 				</div>
 			 	<div class="idea2">
 			 		<h2>Find</h2>
 					<img src="images/icons/map.png"></img>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis viverra leo, ut laoreet felis viverra eget. Etiam quis sem eget metus mattis convallis. Mauris pulvinar augue ex, nec auctor ante auctor at. In sit amet tellus a nisi venenatis semper. Praesent sit amet sollicitudin lorem. Nulla aliquet, felis vitae mollis auctor, lorem eros tempus massa, vel placerat justo metus sit amet magna.</p>
 		 		</div>
 		 		<div class="idea3">
 					<h2>Go & Share</h2>
 		 			<img src="images/icons/share.png"></img>
+		 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis viverra leo, ut laoreet felis viverra eget. Etiam quis sem eget metus mattis convallis. Mauris pulvinar augue ex, nec auctor ante auctor at. In sit amet tellus a nisi venenatis semper. Praesent sit amet sollicitudin lorem. Nulla aliquet, felis vitae mollis auctor, lorem eros tempus massa, vel placerat justo metus sit amet magna.</p>
 	 			</div>
 			</div>
 		</section>

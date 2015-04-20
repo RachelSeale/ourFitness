@@ -37,6 +37,9 @@ body {
   background-color: $white;
 }
 
+.site {
+  @include outer-container;
+}
 
 @import "header";
 @import "recipe";

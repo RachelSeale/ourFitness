@@ -39,8 +39,10 @@
 					<input type='hidden' name='course' value="<?php echo isset($_GET['course']) ? $_GET['course'] : '' ; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo isset($_GET['search']) ? $_GET['search'] : '' ; ?>' />
 					<input type='submit' value='Search' />
-					<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
-					<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
+					<div class='filters'>
+						<input id="quick" type='checkbox' name='quick' /><label for="quick">Quick and Easy</label>
+						<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
+					</div>
 				</form>
 				<section class="list-of-recipes">
 				<?php
@@ -171,7 +173,6 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 		<script src="js/nav.js"></script>
-		<script src="js/jquery.uniform.min.js"></script>
 		<script src="js/home.js"></script>
 		<script src="js/likeFunction.js"></script>
 	</body>

@@ -31,6 +31,15 @@ html, body {
 body {
   background-color: #FFF; }
 
+.site {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .site:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 header {
   font-weight: bold;
   color: #76cdd3;
@@ -154,6 +163,9 @@ nav {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (max-width: 850px) {
+    .list-of-recipes {
+      padding: 2%; } }
   @media screen and (max-width: 650px) {
     .list-of-recipes {
       margin-left: 10%;
@@ -584,9 +596,9 @@ input[type=password]:focus {
 
 input[type=submit],
 .login-form button[type=submit] {
-  background: white url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  background: #FFF;
   border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
+  padding: 9px 0;
   width: 100px;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
@@ -769,7 +781,7 @@ header .hashtag-name a {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  height: 465px;
+  height: 470px;
   margin-top: 2%;
   -webkit-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
@@ -782,12 +794,36 @@ header .hashtag-name a {
     margin-right: 0; }
   .insta-images:nth-child(3n+1) {
     clear: left; }
+  .insta-images img {
+    position: relative; }
   @media screen and (max-width: 850px) {
     .insta-images {
       float: left;
       display: block;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 46.28851%; }
+      .insta-images:last-child {
+        margin-right: 0; }
+      .insta-images:nth-child(0n) {
+        margin-right: 0; }
+      .insta-images:nth-child(0n+1) {
+        clear: left; } }
+  @media screen and (max-width: 650px) {
+    .insta-images {
+      float: left;
+      display: block;
+      margin-right: 16.03631%;
+      width: 41.98184%; }
+      .insta-images:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .insta-images {
+      float: left;
+      display: block;
+      margin-right: 38.19821%;
+      width: 100%;
+      width: 90%;
+      margin-left: 5%; }
       .insta-images:last-child {
         margin-right: 0; } }
   .insta-images .fa-heart {

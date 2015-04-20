@@ -52,6 +52,10 @@
 .list-of-recipes {
 	@include outer-container;
 
+  @include media($tablet) {
+    padding: 2%;
+  }
+
   @include media($phablet) {
     margin-left: 10%;
     margin-right: 10%;

@@ -15,12 +15,10 @@
 	  		</h1>
 	  		<h2 class="hashtag-name"><a href="https://instagram.com/activegirlsussex/">#girlsourfitness</a></h2>
 		</header>
-		<section class="site">
-			<div class="content">
-				<div class="instafeed" id="instafeed">
-				</div>
-			</div>
-		
+		<section class="site">	
+				<div class="instafeed" id="instafeed"></div>	
+		</section>
+
 
 		<script type="text/javascript" src="js/instafeed.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,6 +36,6 @@
 		    });
 		    userFeed.run();
 		</script>
+	<?php include("footer.php"); ?>
 	</body>
 </html>
-<?php include("footer.php"); ?>

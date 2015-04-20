@@ -14,7 +14,7 @@ header {
 	display: inline-block;
 	@include span-columns(4);
 	@include omega(3n);
-	height: 465px;
+	height: 470px;
 	margin-top: 2%;
 	-webkit-border-radius:0 0 7px 7px;
 	border-radius:0 0 7px 7px;
@@ -22,8 +22,24 @@ header {
 	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 
+	img {
+		position: relative;
+	}
+
 	@include media($tablet) {
-		@include span-columns(4);
+		@include span-columns(2);
+		@include omega(0n);
+  	}
+
+  	@include media($phablet) {
+  		@include span-columns(1);
+  		
+  	}
+
+  	@include media($mobile) {
+  		@include span-columns(1);	
+  		width: 90%;
+  		margin-left: 5%
   	}
 
 	.fa-heart {
