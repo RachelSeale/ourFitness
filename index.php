@@ -6,6 +6,7 @@
 		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/index.css">
         <meta name="viewport" content="width=device-width">
+        <script src="js/modernizr.js"></script>
 </head>
 	<body>
 		<?php include("header.php"); ?>

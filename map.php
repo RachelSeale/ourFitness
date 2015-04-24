@@ -14,6 +14,7 @@
 		</header> 
 		<div class="welcome-info">
 			<h2> Looking for local sport activities? Looking to get fit? </h2> 	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio ligula, fermentum id sem a, bibendum pharetra risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sed velit nec mi rhoncus gravida. Sed scelerisque sagittis ex id efficitur.</p>
 		</div>
 		<section class="site">
 			<div>
@@ -22,8 +23,7 @@
 
 					<button class="searchLocationBtn" type="submit">Go</button>
 					<p>OR</p>
-					<button class="locationBtn" id="location-button" type="button">Find my location</button>
-					
+					<button class="locationBtn" id="location-button" type="button">Find my location</button><br>
 					<label for="">2miles
 						<input type="radio" name="radius" value="2" checked />
 					</label>
@@ -51,7 +51,7 @@
 				<h3>{{name}}</h3>
 				<p><img src="{{icon}}" alt="{{types}}"></p><br>
 				<p>{{formatted_address}}</p><br>
-				<p>{{formatted_phone_number}}</p><br>
+				<div class="telphoneNo"><b>Tel:</b>{{formatted_phone_number}}</div><br>
 				<p><a href="{{website}}">{{name}} Website</a></p>
 
 			</li>

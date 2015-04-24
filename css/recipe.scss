@@ -100,6 +100,10 @@
             font-family: $font-family;
 	    }
 
+      p {
+            padding: 3%;
+      }
+
 	   .likes {
             width:45px;
             height:35px;
@@ -131,6 +135,14 @@
 
 }
 
+
+.recipeCheckboxes {
+  display: inline-block;
+
+  @include media($phablet) {
+    display: block;
+  }
+}
 
 .image {
   position:relative;
@@ -220,6 +232,7 @@
 }
 
 /* RECIPE PAGE */
+
 
 .recipe-page {
     @include outer-container;

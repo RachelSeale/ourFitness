@@ -223,6 +223,8 @@ nav {
       vertical-align: middle;
       line-height: 50px;
       font-family: "Solomon", Arial, Helvetica, sans-serif; }
+    .list-of-recipes .recipe p {
+      padding: 3%; }
     .list-of-recipes .recipe .likes {
       width: 45px;
       height: 35px;
@@ -242,6 +244,12 @@ nav {
     color: black; }
   .list-of-recipes .course .name {
     background: #A2F3A8; }
+
+.recipeCheckboxes {
+  display: inline-block; }
+  @media screen and (max-width: 650px) {
+    .recipeCheckboxes {
+      display: block; } }
 
 .image {
   position: relative;
@@ -670,17 +678,27 @@ input[type=submit],
     margin-right: 0; }
     .site .resultsMapSection:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      .site .resultsMapSection {
+        float: left;
+        display: block;
+        margin-right: 38.19821%;
+        width: 514.59462%;
+        display: none; }
+        .site .resultsMapSection:last-child {
+          margin-right: 0; } }
   .site .resultAddressSection {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-size: 17px; }
     .site .resultAddressSection:last-child {
       margin-right: 0; }
     .site .resultAddressSection h3 {
-      font-family: "Solomon", Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      display: inline-block; }
+      display: inline-block;
+      color: #76cdd3; }
     .site .resultAddressSection li {
       padding: 2%;
       display: inline-block;
@@ -714,7 +732,12 @@ input[type=submit],
       vertical-align: bottom; }
     .site .resultAddressSection p {
       display: inline-block;
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      color: #A2F3A8; }
+    .site .resultAddressSection a {
+      color: #ed7aad; }
+    .site .resultAddressSection .telephoneNo {
+      color: grey; }
 
 .searchLocationForm {
   text-align: center;
@@ -987,7 +1010,9 @@ footer {
         margin-right: 7.42297%;
         width: 100%; }
         .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
-          margin-right: 0; } }
+          margin-right: 0; }
+        .sub-content .idea1 p, .sub-content .idea2 p, .sub-content idea3 p {
+          padding: 0 20px; } }
   .sub-content h2 {
     text-align: center;
     font-family: "Solomon", Arial, Helvetica, sans-serif;

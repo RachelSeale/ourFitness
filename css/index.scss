@@ -143,6 +143,11 @@ body {
 
     @include media($tablet) {
       @include span-columns(4);
+
+      p {
+         padding: 0 20px;
+      }
+
     }
   }
 

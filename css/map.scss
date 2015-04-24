@@ -2,17 +2,25 @@
 .site {
 	@include outer-container;
 	margin: 0 auto;
+
 	.resultsMapSection {
 		@include span-columns(12);
 		@include omega();
+
+		@include media($mobile) {
+    		@include span-columns(4);
+    		display: none;
+		}
 	}
+
 	.resultAddressSection {
 		@include span-columns(12);
+		font-family: $font-family;
+		font-size: 17px;
 
 		h3 {
-			font-family: $font-family;
-			font-size: 17px;
 			display: inline-block;
+			color: $sky-blue;
 		}
 
 		li {
@@ -41,6 +49,15 @@
 		p {
 			display: inline-block;
 			vertical-align: bottom;
+			color: $pastel-green;
+		}
+
+		a {
+			color: $pastel-pink;
+		}
+
+		.telephoneNo {
+			color: grey;
 		}
 	}
 
