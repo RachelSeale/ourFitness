@@ -17,7 +17,7 @@
 		<section class="site">
 			<div class="welcome-info">
 				<h2> Looking for local sport activities? Looking to get fit? </h2>
-				<p> Use We Our Fitness to search to find local sporting activities and gyms near you. Also while your here search for healthy recipes and share your experices with the hashtag <a href="trends.php"><b>#WeOurFitness</b></a></p>
+				<p> Use Our Fitness to find sporting activities and gyms in your area. Whilst you’re here, why not search for healthy recipes, try them out and share with your friends on social media using the hashtag <a href="trends.php"><b>#girlsourfitness</b></a></p>
 			</div>
 		</section>
 
@@ -41,17 +41,17 @@
 		 		<div class="idea1">
 		 			<h2>Search</h2>		 				
 					<img src="images/icons/search.png"></img>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis viverra leo, ut laoreet felis viverra eget. Etiam quis sem eget metus mattis convallis. Mauris pulvinar augue ex, nec auctor ante auctor at. In sit amet tellus a nisi venenatis semper. Praesent sit amet sollicitudin lorem. Nulla aliquet, felis vitae mollis auctor, lorem eros tempus massa, vel placerat justo metus sit amet magna.</p>
+					<p>Simply find your local gyms by typing in your postcode or town. You can also search for healthy recipes to tickle your taste buds, and even save them for the future.</p>
 				</div>
 			 	<div class="idea2">
 			 		<h2>Find</h2>
 					<img src="images/icons/map.png"></img>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis viverra leo, ut laoreet felis viverra eget. Etiam quis sem eget metus mattis convallis. Mauris pulvinar augue ex, nec auctor ante auctor at. In sit amet tellus a nisi venenatis semper. Praesent sit amet sollicitudin lorem. Nulla aliquet, felis vitae mollis auctor, lorem eros tempus massa, vel placerat justo metus sit amet magna.</p>
+					<p>Need to find your nearest gym? Find it right here on our site, and why not find healthy recipes to make after that gym session.</p>
 		 		</div>
 		 		<div class="idea3">
 					<h2>Go & Share</h2>
 		 			<img src="images/icons/share.png"></img>
-		 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis viverra leo, ut laoreet felis viverra eget. Etiam quis sem eget metus mattis convallis. Mauris pulvinar augue ex, nec auctor ante auctor at. In sit amet tellus a nisi venenatis semper. Praesent sit amet sollicitudin lorem. Nulla aliquet, felis vitae mollis auctor, lorem eros tempus massa, vel placerat justo metus sit amet magna.</p>
+		 			<p>Then why not share your Our Fitness experience with your family and friends. Simply share through our <a href="instagram.com/activegirlsussex/">Instagram</a>, <a href="https://twitter.com/Active_Sussex">Twitter</a> and <a href="http://activegirlsussex.tumblr.com/">Tumblr</a> page, with your friends or family or keep them secret to yourself.</p>
 	 			</div>
 			</div>
 		</section>

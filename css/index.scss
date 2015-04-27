@@ -63,6 +63,7 @@ body {
 
 .logo {
   vertical-align: bottom;
+  width: 64px;
 }
 
 /*****************************************************************************/
@@ -86,7 +87,7 @@ body {
 
         a {
           text-decoration: none;
-          color: black;
+          color: $pastel-pink;
         }
       } 
 
@@ -138,16 +139,19 @@ body {
   $tablet: new-breakpoint(max-width 660px  4);
   $mobile: new-breakpoint(max-width 500px 1);
 
-  .idea1, .idea2, idea3 {
+  .idea1, .idea2, .idea3 {
     @include span-columns(4);
 
-    @include media($tablet) {
-      @include span-columns(4);
+  a {
+      color: $pastel-pink;
+      text-decoration: none;
+  }
 
+  @include media($tablet) {
+    @include span-columns(4);
       p {
          padding: 0 20px;
       }
-
     }
   }
 
@@ -155,7 +159,6 @@ body {
     text-align: center;
     font-family: $font-family;
     color: $sky-blue;
-
   }
 
   img {

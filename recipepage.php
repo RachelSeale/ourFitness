@@ -54,6 +54,9 @@
 							$servingSize = $row ['serving size'];
 							$calories = $row ['calories'];
 							$protein = $row ['protein'];
+							$carbs = $row ['carbs'];
+							$sugar = $row ['sugar'];
+							$fibre = $row ['fibre'];
 							$cookingTime = $row ['cooking time'];
 							$description = $row ['description'];
 							$instructions = explode("\n", $row['instructions']);
@@ -108,19 +111,15 @@
 												</dl>
 												<dl>
 													<dt><span>Carbs</span></dt>
-													<dd>0g</dd>
-												</dl>
-												<dl>
-													<dt><span>Fat</span></dt>
-													<dd>0g</dd>
+													<dd>$carbs</dd>
 												</dl>
 												<dl>
 													<dt><span>Sugar</span></dt>
-													<dd>0g</dd>
+													<dd>$sugar</dd>
 												</dl>
 												<dl>
 													<dt><span>Fibre</span></dt>
-													<dd>0g</dd>
+													<dd>$fibre</dd>
 												</dl>
 											</div>
 								  		</div>
@@ -129,7 +128,7 @@
 									  	<div class='method'>
 									  	
 									  		<ul class= 'ingrediants'>
-									  		<h2>Ingrediants</h2>";
+									  		<h2>Ingredients</h2>";
 									  	
 									  	//for every ingrediants display as list
 									  	foreach ($ingrediants as $ingrediants) {

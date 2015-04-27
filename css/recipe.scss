@@ -85,6 +85,7 @@
           @include span-columns(2); 
         }
 
+
         .name {
             width:100%;
             height:50px;
@@ -125,14 +126,15 @@
 			text-decoration: none;
 			color: black;
 	 }
+}
 
-	 .course {
+.courses {
+  height: 380px;
 
-		.name {
-			background: $pastel-green;
-		}
-	}
+  @include media($mobile) {
+    height: 250px;
 
+  }
 }
 
 
@@ -400,8 +402,8 @@
   		    padding: 2% 3%;
   		    border-right: 2px solid #ECECF0;
 
-  		    @include media($mobile) {
-  		      @include span-columns(1);
+  		    @include media($tablet) {
+  		      @include span-columns(4);
 
             li {
               margin-left: 17px;
@@ -419,8 +421,8 @@
             background-color: $white;
             padding: 3%;
 
-            @include media($mobile) {
-              @include span-columns(1);
+            @include media($tablet) {
+              @include span-columns(4);
 
               li {
                 margin-left: 17px;

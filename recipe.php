@@ -31,7 +31,7 @@
 				<section class="list-of-recipes">
 
 				  	  <!-- Course Start -->
-					<div class="recipe">
+					<div class="recipe courses">
 						<a href="search.php?course=drinks">
 						<div class="image-overlay">
 							<div class="image">
@@ -42,13 +42,13 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+							<p>Whether you’re looking for your first drink of the day, or a healthy evening tipple. You’ll no doubt find what you’re looking for in our wide range of recipes. </p>
 				  		</ul>
 				  	</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="recipe"> 
+					<div class="recipe courses"> 
 						<a href="search.php?course=breakfast">
 						<div class="image-overlay">
 							<div class="image">
@@ -59,30 +59,30 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+							<p>Breakfast is the most important meal of the day. Why not make it unforgettable, by trying our range of healthy and tasty recipes.</p>
 				  		</ul>
 				  		</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="recipe"> 
+					<div class="recipe courses"> 
 						<a href="search.php?course=starters">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/recipeImages/1.jpg"> 
+						    	<img src="images/recipeImages/2.jpg"> 
 						 		<div class="name">
 						 			<h3>Starters</h3>
 						 		</div>
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+							<p>Want memorable and simple recipes? Start your evening meals with a selection of our favourite starters, which are sure to wow at any occasion. </p>
 				  		</ul>
 				  		</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="recipe"> 
+					<div class="recipe courses"> 
 						<a href="search.php?course=mains">
 						<div class="image-overlay">
 							<div class="image">
@@ -93,13 +93,13 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+							<p>Want super healthy, easy to make meals that also taste amazing? Look no further; we have a range of show stopping recipes that tick all the right boxes. </p>
 				  		</ul>
 				  		</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="recipe"> 
+					<div class="recipe courses"> 
 						<a href="search.php?course=desserts">
 						<div class="image-overlay">
 							<div class="image">
@@ -110,13 +110,13 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+							<p>Always resisting desserts for fear it’s unhealthy? Never feel guilty again with our selection of healthy dessert recipes.</p>
 				  		</ul>
 				  		</a>
 					</div>
 				  <!-- Course End -->
 				  <!-- Course Start -->
-					<div class="recipe">
+					<div class="recipe courses">
 						<a href="snacks.php">
 						<div class="image-overlay">
 							<div class="image">
@@ -127,7 +127,7 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu sit amet purus tincidunt vehicula a ut nibh. Maecenas vitae hendrerit ipsum</p>
+							<p>Find yourself snacking between meals? Click here to find alternative snack ideas that are nutritious, healthy, and will tide you over till your next meal. </p>
 				  		</ul>
 				  		</a>
 					</div>

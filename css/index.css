@@ -242,8 +242,12 @@ nav {
   .list-of-recipes a {
     text-decoration: none;
     color: black; }
-  .list-of-recipes .course .name {
-    background: #A2F3A8; }
+
+.courses {
+  height: 380px; }
+  @media screen and (max-width: 500px) {
+    .courses {
+      height: 250px; } }
 
 .recipeCheckboxes {
   display: inline-block; }
@@ -509,11 +513,11 @@ nav {
       border-right: 2px solid #ECECF0; }
       .recipe-page .method .ingrediants:last-child {
         margin-right: 0; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 850px) {
         .recipe-page .method .ingrediants {
           float: left;
           display: block;
-          margin-right: 38.19821%;
+          margin-right: 7.42297%;
           width: 100%; }
           .recipe-page .method .ingrediants:last-child {
             margin-right: 0; }
@@ -531,11 +535,11 @@ nav {
       padding: 3%; }
       .recipe-page .method .instructions:last-child {
         margin-right: 0; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 850px) {
         .recipe-page .method .instructions {
           float: left;
           display: block;
-          margin-right: 38.19821%;
+          margin-right: 7.42297%;
           width: 100%; }
           .recipe-page .method .instructions:last-child {
             margin-right: 0; }
@@ -934,7 +938,8 @@ footer {
     color: #76cdd3; }
 
 .logo {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  width: 64px; }
 
 /*****************************************************************************/
 /*
@@ -958,7 +963,7 @@ footer {
         display: none; } }
     .welcome-info p a {
       text-decoration: none;
-      color: black; }
+      color: #ed7aad; }
   .welcome-info h2 {
     text-align: center;
     font-family: "Solomon", Arial, Helvetica, sans-serif;
@@ -996,22 +1001,25 @@ footer {
     content: "";
     display: table;
     clear: both; }
-  .sub-content .idea1, .sub-content .idea2, .sub-content idea3 {
+  .sub-content .idea1, .sub-content .idea2, .sub-content .idea3 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
+    .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content .idea3:last-child {
       margin-right: 0; }
+    .sub-content .idea1 a, .sub-content .idea2 a, .sub-content .idea3 a {
+      color: #ed7aad;
+      text-decoration: none; }
     @media screen and (max-width: 660px) {
-      .sub-content .idea1, .sub-content .idea2, .sub-content idea3 {
+      .sub-content .idea1, .sub-content .idea2, .sub-content .idea3 {
         float: left;
         display: block;
         margin-right: 7.42297%;
         width: 100%; }
-        .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content idea3:last-child {
+        .sub-content .idea1:last-child, .sub-content .idea2:last-child, .sub-content .idea3:last-child {
           margin-right: 0; }
-        .sub-content .idea1 p, .sub-content .idea2 p, .sub-content idea3 p {
+        .sub-content .idea1 p, .sub-content .idea2 p, .sub-content .idea3 p {
           padding: 0 20px; } }
   .sub-content h2 {
     text-align: center;
