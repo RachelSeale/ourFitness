@@ -367,6 +367,10 @@
   		display: -webkit-inline-box;
   		margin-top: 15px;
 
+      @include media($tablet) {
+        display: none;
+      }
+
   		dl {
   			text-align: center;
   			width: 10%;

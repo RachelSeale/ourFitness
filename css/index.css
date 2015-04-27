@@ -479,6 +479,9 @@ nav {
     margin-top: 15px; }
     .recipe-page .nutrition-servings:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 850px) {
+      .recipe-page .nutrition-servings {
+        display: none; } }
     .recipe-page .nutrition-servings dl {
       text-align: center;
       width: 10%;
