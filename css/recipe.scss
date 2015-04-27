@@ -21,6 +21,7 @@
    	h2,
    	p {
      	font-family: $font-family;
+      font-weight: normal;
     }
  }
 
@@ -363,7 +364,7 @@
 
     .nutrition-servings {
   		@include span-columns(12);
-  		display: flex;
+  		display: -webkit-inline-box;
   		margin-top: 15px;
 
   		dl {

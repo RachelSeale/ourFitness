@@ -136,7 +136,8 @@ nav {
   .site h1,
   .site h2,
   .site p {
-    font-family: "Solomon", Arial, Helvetica, sans-serif; }
+    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-weight: normal; }
 
 /*****************************************************************************/
 /*
@@ -474,7 +475,7 @@ nav {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    display: flex;
+    display: -webkit-inline-box;
     margin-top: 15px; }
     .recipe-page .nutrition-servings:last-child {
       margin-right: 0; }
