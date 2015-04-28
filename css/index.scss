@@ -54,6 +54,7 @@ body {
 .title {
   display: inline-block;
   font-size: 36px;
+  vertical-align: middle;
   text-transform: uppercase;
   font-family: $font-family;
 
@@ -67,7 +68,7 @@ body {
 }
 
 .logo {
-  vertical-align: bottom;
+  vertical-align: middle;
   width: 64px;
 }
 
