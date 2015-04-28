@@ -53,12 +53,17 @@ body {
 
 .title {
   display: inline-block;
-  font-size: 45px;
+  font-size: 36px;
   text-transform: uppercase;
   font-family: $font-family;
-  a {
-  color: $sky-blue;
-  }
+
+	a {
+	color: $sky-blue;
+
+		@include media($mobile) {
+			font-size: 36px;
+		}
+	}
 }
 
 .logo {

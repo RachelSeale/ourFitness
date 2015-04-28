@@ -3,17 +3,15 @@ footer {
   @include outer-container;
   background-color: $white;
   margin-top: 3%;
-  $tablet: new-breakpoint(max-width 760px  4);
-  $mobile: new-breakpoint(max-width 300px 12);
 
   .footer-info{
     text-align: center;
     margin-top: 2%;
     font-size: 12px;
-    @include span-columns(4);
+    @include span-columns(6);
 
     @include media($mobile) {
-      @include span-columns(12);
+      @include span-columns(1);
     }
   }
 }
@@ -28,8 +26,7 @@ footer {
   color: $pastel-pink;
 }
 
-.social-icons img
-{
+.social-icons img {
   max-width: 100%;
   display: block;
   -webkit-transition: 0.30s;

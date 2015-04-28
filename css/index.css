@@ -880,14 +880,14 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 48.82117%; }
     footer .footer-info:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 500px) {
       footer .footer-info {
         float: left;
         display: block;
-        margin-right: 2.35765%;
+        margin-right: 38.19821%;
         width: 100%; }
         footer .footer-info:last-child {
           margin-right: 0; } }
@@ -935,11 +935,14 @@ footer {
 /*TITLE*/
 .title {
   display: inline-block;
-  font-size: 45px;
+  font-size: 36px;
   text-transform: uppercase;
   font-family: "Solomon", Arial, Helvetica, sans-serif; }
   .title a {
     color: #76cdd3; }
+    @media screen and (max-width: 500px) {
+      .title a {
+        font-size: 36px; } }
 
 .logo {
   vertical-align: bottom;
