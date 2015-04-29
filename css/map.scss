@@ -70,12 +70,21 @@
 	color: $black;
     font-family: $font-family;
 
-	p{
+	p {
 		display: inline-block;
-		@include media($tablet) {
+		@include media($phablet) {
         	display: block;
+      	}
+
+		@include media($tablet) {
         	margin: 5px 0;
       }
+	}
+
+	label {
+		@include media($mobile) {
+        	display: block;
+      }	
 	}
 }
 

@@ -15,7 +15,7 @@ $pastel-green: #A2F3A8;
 $font-color: #2e3133;
 $sky-blue: #76cdd3;
 $pastel-pink: #ed7aad;
-$font-family: "Solomon", Arial, Helvetica, sans-serif;
+$font-family: $helvetica;
 
 
 $tablet: new-breakpoint(max-width 850px  4);
@@ -85,7 +85,7 @@ body {
       p {
         color: $black;
         font-family: $font-family;
-        padding-bottom: 2%;
+        padding: 0% 3% 0% 3%;
 
       @include media($mobile) {
         display: none;
@@ -101,7 +101,7 @@ body {
         text-align: center;
         font-family: $font-family;
         color: $pastel-green;
-        margin: -2% 0% 2% 0%;
+        margin: -1% 0% 2% 0%;
           
       @include media($mobile) {
         display: none;

@@ -8,7 +8,10 @@
 		width: 30%;
 		font-size: 13px;
 
-	 @include media($mobile) {
+	@include media($tablet) {
+        padding: 4px 10px 9px 32px;
+    }	
+	@include media($mobile) {
         width: 60%;
       }
 	}
@@ -123,7 +126,15 @@ input[type=submit],
 }
 
 .locationBtn{
-	width: 14%;
+	width: 15%;
+
+	@include media($tablet) {
+		width: 19%;
+	}
+
+	@include media($phablet) {
+		width: 23%;
+	}	
 
 	@include media($mobile) {
 		width: 37%;
@@ -134,7 +145,7 @@ input[type=submit],
 .searchLocationBtn {
 	@include media($mobile) {
         width: 18%;
-		padding: 2.4%;
+		padding: 1.2%;
 	}	
 }
 

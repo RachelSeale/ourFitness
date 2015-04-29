@@ -23,7 +23,7 @@
 
 					<button class="searchLocationBtn" type="submit">Go</button>
 					<p>OR</p>
-					<button class="locationBtn" id="location-button" type="button">Find my location</button><br>
+					<button class="locationBtn" id="location-button" type="button">Find my location</button>
 					<label for="">2miles
 						<input type="radio" name="radius" value="2" checked />
 					</label>

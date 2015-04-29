@@ -13,7 +13,7 @@ header {
 .insta-images {
 	display: inline-block;
 	@include span-columns(4);
-	@include omega(3n);
+	margin-right: 1.5%;
 	height: 470px;
 	margin-top: 2%;
 	-webkit-border-radius:0 0 7px 7px;
@@ -28,12 +28,13 @@ header {
 
 	@include media($tablet) {
 		@include span-columns(2);
-		@include omega(0n);
+		clear: none;
+		margin: 2% 1.5%;
   	}
 
   	@include media($phablet) {
   		@include span-columns(1);
-  		
+  		margin: 2% 4%;		
   	}
 
   	@include media($mobile) {

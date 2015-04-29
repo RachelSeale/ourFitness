@@ -117,7 +117,7 @@ nav {
 /* RECIPE PAGE */
 .recipe-header {
   text-align: center;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #A2F3A8; }
 
 .recipe-page p {
@@ -136,7 +136,7 @@ nav {
   .site h1,
   .site h2,
   .site p {
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal; }
 
 /*****************************************************************************/
@@ -146,7 +146,7 @@ nav {
 /*****************************************************************************/
 .search-page h2 {
   margin: 1% 0 1% 0;
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
 .search-recipes {
   text-align: center;
@@ -223,7 +223,7 @@ nav {
       text-align: center;
       vertical-align: middle;
       line-height: 50px;
-      font-family: "Solomon", Arial, Helvetica, sans-serif; }
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
     .list-of-recipes .recipe p {
       padding: 3%; }
     .list-of-recipes .recipe .likes {
@@ -334,7 +334,7 @@ nav {
   margin-top: 2%;
   background: #F3FCFF;
   padding: 2%;
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .recipe-page:after {
     content: "";
     display: table;
@@ -557,6 +557,9 @@ nav {
   margin-top: 2%;
   width: 30%;
   font-size: 13px; }
+  @media screen and (max-width: 850px) {
+    .searchLocationForm input[type=text] {
+      padding: 4px 10px 9px 32px; } }
   @media screen and (max-width: 500px) {
     .searchLocationForm input[type=text] {
       width: 60%; } }
@@ -624,7 +627,7 @@ input[type=submit],
   transition: all .5s; }
 
 .recipe-search label {
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
 .searchLocationBtn,
 .locationBtn {
@@ -636,14 +639,20 @@ input[type=submit],
   display: inline-block;
   background: #76cdd3;
   vertical-align: bottom;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 15px; }
   .searchLocationBtn input[type=submit],
   .locationBtn input[type=submit] {
     outline: none; }
 
 .locationBtn {
-  width: 14%; }
+  width: 15%; }
+  @media screen and (max-width: 850px) {
+    .locationBtn {
+      width: 19%; } }
+  @media screen and (max-width: 650px) {
+    .locationBtn {
+      width: 23%; } }
   @media screen and (max-width: 500px) {
     .locationBtn {
       width: 37%;
@@ -652,7 +661,7 @@ input[type=submit],
 @media screen and (max-width: 500px) {
   .searchLocationBtn {
     width: 18%;
-    padding: 2.4%; } }
+    padding: 1.2%; } }
 
 /* Log in Form */
 .login-form {
@@ -664,7 +673,7 @@ input[type=submit],
 
 .welcome-message h2, .welcome-message a {
   display: inline-block;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 13px;
   color: #76cdd3; }
 
@@ -700,7 +709,7 @@ input[type=submit],
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 17px; }
     .site .resultAddressSection:last-child {
       margin-right: 0; }
@@ -751,13 +760,18 @@ input[type=submit],
   text-align: center;
   padding-top: 0%;
   color: #000000;
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .searchLocationForm p {
     display: inline-block; }
+    @media screen and (max-width: 650px) {
+      .searchLocationForm p {
+        display: block; } }
     @media screen and (max-width: 850px) {
       .searchLocationForm p {
-        display: block;
         margin: 5px 0; } }
+  @media screen and (max-width: 500px) {
+    .searchLocationForm label {
+      display: block; } }
 
 .resultsMapSection {
   padding-top: 4%; }
@@ -812,6 +826,7 @@ header .hashtag-name a {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  margin-right: 1.5%;
   height: 470px;
   margin-top: 2%;
   -webkit-border-radius: 0 0 7px 7px;
@@ -821,10 +836,6 @@ header .hashtag-name a {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); }
   .insta-images:last-child {
     margin-right: 0; }
-  .insta-images:nth-child(3n) {
-    margin-right: 0; }
-  .insta-images:nth-child(3n+1) {
-    clear: left; }
   .insta-images img {
     position: relative; }
   @media screen and (max-width: 850px) {
@@ -832,19 +843,18 @@ header .hashtag-name a {
       float: left;
       display: block;
       margin-right: 7.42297%;
-      width: 46.28851%; }
+      width: 46.28851%;
+      clear: none;
+      margin: 2% 1.5%; }
       .insta-images:last-child {
-        margin-right: 0; }
-      .insta-images:nth-child(0n) {
-        margin-right: 0; }
-      .insta-images:nth-child(0n+1) {
-        clear: left; } }
+        margin-right: 0; } }
   @media screen and (max-width: 650px) {
     .insta-images {
       float: left;
       display: block;
       margin-right: 16.03631%;
-      width: 41.98184%; }
+      width: 41.98184%;
+      margin: 2% 4%; }
       .insta-images:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 500px) {
@@ -938,7 +948,7 @@ footer {
   font-size: 36px;
   vertical-align: middle;
   text-transform: uppercase;
-  font-family: "Solomon", Arial, Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .title a {
     color: #76cdd3; }
     @media screen and (max-width: 500px) {
@@ -964,8 +974,8 @@ footer {
     margin-right: 0; }
   .welcome-info p {
     color: #000000;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
-    padding-bottom: 2%; }
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    padding: 0% 3% 0% 3%; }
     @media screen and (max-width: 500px) {
       .welcome-info p {
         display: none; } }
@@ -974,16 +984,16 @@ footer {
       color: #ed7aad; }
   .welcome-info h2 {
     text-align: center;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     color: #A2F3A8;
-    margin: -2% 0% 2% 0%; }
+    margin: -1% 0% 2% 0%; }
     @media screen and (max-width: 500px) {
       .welcome-info h2 {
         display: none; } }
 
 .search-location .content {
   text-align: center;
-  font-family: "Solomon", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   background-image: url("../images/fitness.jpg");
   background-repeat: no-repeat;
   height: 300px;
@@ -996,7 +1006,7 @@ footer {
       background-image: url("../images/fitness-mob.jpg"); } }
   .search-location .content p {
     color: white;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 15px;
     padding: 1% 0; }
 
@@ -1031,7 +1041,7 @@ footer {
           padding: 0 20px; } }
   .sub-content h2 {
     text-align: center;
-    font-family: "Solomon", Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     color: #76cdd3; }
   .sub-content img {
     margin-left: auto;
