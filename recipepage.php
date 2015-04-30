@@ -77,7 +77,7 @@
 									  		<ul class='icons'>
 											    <li><i class='fa fa-clock-o'></i> $cookingTime Minutes</li>
 											    <li><i class='fa fa-tachometer'></i> $calories Calories</li>
-											    <li><i class='fa fa-cutlery'></i> $servingSize People</li>
+											    <li><i class='fa fa-cutlery'></i> $servingSize Servings</li>
 									  		</ul>
 									  		<div class='description'>
 									  			<p>$description</p>

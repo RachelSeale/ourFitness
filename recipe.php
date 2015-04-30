@@ -117,10 +117,10 @@
 				  <!-- Course End -->
 				  <!-- Course Start -->
 					<div class="recipe courses">
-						<a href="snacks.php">
+						<a href="search.php?course=snacks">
 						<div class="image-overlay">
 							<div class="image">
-						    	<img src="images/food/ingrediants.png"> 
+						    	<img src="images/recipeImages/32.jpg"> 
 						 		<div class="name">
 						 			<h3>Snacks / Light Bites</h3>
 						 		</div>
