@@ -42,7 +42,7 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Whether you&#8217;re looking for your first drink of the day, or a healthy evening tipple. You’ll no doubt find what you’re looking for in our wide range of recipes. </p>
+							<p>Whether you&#8217;re looking for your first drink of the day, or a healthy evening tipple. You&#8217;ll no doubt find what you&#8217;re looking for in our wide range of recipes. </p>
 				  		</ul>
 				  	</a>
 					</div>
