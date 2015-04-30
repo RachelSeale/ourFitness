@@ -17,7 +17,7 @@
 		<section class="site">
 			<div class="welcome-info">
 				<h2> Looking for local sport activities? Looking to get fit? </h2>
-				<p> Use Our Fitness to find sporting activities and gyms in your area. Whilst you’re here, why not search for healthy recipes, try them out and share with your friends on social media using the hashtag <a href="trends.php"><b>#girlsourfitness</b></a></p>
+				<p> Use Our Fitness to find sporting activities and gyms in your area. Whilst you&#8217;re here, why not search for healthy recipes, try them out and share with your friends on social media using the hashtag <a href="trends.php"><b>#girlsourfitness</b></a></p>
 			</div>
 		</section>
 

@@ -42,7 +42,7 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Whether you’re looking for your first drink of the day, or a healthy evening tipple. You’ll no doubt find what you’re looking for in our wide range of recipes. </p>
+							<p>Whether you&#8217;re looking for your first drink of the day, or a healthy evening tipple. You’ll no doubt find what you’re looking for in our wide range of recipes. </p>
 				  		</ul>
 				  	</a>
 					</div>
@@ -110,7 +110,7 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Always resisting desserts for fear it’s unhealthy? Never feel guilty again with our selection of healthy dessert recipes.</p>
+							<p>Always resisting desserts for fear it&#8217;s unhealthy? Never feel guilty again with our selection of healthy dessert recipes.</p>
 				  		</ul>
 				  		</a>
 					</div>
