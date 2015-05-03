@@ -14,7 +14,7 @@
 		</header> 
 		<div class="welcome-info">
 			<h2> Looking for local sport activities? Looking to get fit? </h2> 	
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio ligula, fermentum id sem a, bibendum pharetra risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sed velit nec mi rhoncus gravida. Sed scelerisque sagittis ex id efficitur.</p>
+			<p>What better way to kick off your new fitness regime then by browsing the <b class="website-name">Our Fitness</b> map page to find your local gyms and sports clubs. All you need to do is enter your postcode or click ‘Find My Location’.</p>
 		</div>
 		<section class="site">
 			<div>

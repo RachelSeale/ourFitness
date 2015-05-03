@@ -25,7 +25,7 @@
 						<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
 					</div>
 				</form>
-				<p><b>Our Fitness</b> is all about keeping fit and healthy. So this is the place to find great recipes and learn about quality cooking that everyone can try and enjoy. So why not try out our inspirational healthy, fun and colourful dishes from starters to desserts!</p>
+				<p><b class="website-name">Our Fitness</b> is all about keeping fit and healthy. This is the place to find great recipes and learn about quality cooking that everyone can try and enjoy. From starters through to desseets, why not try our range of healthy, fun and colourful dishes</p>
 				
 
 				<section class="list-of-recipes">
@@ -42,7 +42,7 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Whether you&#8217;re looking for your first drink of the day, or a healthy evening tipple. You&#8217;ll no doubt find what you&#8217;re looking for in our wide range of recipes. </p>
+							<p>Whether you&#8217;re looking for your first drink of the day, or a healthy evening tipple. You&#8217;ll no doubt find what you are looking for in our wide range of recipes. </p>
 				  		</ul>
 				  	</a>
 					</div>
@@ -76,7 +76,7 @@
 							</div>
 						</div>
 				  		<ul class="media">
-							<p>Want memorable and simple recipes? Start your evening meals with a selection of our favourite starters, which are sure to wow at any occasion. </p>
+							<p>Want memorable and simple recipes? Begin your evening meals with a selection of our favourite Starters which are sure to wow at any occasion. </p>
 				  		</ul>
 				  		</a>
 					</div>

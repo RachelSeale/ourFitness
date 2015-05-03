@@ -17,10 +17,17 @@ $sky-blue: #76cdd3;
 $pastel-pink: #ed7aad;
 $font-family: $helvetica;
 
-
 $tablet: new-breakpoint(max-width 850px  4);
 $phablet: new-breakpoint(max-width 650px  2);
 $mobile: new-breakpoint(max-width 500px 1);
+
+@import "header";
+@import "recipe";
+@import "searchInput";
+@import "map";
+@import "registeruser";
+@import "trends";
+@import "footer";
 
 /* Global Reset */
 * {
@@ -41,13 +48,9 @@ body {
   @include outer-container;
 }
 
-@import "header";
-@import "recipe";
-@import "searchInput";
-@import "map";
-@import "registeruser";
-@import "trends";
-@import "footer";
+.website-name {
+  color: $sky-blue;
+}
 
 /*TITLE*/
 

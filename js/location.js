@@ -180,7 +180,4 @@ $(function () {
 		getPlaces(location);
     }
 
-          
-
-
 });

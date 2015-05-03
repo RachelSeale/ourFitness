@@ -8,13 +8,15 @@
 </head>
 	<body>
 		<?php include("header.php"); ?>
-		<header class="recipe-header">
-	  		<h1 class="title">
-	  			<img class="logo" src="images/logo2.png">
-	  			<a href="index.php">Our Fitness</a>
-	  		</h1>
-	  		<h2 class="hashtag-name"><a href="https://instagram.com/activegirlsussex/">#girlsourfitness</a></h2>
-		</header>
+		<header class="header">
+			<img class="logo" src="images/logo2.png">
+	  		<h1 class="title"><a href="index.php">Our Fitness </a></h1>
+		</header>  
+		<section class="site">
+			<div class="welcome-info">
+				<h2> Looking for the health and fitness trends? </h2>
+				<p> Come and look at all the health and fitness images from the <b class="website-name">Our Fitness</b> Instagram page, <a href="https://instagram.com/activegirlsussex/"><b>@activegirlsussex</b></a>. Feel free to follow, like, comment and share with friends and family! Or why not get involved yourself and use the hashtag <a href="https://instagram.com/explore/tags/girlsourfitness/"><b>#girlsourfitness</b></a></p>
+			</div>
 		<section class="site">	
 				<div class="instafeed" id="instafeed"></div>	
 		</section>
