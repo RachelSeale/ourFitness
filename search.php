@@ -35,6 +35,8 @@
 		  				echo "<h2>Find your favourite healthy and low calories recipes here...</h2>";	
 		  			}
 		  		?>
+
+
 				<form class="search-recipes" action='./search.php' method='get'>
 					<input type='hidden' name='course' value="<?php echo isset($_GET['course']) ? $_GET['course'] : '' ; ?>" />
 					<input type='text' name='search' size='50' value='<?php echo isset($_GET['search']) ? $_GET['search'] : '' ; ?>' />
@@ -44,6 +46,7 @@
 						<input id="vegetarian" type='checkbox' name='vegetarian' /><label for="vegetarian">Vegetarian</label>
 					</div>
 				</form>
+
 				<section class="list-of-recipes">
 				<?php
 					//setting variables - determine if a variable is set and is not NULL
@@ -175,5 +178,15 @@
 		<script src="js/nav.js"></script>
 		<script src="js/home.js"></script>
 		<script src="js/likeFunction.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-48209576-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</body>
 </html>
