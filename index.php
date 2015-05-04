@@ -48,7 +48,7 @@
 				</div>
 			 	<div class="idea2">
 			 		<h2>Find</h2>
-					<img src="images/icons/map.png"></img>
+					<img src="images/icons/recipe.png"></img>
 					<p>Now you've found your local gym, why not find healthy recipes to make after that gym session.</p>
 		 		</div>
 		 		<div class="idea3">
