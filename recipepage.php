@@ -50,7 +50,6 @@
 							$title = $row ['title'];
 							$description = $row ['description'];
 							$keywords = $row ['keywords'];
-							$link = $row ['link'];
 							$servingSize = $row ['serving size'];
 							$calories = $row ['calories'];
 							$protein = $row ['protein'];
