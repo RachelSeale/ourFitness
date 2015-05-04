@@ -3,6 +3,11 @@
 <html>
 <head>
 	<title>Recipes - Our Fitness</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Health and fitness website, where you can search for delicous healthy recipes from starters to desserts">
+	<meta name="keywords" content="Health, healthy, fitness, recipes, fit, gyms, sport, food">
+	<meta name="author" content="Our Fitness">
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 </head>

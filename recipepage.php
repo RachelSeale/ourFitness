@@ -9,6 +9,11 @@
 <html>
 <head>
 	<title>Recipes - Our Fitness</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Health and fitness website, that provides you with step by step recipes that are healthy and tasty">
+	<meta name="keywords" content="Health, healthy, fitness, recipes, fit, gyms, sport">
+	<meta name="author" content="Our Fitness">
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">

@@ -3,6 +3,11 @@
 <html>
 <head>
 	<title>@activegirlsussex - Our Fitness</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Health and fitness website, that has a socail media presence where you can find health food recipes or fitness related images">
+	<meta name="keywords" content="Health, healthy, fitness, recipes, fit, gyms, sport, instagram">
+	<meta name="author" content="Our Fitness">
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 </head>

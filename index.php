@@ -5,7 +5,11 @@
 		<title>Our Fitness - Health and Fitness Tips</title>
 		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/index.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+		<meta name="description" content="Health and fitness website, that provides information on finding local sporting activites, recipes and up and coming fitness trends.">
+		<meta name="keywords" content="Health, healthy, fitness, recipes, fit, gyms, sport">
+		<meta name="author" content="Our Fitness">
         <script src="js/modernizr.js"></script>
 </head>
 	<body>
