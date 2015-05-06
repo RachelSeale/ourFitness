@@ -124,6 +124,7 @@ input[type=submit] {
 	}	
 	@include media($mobile) {
 		padding: 1.5%;
+		width: 26%;
 	}	
 }
 
