@@ -22,7 +22,7 @@
 			<p>What better way to kick off your new fitness regime then by browsing the <b class="website-name">Our Fitness</b> map page to find your local gyms and sports clubs. All you need to do is enter your postcode or click ‘Find My Location’.</p>
 		</div>
 		<section class="site">
-			<div>
+			<div class="mapSearch">
 				<form class="searchLocationForm" id="location-form">
 					<input for="form-input" type="text" placeholder="Enter your location here" id="location-input" name="location" />
 

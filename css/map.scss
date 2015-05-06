@@ -63,6 +63,11 @@
 
 }
 
+.mapSearch {
+	@include media($mobile) {
+		background-image: url("../images/fitness-mob.jpg"); 
+	}
+}
 
 .searchLocationForm {
 	text-align: center;

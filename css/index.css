@@ -707,6 +707,10 @@ input[type=submit] {
     .site .resultAddressSection .telephoneNo {
       color: grey; }
 
+@media screen and (max-width: 500px) {
+  .mapSearch {
+    background-image: url("../images/fitness-mob.jpg"); } }
+
 .searchLocationForm {
   text-align: center;
   padding-top: 0%;
