@@ -21,6 +21,11 @@ footer {
   text-decoration: none;
 }
 
+.footer-info p {
+  color: $font-color;
+  text-decoration: none;
+}
+
 .footer-info a:hover{
   text-decoration: underline;
   color: $pastel-pink;

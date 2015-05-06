@@ -778,7 +778,8 @@ body.search-page.js {
   background: white;
   padding: 7px 0px 8px 1px;
   width: 77px;
-  margin-top: 1%; }
+  margin-top: 1%;
+  border-radius: 1em; }
 
 header .hashtag-name a {
   text-decoration: none;
@@ -871,6 +872,10 @@ footer {
           margin-right: 0; } }
 
 .footer-info a {
+  color: #2e3133;
+  text-decoration: none; }
+
+.footer-info p {
   color: #2e3133;
   text-decoration: none; }
 
