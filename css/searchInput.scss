@@ -82,7 +82,6 @@ input[type=password]:focus {
 	width: 40%;
 }
 
-input[type=submit],
 .login-form button[type=submit] {
 	background: $white;
 	border: solid 1px #ccc;
@@ -100,7 +99,8 @@ input[type=submit],
 
 
 .searchLocationBtn,
-.locationBtn {
+.locationBtn,
+input[type=submit] {
 	padding: 0.9%;
 	width: 7%;
 	color: white;
@@ -115,6 +115,10 @@ input[type=submit],
 	input[type=submit] {
 		outline: none;
 	}
+}
+
+input[type=submit] {
+  padding: 0.7%;
 }
 
 .locationBtn{

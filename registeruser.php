@@ -11,6 +11,7 @@
 		if ($email === "" && $password === "") {
 			// Fail if basic validation
 			return false;
+			
 		}
 		
 		if (isset($_POST["login"])) {

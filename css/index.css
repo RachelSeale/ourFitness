@@ -244,14 +244,6 @@ label {
   width: 100%;
   height: 250px; }
 
-.fa-heart-o:hover {
-  animation-name: pulse;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: pulse;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite; }
-
 .icons {
   width: 100%;
   font-size: 0.7em;
@@ -265,28 +257,6 @@ label {
   display: inline-block;
   padding: 0 7px; }
 
-/* Pulse Animation for Firefox, Opera and Internet Explorer 10 */
-@keyframes pulse {
-  from {
-    transform: scale(1);
-    opacity: 1.0; }
-  50% {
-    transform: scale(1.2);
-    opacity: 1.0; }
-  to {
-    transform: scale(1);
-    opacity: 1.0; } }
-/* Pulse Animation for Google Chrome and Safari */
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale(1);
-    opacity: 1.0; }
-  50% {
-    -webkit-transform: scale(1.2);
-    opacity: 1.0; }
-  to {
-    -webkit-transform: scale(1);
-    opacity: 1.0; } }
 .image-overlay {
   position: relative;
   background: rgba(255, 255, 255, 0.85);
@@ -593,7 +563,6 @@ input[type=email]:focus,
 input[type=password]:focus {
   width: 40%; }
 
-input[type=submit],
 .login-form button[type=submit] {
   background: #FFF;
   border: solid 1px #ccc;
@@ -607,7 +576,8 @@ input[type=submit],
   transition: all .5s; }
 
 .searchLocationBtn,
-.locationBtn {
+.locationBtn,
+input[type=submit] {
   padding: 0.9%;
   width: 7%;
   color: white;
@@ -619,8 +589,12 @@ input[type=submit],
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 15px; }
   .searchLocationBtn input[type=submit],
-  .locationBtn input[type=submit] {
+  .locationBtn input[type=submit],
+  input[type=submit] input[type=submit] {
     outline: none; }
+
+input[type=submit] {
+  padding: 0.7%; }
 
 .locationBtn {
   width: 15%; }
