@@ -118,7 +118,13 @@ input[type=submit] {
 }
 
 input[type=submit] {
-  padding: 0.7%;
+	padding: 0.7%;
+	@include media($tablet) {
+		width: 19%;
+	}	
+	@include media($mobile) {
+		padding: 1.5%;
+	}	
 }
 
 .locationBtn{
