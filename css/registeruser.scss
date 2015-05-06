@@ -1,8 +1,15 @@
+body.search-page.js {
+	font-family: $font-family;
+	color: #FFB84B;
+	text-align: center;
+}
+
 .login-form,
 .register-form {
 	@include span-columns(12);
 	border: 1px solid #e4e4e4;
 	padding: 2%;
+	color: black;
 }
 
 .login-form,

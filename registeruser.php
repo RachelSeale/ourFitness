@@ -27,12 +27,12 @@
 						$_SESSION['name'] = $row['name'];
 						$_SESSION['id'] = $row['id'];
 					} else {
-						echo "Username and password did not match";
+						echo "Oh no, your username and password did not match. Please try again!";
 					}
 				}
 				$formSubmitted = true;
 			} else {
-				echo "Username and password did not match";
+				echo "Oh no, your username and password did not match. Please try again!";
 			}
 
 		} else if (isset($_POST["register"])) {
