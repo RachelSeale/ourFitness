@@ -478,7 +478,8 @@ label {
           .recipe-page .method .ingrediants li {
             margin-left: 17px; } }
       .recipe-page .method .ingrediants li {
-        list-style-type: disc; }
+        list-style-type: disc;
+        text-align: left; }
     .recipe-page .method .instructions {
       float: left;
       display: block;
@@ -743,8 +744,7 @@ input[type=submit] {
   padding-top: 4%; }
 
 body.search-page.js {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  text-align: center; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
 .login-form,
 .register-form {
