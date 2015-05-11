@@ -865,7 +865,7 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
+    width: 31.76157%; }
     footer .footer-info:last-child {
       margin-right: 0; }
     @media screen and (max-width: 500px) {
@@ -920,6 +920,9 @@ footer {
 
 .touch .social-icons img {
   -webkit-filter: grayscale(0); }
+
+.footer-info.flaticon {
+  font-size: 10px; }
 
 /* Global Reset */
 * {
