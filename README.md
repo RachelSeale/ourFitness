@@ -11,4 +11,4 @@ Fitness website aimed at Women getting fit and healthy
 - SASS
 - HTML
 
-Just added Gulp to the project as a trail
+Just added Gulp to the project as a trial
